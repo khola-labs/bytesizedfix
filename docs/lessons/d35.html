@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minimum spanning tree: Kruskal &amp; Prim (DSA L33) · Byte-Sized Fix</title>
+<meta name="description" content="Minimum spanning tree: Kruskal &amp; Prim — free animated lesson in Hinglish with 3 practice problems and a cheat-sheet. Gaon-gaon bijli kam taar mein: minimum spanning tree.">
+<link rel="canonical" href="https://khola-labs.github.io/bytesizedfix/lessons/d35.html">
+<meta name="theme-color" content="#111a32">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Byte-Sized Fix">
+<meta property="og:title" content="Minimum spanning tree: Kruskal &amp; Prim (DSA L33) · Byte-Sized Fix">
+<meta property="og:description" content="Minimum spanning tree: Kruskal &amp; Prim — free animated lesson in Hinglish with 3 practice problems and a cheat-sheet. Gaon-gaon bijli kam taar mein: minimum spanning tree.">
+<meta property="og:url" content="https://khola-labs.github.io/bytesizedfix/lessons/d35.html">
+<meta property="og:image" content="https://khola-labs.github.io/bytesizedfix/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+<div class="wrap">
+<a class="brand" href="../index.html"><img src="../assets/favicon.svg" alt="" width="28" height="28">BYTE-SIZED FIX</a>
+<nav class="nav" aria-label="Main"><a href="../index.html">Home</a><a href="../dsa.html" aria-current="page">DSA</a><a href="../system-design.html">System Design</a><a href="../interview.html">Interview Craft</a><a href="../lessons.html">All lessons</a><a href="../calendar.html">Calendar</a></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<p class="crumbs"><a href="../index.html">Home</a> › <a href="../dsa.html">DSA</a> › <a href="../dsa.html#di">DSA-8 · Graphs</a></p>
+<div class="lesson-head">
+<p class="eyebrow">DSA · Lesson L33 · DSA-8 · Graphs</p>
+<h1>Minimum spanning tree: Kruskal &amp; Prim</h1>
+<p class="lead hook">“Gaon-gaon bijli kam taar mein: minimum spanning tree”</p>
+<div class="lesson-facts"><span class="badge soon">Coming Tue 22 Jun 2027</span><span>Lesson ~11 min</span><span>Short 60-90 s</span><span>Code on screen: Python</span><span>Cheat-sheet: <span class="badge kw">MST</span></span></div>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:D35"><span><strong>I’ve finished this lesson</strong></span></label>
+</div>
+<p class="storage-note" data-storage-note hidden>Your browser is blocking local storage, so ticks won’t be saved after you leave this page. Everything else works.</p>
+<div class="media-row"><div><div class="video placeholder" role="img" aria-label="Video placeholder: full lesson coming Tue 22 Jun 2027">
+<img src="../assets/kursor-320.webp" alt="" width="72" height="72">
+<strong>Full lesson coming Tue 22 Jun 2027</strong><span>Kursor is still drawing this one.</span></div></div></div>
+
+<h2>What you’ll learn</h2>
+<ul class="goals"><li>MST definition and cut property</li><li>Kruskal (sort + DSU) and Prim (heap)</li><li>Where MST shows up in interviews</li></ul>
+<h2>The story behind it</h2>
+<p>Connecting every village in a district to electricity with the least wire: always pick the cheapest new connection that doesn&#x27;t create a loop.</p>
+<h2>Before this lesson</h2>
+<ul><li><a href="d33.html">Disjoint Set Union (Union-Find)</a> <span class="meter-label" style="display:inline">(DSA L31)</span></li><li><a href="d34.html">Shortest paths: Dijkstra, Bellman-Ford, 0-1 BFS</a> <span class="meter-label" style="display:inline">(DSA L32)</span></li></ul>
+<h2>Practice <span class="meter-label js-only" style="display:inline;font-weight:400" data-pmeter="D35" hidden></span></h2>
+<p>Ordered from first try to stretch. All free.</p>
+<ul class="practice"><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D35|https://leetcode.com/problems/min-cost-to-connect-all-points/"><span class="visually-hidden">Mark 1584. Min Cost to Connect All Points as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/min-cost-to-connect-all-points/" rel="noopener">1584. Min Cost to Connect All Points</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D35|https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/"><span class="visually-hidden">Mark 1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/" rel="noopener">1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree</a><span class="src"><span class="diff Hard">Hard</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D35|https://www.geeksforgeeks.org/problems/minimum-spanning-tree/1"><span class="visually-hidden">Mark GFG: Minimum spanning tree as solved</span></label>
+<span class="p-main"><a href="https://www.geeksforgeeks.org/problems/minimum-spanning-tree/1" rel="noopener">GFG: Minimum spanning tree</a><span class="src">GeeksforGeeks · free</span></span></li></ul>
+
+<h2>Get the cheat-sheet</h2>
+<div class="kwbox"><p>Comment <span class="badge kw">MST</span> on the Reel or Short and we’ll DM you the one-page cheat-sheet, the video link and this page.</p>
+<p class="meter-label">Find us on <a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a> and <a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a> as @thebytesizedfix.</p></div>
+<h2>Sources &amp; further reading</h2>
+<ul><li><a href="https://cp-algorithms.com/graph/mst_kruskal.html" rel="noopener">cp-algorithms: Kruskal MST</a></li><li><a href="https://cp-algorithms.com/graph/mst_prim.html" rel="noopener">cp-algorithms: Prim MST</a></li><li><a href="https://visualgo.net/en/mst" rel="noopener">VisuAlgo: Minimum spanning tree (animated)</a></li></ul>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:D35"><span>Mark this lesson as done</span></label>
+<nav class="pager" aria-label="Lessons"><a class="prev" href="d34.html" rel="prev"><small>← Previous</small>Shortest paths: Dijkstra, Bellman-Ford, 0-1 BFS</a><a class="next" href="d36.html" rel="next"><small>Next →</small>Advanced graph patterns: implicit graphs, bipartite, bridges</a></nav>
+</div>
+</main>
+<footer class="site-foot">
+<div class="wrap">
+<p><strong>Free forever. Made by Khola Labs.</strong><br>No ads, no sign-up, no tracking. Your progress stays in your browser.</p>
+<ul>
+<li><a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a></li>
+<li><a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a></li>
+<li><a href="../lessons.html">All lessons</a></li>
+<li><a href="../calendar.html">Release calendar</a></li>
+</ul>
+</div>
+</footer>
+</body>
+</html>

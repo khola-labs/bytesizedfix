@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Top-K and K-way merge (DSA L26) · Byte-Sized Fix</title>
+<meta name="description" content="Top-K and K-way merge — free animated lesson in Hinglish with 6 practice problems and a cheat-sheet. IPL ke top 3 run-scorers: top-K &amp; k-way merge.">
+<link rel="canonical" href="https://khola-labs.github.io/bytesizedfix/lessons/d28.html">
+<meta name="theme-color" content="#111a32">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Byte-Sized Fix">
+<meta property="og:title" content="Top-K and K-way merge (DSA L26) · Byte-Sized Fix">
+<meta property="og:description" content="Top-K and K-way merge — free animated lesson in Hinglish with 6 practice problems and a cheat-sheet. IPL ke top 3 run-scorers: top-K &amp; k-way merge.">
+<meta property="og:url" content="https://khola-labs.github.io/bytesizedfix/lessons/d28.html">
+<meta property="og:image" content="https://khola-labs.github.io/bytesizedfix/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+<div class="wrap">
+<a class="brand" href="../index.html"><img src="../assets/favicon.svg" alt="" width="28" height="28">BYTE-SIZED FIX</a>
+<nav class="nav" aria-label="Main"><a href="../index.html">Home</a><a href="../dsa.html" aria-current="page">DSA</a><a href="../system-design.html">System Design</a><a href="../interview.html">Interview Craft</a><a href="../lessons.html">All lessons</a><a href="../calendar.html">Calendar</a></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<p class="crumbs"><a href="../index.html">Home</a> › <a href="../dsa.html">DSA</a> › <a href="../dsa.html#dh">DSA-7 · Heaps &amp; Priority Queues</a></p>
+<div class="lesson-head">
+<p class="eyebrow">DSA · Lesson L26 · DSA-7 · Heaps &amp; Priority Queues</p>
+<h1>Top-K and K-way merge</h1>
+<p class="lead hook">“IPL ke top 3 run-scorers: top-K &amp; k-way merge”</p>
+<div class="lesson-facts"><span class="badge soon">Coming Tue 4 May 2027</span><span>Lesson ~12 min</span><span>Short 60-90 s</span><span>Code on screen: Python</span><span>Cheat-sheet: <span class="badge kw">TOPK</span></span></div>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:D28"><span><strong>I’ve finished this lesson</strong></span></label>
+</div>
+<p class="storage-note" data-storage-note hidden>Your browser is blocking local storage, so ticks won’t be saved after you leave this page. Everything else works.</p>
+<div class="media-row"><div><div class="video placeholder" role="img" aria-label="Video placeholder: full lesson coming Tue 4 May 2027">
+<img src="../assets/kursor-320.webp" alt="" width="72" height="72">
+<strong>Full lesson coming Tue 4 May 2027</strong><span>Kursor is still drawing this one.</span></div></div></div>
+
+<h2>What you’ll learn</h2>
+<ul class="goals"><li>Size-K heap for top-K in O(n log k)</li><li>Merge K sorted lists with a min-heap</li><li>Quickselect alternative</li></ul>
+<h2>The story behind it</h2>
+<p>Orange-cap tracker: keep only the current top 3 batters on a small podium; a new batter replaces the weakest on the podium only if he beats them.</p>
+<h2>Before this lesson</h2>
+<ul><li><a href="d27.html">Heaps &amp; priority queues</a> <span class="meter-label" style="display:inline">(DSA L25)</span></li></ul>
+<h2>Practice <span class="meter-label js-only" style="display:inline;font-weight:400" data-pmeter="D28" hidden></span></h2>
+<p>Ordered from first try to stretch. All free.</p>
+<ul class="practice"><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D28|https://leetcode.com/problems/top-k-frequent-elements/"><span class="visually-hidden">Mark 347. Top K Frequent Elements as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/top-k-frequent-elements/" rel="noopener">347. Top K Frequent Elements</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D28|https://leetcode.com/problems/top-k-frequent-words/"><span class="visually-hidden">Mark 692. Top K Frequent Words as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/top-k-frequent-words/" rel="noopener">692. Top K Frequent Words</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D28|https://leetcode.com/problems/merge-k-sorted-lists/"><span class="visually-hidden">Mark 23. Merge k Sorted Lists as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/merge-k-sorted-lists/" rel="noopener">23. Merge k Sorted Lists</a><span class="src"><span class="diff Hard">Hard</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D28|https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/"><span class="visually-hidden">Mark 378. Kth Smallest Element in a Sorted Matrix as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/" rel="noopener">378. Kth Smallest Element in a Sorted Matrix</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D28|https://leetcode.com/problems/find-k-pairs-with-smallest-sums/"><span class="visually-hidden">Mark 373. Find K Pairs with Smallest Sums as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/find-k-pairs-with-smallest-sums/" rel="noopener">373. Find K Pairs with Smallest Sums</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D28|https://leetcode.com/problems/reorganize-string/"><span class="visually-hidden">Mark 767. Reorganize String as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/reorganize-string/" rel="noopener">767. Reorganize String</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li></ul>
+
+<h2>Get the cheat-sheet</h2>
+<div class="kwbox"><p>Comment <span class="badge kw">TOPK</span> on the Reel or Short and we’ll DM you the one-page cheat-sheet, the video link and this page.</p>
+<p class="meter-label">Find us on <a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a> and <a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a> as @thebytesizedfix.</p></div>
+<h2>Sources &amp; further reading</h2>
+<ul><li><a href="https://www.techinterviewhandbook.org/algorithms/heap/" rel="noopener">Tech Interview Handbook: Heap cheatsheet</a></li><li><a href="https://neetcode.io/roadmap" rel="noopener">NeetCode Roadmap (free, pattern-ordered problem tree)</a></li></ul>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:D28"><span>Mark this lesson as done</span></label>
+<nav class="pager" aria-label="Lessons"><a class="prev" href="d27.html" rel="prev"><small>← Previous</small>Heaps &amp; priority queues</a><a class="next" href="d29.html" rel="next"><small>Next →</small>Two heaps (running median) &amp; scheduling with heaps</a></nav>
+</div>
+</main>
+<footer class="site-foot">
+<div class="wrap">
+<p><strong>Free forever. Made by Khola Labs.</strong><br>No ads, no sign-up, no tracking. Your progress stays in your browser.</p>
+<ul>
+<li><a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a></li>
+<li><a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a></li>
+<li><a href="../lessons.html">All lessons</a></li>
+<li><a href="../calendar.html">Release calendar</a></li>
+</ul>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design-a-data-structure: LRU, LFU, iterators (DSA L48) · Byte-Sized Fix</title>
+<meta name="description" content="Design-a-data-structure: LRU, LFU, iterators — free animated lesson in Hinglish with 6 practice problems and a cheat-sheet. Phone ki recent apps list: LRU cache banao.">
+<link rel="canonical" href="https://khola-labs.github.io/bytesizedfix/lessons/d50.html">
+<meta name="theme-color" content="#111a32">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Byte-Sized Fix">
+<meta property="og:title" content="Design-a-data-structure: LRU, LFU, iterators (DSA L48) · Byte-Sized Fix">
+<meta property="og:description" content="Design-a-data-structure: LRU, LFU, iterators — free animated lesson in Hinglish with 6 practice problems and a cheat-sheet. Phone ki recent apps list: LRU cache banao.">
+<meta property="og:url" content="https://khola-labs.github.io/bytesizedfix/lessons/d50.html">
+<meta property="og:image" content="https://khola-labs.github.io/bytesizedfix/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+<div class="wrap">
+<a class="brand" href="../index.html"><img src="../assets/favicon.svg" alt="" width="28" height="28">BYTE-SIZED FIX</a>
+<nav class="nav" aria-label="Main"><a href="../index.html">Home</a><a href="../dsa.html" aria-current="page">DSA</a><a href="../system-design.html">System Design</a><a href="../interview.html">Interview Craft</a><a href="../lessons.html">All lessons</a><a href="../calendar.html">Calendar</a></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<p class="crumbs"><a href="../index.html">Home</a> › <a href="../dsa.html">DSA</a> › <a href="../dsa.html#dl">DSA-11 · Advanced Toolkit</a></p>
+<div class="lesson-head">
+<p class="eyebrow">DSA · Lesson L48 · DSA-11 · Advanced Toolkit</p>
+<h1>Design-a-data-structure: LRU, LFU, iterators</h1>
+<p class="lead hook">“Phone ki recent apps list: LRU cache banao”</p>
+<div class="lesson-facts"><span class="badge soon">Coming Tue 5 Oct 2027</span><span>Lesson ~14 min</span><span>Short 60-90 s</span><span>Code on screen: Python</span><span>Cheat-sheet: <span class="badge kw">LRU</span></span></div>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:D50"><span><strong>I’ve finished this lesson</strong></span></label>
+</div>
+<p class="storage-note" data-storage-note hidden>Your browser is blocking local storage, so ticks won’t be saved after you leave this page. Everything else works.</p>
+<div class="media-row"><div><div class="video placeholder" role="img" aria-label="Video placeholder: full lesson coming Tue 5 Oct 2027">
+<img src="../assets/kursor-320.webp" alt="" width="72" height="72">
+<strong>Full lesson coming Tue 5 Oct 2027</strong><span>Kursor is still drawing this one.</span></div></div></div>
+
+<h2>What you’ll learn</h2>
+<ul class="goals"><li>Combine hashmap + doubly linked list for O(1) LRU</li><li>LFU with frequency buckets</li><li>Design questions: min stack, iterator, snapshot array</li></ul>
+<h2>The story behind it</h2>
+<p>Your phone&#x27;s recent-apps screen: the app you just opened jumps to the front; when memory is full the oldest one is killed. Bridges DSA and system-design caching (S11).</p>
+<h2>Before this lesson</h2>
+<ul><li><a href="d05.html">Hashing: hash maps &amp; hash sets</a> <span class="meter-label" style="display:inline">(DSA L4)</span></li><li><a href="d17.html">Linked lists: basics, reversal, merging</a> <span class="meter-label" style="display:inline">(DSA L16)</span></li></ul>
+<h2>Practice <span class="meter-label js-only" style="display:inline;font-weight:400" data-pmeter="D50" hidden></span></h2>
+<p>Ordered from first try to stretch. All free.</p>
+<ul class="practice"><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D50|https://leetcode.com/problems/lru-cache/"><span class="visually-hidden">Mark 146. LRU Cache as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/lru-cache/" rel="noopener">146. LRU Cache</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D50|https://leetcode.com/problems/lfu-cache/"><span class="visually-hidden">Mark 460. LFU Cache as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/lfu-cache/" rel="noopener">460. LFU Cache</a><span class="src"><span class="diff Hard">Hard</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D50|https://leetcode.com/problems/design-browser-history/"><span class="visually-hidden">Mark 1472. Design Browser History as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/design-browser-history/" rel="noopener">1472. Design Browser History</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D50|https://leetcode.com/problems/snapshot-array/"><span class="visually-hidden">Mark 1146. Snapshot Array as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/snapshot-array/" rel="noopener">1146. Snapshot Array</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D50|https://leetcode.com/problems/insert-delete-getrandom-o1/"><span class="visually-hidden">Mark 380. Insert Delete GetRandom O(1) as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/insert-delete-getrandom-o1/" rel="noopener">380. Insert Delete GetRandom O(1)</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D50|https://leetcode.com/problems/design-twitter/"><span class="visually-hidden">Mark 355. Design Twitter as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/design-twitter/" rel="noopener">355. Design Twitter</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li></ul>
+
+<h2>Get the cheat-sheet</h2>
+<div class="kwbox"><p>Comment <span class="badge kw">LRU</span> on the Reel or Short and we’ll DM you the one-page cheat-sheet, the video link and this page.</p>
+<p class="meter-label">Find us on <a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a> and <a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a> as @thebytesizedfix.</p></div>
+<h2>Sources &amp; further reading</h2>
+<ul><li><a href="https://www.techinterviewhandbook.org/algorithms/linked-list/" rel="noopener">Tech Interview Handbook: Linked list cheatsheet</a></li><li><a href="https://www.techinterviewhandbook.org/algorithms/hash-table/" rel="noopener">Tech Interview Handbook: Hash table cheatsheet</a></li></ul>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:D50"><span>Mark this lesson as done</span></label>
+<nav class="pager" aria-label="Lessons"><a class="prev" href="d49.html" rel="prev"><small>← Previous</small>String algorithms: KMP, Rabin-Karp, Z-function</a></nav>
+</div>
+</main>
+<footer class="site-foot">
+<div class="wrap">
+<p><strong>Free forever. Made by Khola Labs.</strong><br>No ads, no sign-up, no tracking. Your progress stays in your browser.</p>
+<ul>
+<li><a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a></li>
+<li><a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a></li>
+<li><a href="../lessons.html">All lessons</a></li>
+<li><a href="../calendar.html">Release calendar</a></li>
+</ul>
+</div>
+</footer>
+</body>
+</html>

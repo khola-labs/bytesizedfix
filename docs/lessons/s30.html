@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OOP fundamentals &amp; SOLID principles (System Design L30) · Byte-Sized Fix</title>
+<meta name="description" content="OOP fundamentals &amp; SOLID principles — free animated lesson in Hinglish with 4 practice problems and a cheat-sheet. Code jo badalne pe toote nahi: OOP &amp; SOLID.">
+<link rel="canonical" href="https://khola-labs.github.io/bytesizedfix/lessons/s30.html">
+<meta name="theme-color" content="#111a32">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Byte-Sized Fix">
+<meta property="og:title" content="OOP fundamentals &amp; SOLID principles (System Design L30) · Byte-Sized Fix">
+<meta property="og:description" content="OOP fundamentals &amp; SOLID principles — free animated lesson in Hinglish with 4 practice problems and a cheat-sheet. Code jo badalne pe toote nahi: OOP &amp; SOLID.">
+<meta property="og:url" content="https://khola-labs.github.io/bytesizedfix/lessons/s30.html">
+<meta property="og:image" content="https://khola-labs.github.io/bytesizedfix/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+<div class="wrap">
+<a class="brand" href="../index.html"><img src="../assets/favicon.svg" alt="" width="28" height="28">BYTE-SIZED FIX</a>
+<nav class="nav" aria-label="Main"><a href="../index.html">Home</a><a href="../dsa.html">DSA</a><a href="../system-design.html" aria-current="page">System Design</a><a href="../interview.html">Interview Craft</a><a href="../lessons.html">All lessons</a><a href="../calendar.html">Calendar</a></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<p class="crumbs"><a href="../index.html">Home</a> › <a href="../system-design.html">System Design</a> › <a href="../system-design.html#se">SD-4 · Low-Level Design (Machine Coding)</a></p>
+<div class="lesson-head">
+<p class="eyebrow">System Design · Lesson L30 · SD-4 · Low-Level Design (Machine Coding)</p>
+<h1>OOP fundamentals &amp; SOLID principles</h1>
+<p class="lead hook">“Code jo badalne pe toote nahi: OOP &amp; SOLID”</p>
+<div class="lesson-facts"><span class="badge soon">Coming Fri 24 Sep 2027</span><span>Lesson ~15 min</span><span>Short 60-90 s</span><span>Cheat-sheet: <span class="badge kw">SOLID</span></span></div>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:S30"><span><strong>I’ve finished this lesson</strong></span></label>
+</div>
+<p class="storage-note" data-storage-note hidden>Your browser is blocking local storage, so ticks won’t be saved after you leave this page. Everything else works.</p>
+<div class="media-row"><div><div class="video placeholder" role="img" aria-label="Video placeholder: full lesson coming Fri 24 Sep 2027">
+<img src="../assets/kursor-320.webp" alt="" width="72" height="72">
+<strong>Full lesson coming Fri 24 Sep 2027</strong><span>Kursor is still drawing this one.</span></div></div></div>
+
+<h2>What you’ll learn</h2>
+<ul class="goals"><li>Encapsulation, inheritance vs composition, polymorphism</li><li>SOLID with before/after code</li><li>Class diagrams for interviews</li></ul>
+<h2>The story behind it</h2>
+<p>A Swiss-army &#x27;jugaad&#x27; tool vs a proper toolbox: one class doing everything breaks whenever anything changes.</p>
+<h2>Before this lesson</h2>
+<ul><li><a href="d02.html">Memory model, arrays &amp; space complexity</a> <span class="meter-label" style="display:inline">(DSA L2)</span></li></ul>
+<h2>Practice <span class="meter-label js-only" style="display:inline;font-weight:400" data-pmeter="S30" hidden></span></h2>
+<p>Ordered from first try to stretch. All free.</p>
+<ul class="practice"><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:S30|https://www.digitalocean.com/community/conceptual-articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design"><span class="visually-hidden">Mark DigitalOcean: SOLID principles explained as solved</span></label>
+<span class="p-main"><a href="https://www.digitalocean.com/community/conceptual-articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design" rel="noopener">DigitalOcean: SOLID principles explained</a><span class="src">Reading / hands-on · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:S30|https://github.com/ashishps1/awesome-low-level-design"><span class="visually-hidden">Mark awesome-low-level-design (free LLD problems &amp; solutions) as solved</span></label>
+<span class="p-main"><a href="https://github.com/ashishps1/awesome-low-level-design" rel="noopener">awesome-low-level-design (free LLD problems &amp; solutions)</a><span class="src">Reading / hands-on · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:S30|https://leetcode.com/problems/design-parking-system/"><span class="visually-hidden">Mark 1603. Design Parking System as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/design-parking-system/" rel="noopener">1603. Design Parking System</a><span class="src"><span class="diff Easy">Easy</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:S30|https://leetcode.com/problems/design-an-atm-machine/"><span class="visually-hidden">Mark 2241. Design an ATM Machine as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/design-an-atm-machine/" rel="noopener">2241. Design an ATM Machine</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li></ul>
+
+<h2>Get the cheat-sheet</h2>
+<div class="kwbox"><p>Comment <span class="badge kw">SOLID</span> on the Reel or Short and we’ll DM you the one-page cheat-sheet, the video link and this page.</p>
+<p class="meter-label">Find us on <a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a> and <a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a> as @thebytesizedfix.</p></div>
+<h2>Sources &amp; further reading</h2>
+<ul><li><a href="https://www.digitalocean.com/community/conceptual-articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design" rel="noopener">DigitalOcean: SOLID principles explained</a></li><li><a href="https://refactoring.guru/design-patterns" rel="noopener">Refactoring.Guru: Design patterns catalog</a></li></ul>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:S30"><span>Mark this lesson as done</span></label>
+<nav class="pager" aria-label="Lessons"><a class="prev" href="s29.html" rel="prev"><small>← Previous</small>Security basics: authN vs authZ, sessions vs JWT, OAuth, OWASP</a><a class="next" href="s31.html" rel="next"><small>Next →</small>Design patterns for interviews (Strategy, Observer, Factory, Singleton, State, Builder)</a></nav>
+</div>
+</main>
+<footer class="site-foot">
+<div class="wrap">
+<p><strong>Free forever. Made by Khola Labs.</strong><br>No ads, no sign-up, no tracking. Your progress stays in your browser.</p>
+<ul>
+<li><a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a></li>
+<li><a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a></li>
+<li><a href="../lessons.html">All lessons</a></li>
+<li><a href="../calendar.html">Release calendar</a></li>
+</ul>
+</div>
+</footer>
+</body>
+</html>

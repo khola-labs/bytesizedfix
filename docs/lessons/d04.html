@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arrays &amp; prefix sums (DSA L3) · Byte-Sized Fix</title>
+<meta name="description" content="Arrays &amp; prefix sums — free animated lesson in Hinglish with 6 practice problems and a cheat-sheet. Cricket scoreboard ka jaadu: prefix sums.">
+<link rel="canonical" href="https://khola-labs.github.io/bytesizedfix/lessons/d04.html">
+<meta name="theme-color" content="#111a32">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Byte-Sized Fix">
+<meta property="og:title" content="Arrays &amp; prefix sums (DSA L3) · Byte-Sized Fix">
+<meta property="og:description" content="Arrays &amp; prefix sums — free animated lesson in Hinglish with 6 practice problems and a cheat-sheet. Cricket scoreboard ka jaadu: prefix sums.">
+<meta property="og:url" content="https://khola-labs.github.io/bytesizedfix/lessons/d04.html">
+<meta property="og:image" content="https://khola-labs.github.io/bytesizedfix/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+<div class="wrap">
+<a class="brand" href="../index.html"><img src="../assets/favicon.svg" alt="" width="28" height="28">BYTE-SIZED FIX</a>
+<nav class="nav" aria-label="Main"><a href="../index.html">Home</a><a href="../dsa.html" aria-current="page">DSA</a><a href="../system-design.html">System Design</a><a href="../interview.html">Interview Craft</a><a href="../lessons.html">All lessons</a><a href="../calendar.html">Calendar</a></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<p class="crumbs"><a href="../index.html">Home</a> › <a href="../dsa.html">DSA</a> › <a href="../dsa.html#db">DSA-1 · Arrays, Strings &amp; Hashing</a></p>
+<div class="lesson-head">
+<p class="eyebrow">DSA · Lesson L3 · DSA-1 · Arrays, Strings &amp; Hashing</p>
+<h1>Arrays &amp; prefix sums</h1>
+<p class="lead hook">“Cricket scoreboard ka jaadu: prefix sums”</p>
+<div class="lesson-facts"><span class="badge soon">Coming Tue 24 Nov 2026</span><span>Lesson ~13 min</span><span>Short 60-90 s</span><span>Code on screen: Python</span><span>Cheat-sheet: <span class="badge kw">PREFIX</span></span></div>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:D04"><span><strong>I’ve finished this lesson</strong></span></label>
+</div>
+<p class="storage-note" data-storage-note hidden>Your browser is blocking local storage, so ticks won’t be saved after you leave this page. Everything else works.</p>
+<div class="media-row"><div><div class="video placeholder" role="img" aria-label="Video placeholder: full lesson coming Tue 24 Nov 2026">
+<img src="../assets/kursor-320.webp" alt="" width="72" height="72">
+<strong>Full lesson coming Tue 24 Nov 2026</strong><span>Kursor is still drawing this one.</span></div></div></div>
+
+<h2>What you’ll learn</h2>
+<ul class="goals"><li>Build prefix sums and answer range-sum in O(1)</li><li>Prefix sum + hashmap for &#x27;subarray sum = k&#x27;</li><li>2D prefix sums for grids</li></ul>
+<h2>The story behind it</h2>
+<p>The scoreboard shows the running total after every over. Runs scored between over 12 and 18? Subtract two scoreboard numbers — no need to re-add every ball.</p>
+<h2>Before this lesson</h2>
+<ul><li><a href="d02.html">Memory model, arrays &amp; space complexity</a> <span class="meter-label" style="display:inline">(DSA L2)</span></li></ul>
+<h2>Practice <span class="meter-label js-only" style="display:inline;font-weight:400" data-pmeter="D04" hidden></span></h2>
+<p>Ordered from first try to stretch. All free.</p>
+<ul class="practice"><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D04|https://leetcode.com/problems/running-sum-of-1d-array/"><span class="visually-hidden">Mark 1480. Running Sum of 1d Array as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/running-sum-of-1d-array/" rel="noopener">1480. Running Sum of 1d Array</a><span class="src"><span class="diff Easy">Easy</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D04|https://leetcode.com/problems/range-sum-query-immutable/"><span class="visually-hidden">Mark 303. Range Sum Query - Immutable as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/range-sum-query-immutable/" rel="noopener">303. Range Sum Query - Immutable</a><span class="src"><span class="diff Easy">Easy</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D04|https://leetcode.com/problems/find-pivot-index/"><span class="visually-hidden">Mark 724. Find Pivot Index as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/find-pivot-index/" rel="noopener">724. Find Pivot Index</a><span class="src"><span class="diff Easy">Easy</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D04|https://leetcode.com/problems/product-of-array-except-self/"><span class="visually-hidden">Mark 238. Product of Array Except Self as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/product-of-array-except-self/" rel="noopener">238. Product of Array Except Self</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D04|https://leetcode.com/problems/subarray-sum-equals-k/"><span class="visually-hidden">Mark 560. Subarray Sum Equals K as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/subarray-sum-equals-k/" rel="noopener">560. Subarray Sum Equals K</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D04|https://leetcode.com/problems/range-sum-query-2d-immutable/"><span class="visually-hidden">Mark 304. Range Sum Query 2D - Immutable as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/range-sum-query-2d-immutable/" rel="noopener">304. Range Sum Query 2D - Immutable</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li></ul>
+
+<h2>Get the cheat-sheet</h2>
+<div class="kwbox"><p>Comment <span class="badge kw">PREFIX</span> on the Reel or Short and we’ll DM you the one-page cheat-sheet, the video link and this page.</p>
+<p class="meter-label">Find us on <a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a> and <a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a> as @thebytesizedfix.</p></div>
+<h2>Sources &amp; further reading</h2>
+<ul><li><a href="https://usaco.guide/silver/prefix-sums" rel="noopener">USACO Guide: Prefix sums</a></li><li><a href="https://www.techinterviewhandbook.org/algorithms/array/" rel="noopener">Tech Interview Handbook: Array cheatsheet</a></li></ul>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:D04"><span>Mark this lesson as done</span></label>
+<nav class="pager" aria-label="Lessons"><a class="prev" href="d02.html" rel="prev"><small>← Previous</small>Memory model, arrays &amp; space complexity</a><a class="next" href="d05.html" rel="next"><small>Next →</small>Hashing: hash maps &amp; hash sets</a></nav>
+</div>
+</main>
+<footer class="site-foot">
+<div class="wrap">
+<p><strong>Free forever. Made by Khola Labs.</strong><br>No ads, no sign-up, no tracking. Your progress stays in your browser.</p>
+<ul>
+<li><a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a></li>
+<li><a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a></li>
+<li><a href="../lessons.html">All lessons</a></li>
+<li><a href="../calendar.html">Release calendar</a></li>
+</ul>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Time complexity &amp; Big-O (DSA L1) · Byte-Sized Fix</title>
+<meta name="description" content="Time complexity &amp; Big-O — free animated lesson in Hinglish with 5 practice problems and a cheat-sheet. Chai banane mein kitna time? Big-O ka asli matlab.">
+<link rel="canonical" href="https://khola-labs.github.io/bytesizedfix/lessons/d01.html">
+<meta name="theme-color" content="#111a32">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Byte-Sized Fix">
+<meta property="og:title" content="Time complexity &amp; Big-O (DSA L1) · Byte-Sized Fix">
+<meta property="og:description" content="Time complexity &amp; Big-O — free animated lesson in Hinglish with 5 practice problems and a cheat-sheet. Chai banane mein kitna time? Big-O ka asli matlab.">
+<meta property="og:url" content="https://khola-labs.github.io/bytesizedfix/lessons/d01.html">
+<meta property="og:image" content="https://khola-labs.github.io/bytesizedfix/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+<div class="wrap">
+<a class="brand" href="../index.html"><img src="../assets/favicon.svg" alt="" width="28" height="28">BYTE-SIZED FIX</a>
+<nav class="nav" aria-label="Main"><a href="../index.html">Home</a><a href="../dsa.html" aria-current="page">DSA</a><a href="../system-design.html">System Design</a><a href="../interview.html">Interview Craft</a><a href="../lessons.html">All lessons</a><a href="../calendar.html">Calendar</a></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<p class="crumbs"><a href="../index.html">Home</a> › <a href="../dsa.html">DSA</a> › <a href="../dsa.html#da">DSA-0 · Foundations</a></p>
+<div class="lesson-head">
+<p class="eyebrow">DSA · Lesson L1 · DSA-0 · Foundations</p>
+<h1>Time complexity &amp; Big-O</h1>
+<p class="lead hook">“Chai banane mein kitna time? Big-O ka asli matlab”</p>
+<div class="lesson-facts"><span class="badge soon">Coming Tue 10 Nov 2026</span><span>Lesson ~14 min</span><span>Short 60-90 s</span><span>Code on screen: Python</span><span>Cheat-sheet: <span class="badge kw">BIGO</span></span></div>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:D01"><span><strong>I’ve finished this lesson</strong></span></label>
+</div>
+<p class="storage-note" data-storage-note hidden>Your browser is blocking local storage, so ticks won’t be saved after you leave this page. Everything else works.</p>
+<div class="media-row"><div><div class="video placeholder" role="img" aria-label="Video placeholder: full lesson coming Tue 10 Nov 2026">
+<img src="../assets/kursor-320.webp" alt="" width="72" height="72">
+<strong>Full lesson coming Tue 10 Nov 2026</strong><span>Kursor is still drawing this one.</span></div></div></div>
+
+<h2>What you’ll learn</h2>
+<ul class="goals"><li>Count operations instead of seconds</li><li>Recognise O(1), O(log n), O(n), O(n log n), O(n²), O(2ⁿ) from code shape</li><li>Use constraints (n ≤ 10⁵ etc.) to pick a target complexity</li></ul>
+<h2>The story behind it</h2>
+<p>Chai for a shaadi with 500 guests: boiling one big patila takes the same effort for 5 or 500 guests (O(1)); pouring cup by cup grows with guests (O(n)); every guest clinking glasses with every other guest explodes (O(n²)); the halwai finding one guest by halving the alphabetical seating list needs ~9 looks (O(log n)).</p>
+<h2>Before this lesson</h2>
+<p>None. You can start here.</p>
+<h2>Practice <span class="meter-label js-only" style="display:inline;font-weight:400" data-pmeter="D01" hidden></span></h2>
+<p>Ordered from first try to stretch. All free.</p>
+<ul class="practice"><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D01|https://leetcode.com/problems/fibonacci-number/"><span class="visually-hidden">Mark 509. Fibonacci Number as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/fibonacci-number/" rel="noopener">509. Fibonacci Number</a><span class="src"><span class="diff Easy">Easy</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D01|https://leetcode.com/problems/contains-duplicate/"><span class="visually-hidden">Mark 217. Contains Duplicate as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/contains-duplicate/" rel="noopener">217. Contains Duplicate</a><span class="src"><span class="diff Easy">Easy</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D01|https://leetcode.com/problems/richest-customer-wealth/"><span class="visually-hidden">Mark 1672. Richest Customer Wealth as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/richest-customer-wealth/" rel="noopener">1672. Richest Customer Wealth</a><span class="src"><span class="diff Easy">Easy</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D01|https://leetcode.com/problems/count-primes/"><span class="visually-hidden">Mark 204. Count Primes as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/count-primes/" rel="noopener">204. Count Primes</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D01|https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"><span class="visually-hidden">Mark Striver: Time &amp; space complexity (A2Z step 1) as solved</span></label>
+<span class="p-main"><a href="https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z" rel="noopener">Striver: Time &amp; space complexity (A2Z step 1)</a><span class="src">takeUforward · free</span><span class="note">Do the complexity quiz items in Step 1</span></span></li></ul>
+
+<h2>Get the cheat-sheet</h2>
+<div class="kwbox"><p>Comment <span class="badge kw">BIGO</span> on the Reel or Short and we’ll DM you the one-page cheat-sheet, the video link and this page.</p>
+<p class="meter-label">Find us on <a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a> and <a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a> as @thebytesizedfix.</p></div>
+<h2>Sources &amp; further reading</h2>
+<ul><li><a href="https://www.bigocheatsheet.com/" rel="noopener">Big-O Cheat Sheet</a></li><li><a href="https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/" rel="noopener">MIT 6.006 Introduction to Algorithms (OCW, free lectures)</a></li><li><a href="https://wiki.python.org/moin/TimeComplexity" rel="noopener">Python wiki: TimeComplexity of built-ins</a></li></ul>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:D01"><span>Mark this lesson as done</span></label>
+<nav class="pager" aria-label="Lessons"><a class="next" href="d02.html" rel="next"><small>Next →</small>Memory model, arrays &amp; space complexity</a></nav>
+</div>
+</main>
+<footer class="site-foot">
+<div class="wrap">
+<p><strong>Free forever. Made by Khola Labs.</strong><br>No ads, no sign-up, no tracking. Your progress stays in your browser.</p>
+<ul>
+<li><a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a></li>
+<li><a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a></li>
+<li><a href="../lessons.html">All lessons</a></li>
+<li><a href="../calendar.html">Release calendar</a></li>
+</ul>
+</div>
+</footer>
+</body>
+</html>

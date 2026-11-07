@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Memory model, arrays &amp; space complexity (DSA L2) · Byte-Sized Fix</title>
+<meta name="description" content="Memory model, arrays &amp; space complexity — free animated lesson in Hinglish with 5 practice problems and a cheat-sheet. RAM ek lambi railway hai: arrays, memory aur space complexity.">
+<link rel="canonical" href="https://khola-labs.github.io/bytesizedfix/lessons/d02.html">
+<meta name="theme-color" content="#111a32">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Byte-Sized Fix">
+<meta property="og:title" content="Memory model, arrays &amp; space complexity (DSA L2) · Byte-Sized Fix">
+<meta property="og:description" content="Memory model, arrays &amp; space complexity — free animated lesson in Hinglish with 5 practice problems and a cheat-sheet. RAM ek lambi railway hai: arrays, memory aur space complexity.">
+<meta property="og:url" content="https://khola-labs.github.io/bytesizedfix/lessons/d02.html">
+<meta property="og:image" content="https://khola-labs.github.io/bytesizedfix/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+<div class="wrap">
+<a class="brand" href="../index.html"><img src="../assets/favicon.svg" alt="" width="28" height="28">BYTE-SIZED FIX</a>
+<nav class="nav" aria-label="Main"><a href="../index.html">Home</a><a href="../dsa.html" aria-current="page">DSA</a><a href="../system-design.html">System Design</a><a href="../interview.html">Interview Craft</a><a href="../lessons.html">All lessons</a><a href="../calendar.html">Calendar</a></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<p class="crumbs"><a href="../index.html">Home</a> › <a href="../dsa.html">DSA</a> › <a href="../dsa.html#da">DSA-0 · Foundations</a></p>
+<div class="lesson-head">
+<p class="eyebrow">DSA · Lesson L2 · DSA-0 · Foundations</p>
+<h1>Memory model, arrays &amp; space complexity</h1>
+<p class="lead hook">“RAM ek lambi railway hai: arrays, memory aur space complexity”</p>
+<div class="lesson-facts"><span class="badge soon">Coming Tue 15 Dec 2026</span><span>Lesson ~11 min</span><span>Short 60-90 s</span><span>Code on screen: Python</span><span>Cheat-sheet: <span class="badge kw">MEMORY</span></span></div>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:D02"><span><strong>I’ve finished this lesson</strong></span></label>
+</div>
+<p class="storage-note" data-storage-note hidden>Your browser is blocking local storage, so ticks won’t be saved after you leave this page. Everything else works.</p>
+<div class="media-row"><div><div class="video placeholder" role="img" aria-label="Video placeholder: full lesson coming Tue 15 Dec 2026">
+<img src="../assets/kursor-320.webp" alt="" width="72" height="72">
+<strong>Full lesson coming Tue 15 Dec 2026</strong><span>Kursor is still drawing this one.</span></div></div></div>
+
+<h2>What you’ll learn</h2>
+<ul class="goals"><li>See why array index access is O(1) (base address + offset)</li><li>Static vs dynamic arrays and amortised O(1) append</li><li>Measure extra space; stack vs heap memory</li></ul>
+<h2>The story behind it</h2>
+<p>A Rajdhani train with numbered coaches: coach 7 is found instantly from the engine&#x27;s position (index math). When the train is full, Railways attaches a NEW longer rake and moves everyone — that&#x27;s dynamic-array resizing.</p>
+<h2>Before this lesson</h2>
+<ul><li><a href="d01.html">Time complexity &amp; Big-O</a> <span class="meter-label" style="display:inline">(DSA L1)</span></li></ul>
+<h2>Practice <span class="meter-label js-only" style="display:inline;font-weight:400" data-pmeter="D02" hidden></span></h2>
+<p>Ordered from first try to stretch. All free.</p>
+<ul class="practice"><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D02|https://leetcode.com/problems/concatenation-of-array/"><span class="visually-hidden">Mark 1929. Concatenation of Array as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/concatenation-of-array/" rel="noopener">1929. Concatenation of Array</a><span class="src"><span class="diff Easy">Easy</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D02|https://leetcode.com/problems/remove-element/"><span class="visually-hidden">Mark 27. Remove Element as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/remove-element/" rel="noopener">27. Remove Element</a><span class="src"><span class="diff Easy">Easy</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D02|https://leetcode.com/problems/remove-duplicates-from-sorted-array/"><span class="visually-hidden">Mark 26. Remove Duplicates from Sorted Array as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/remove-duplicates-from-sorted-array/" rel="noopener">26. Remove Duplicates from Sorted Array</a><span class="src"><span class="diff Easy">Easy</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D02|https://leetcode.com/problems/rotate-array/"><span class="visually-hidden">Mark 189. Rotate Array as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/rotate-array/" rel="noopener">189. Rotate Array</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D02|https://leetcode.com/problems/shuffle-the-array/"><span class="visually-hidden">Mark 1470. Shuffle the Array as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/shuffle-the-array/" rel="noopener">1470. Shuffle the Array</a><span class="src"><span class="diff Easy">Easy</span> · LeetCode · free</span></span></li></ul>
+
+<h2>Get the cheat-sheet</h2>
+<div class="kwbox"><p>Comment <span class="badge kw">MEMORY</span> on the Reel or Short and we’ll DM you the one-page cheat-sheet, the video link and this page.</p>
+<p class="meter-label">Find us on <a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a> and <a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a> as @thebytesizedfix.</p></div>
+<h2>Sources &amp; further reading</h2>
+<ul><li><a href="https://www.techinterviewhandbook.org/algorithms/array/" rel="noopener">Tech Interview Handbook: Array cheatsheet</a></li><li><a href="https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/" rel="noopener">MIT 6.006 Introduction to Algorithms (OCW, free lectures)</a></li></ul>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:D02"><span>Mark this lesson as done</span></label>
+<nav class="pager" aria-label="Lessons"><a class="prev" href="d01.html" rel="prev"><small>← Previous</small>Time complexity &amp; Big-O</a><a class="next" href="d04.html" rel="next"><small>Next →</small>Arrays &amp; prefix sums</a></nav>
+</div>
+</main>
+<footer class="site-foot">
+<div class="wrap">
+<p><strong>Free forever. Made by Khola Labs.</strong><br>No ads, no sign-up, no tracking. Your progress stays in your browser.</p>
+<ul>
+<li><a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a></li>
+<li><a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a></li>
+<li><a href="../lessons.html">All lessons</a></li>
+<li><a href="../calendar.html">Release calendar</a></li>
+</ul>
+</div>
+</footer>
+</body>
+</html>

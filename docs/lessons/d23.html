@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tree recursion: height, diameter, path sums, balanced (DSA L21) · Byte-Sized Fix</title>
+<meta name="description" content="Tree recursion: height, diameter, path sums, balanced — free animated lesson in Hinglish with 6 practice problems and a cheat-sheet. Neeche se upar jawab: tree recursion patterns.">
+<link rel="canonical" href="https://khola-labs.github.io/bytesizedfix/lessons/d23.html">
+<meta name="theme-color" content="#111a32">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Byte-Sized Fix">
+<meta property="og:title" content="Tree recursion: height, diameter, path sums, balanced (DSA L21) · Byte-Sized Fix">
+<meta property="og:description" content="Tree recursion: height, diameter, path sums, balanced — free animated lesson in Hinglish with 6 practice problems and a cheat-sheet. Neeche se upar jawab: tree recursion patterns.">
+<meta property="og:url" content="https://khola-labs.github.io/bytesizedfix/lessons/d23.html">
+<meta property="og:image" content="https://khola-labs.github.io/bytesizedfix/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+<div class="wrap">
+<a class="brand" href="../index.html"><img src="../assets/favicon.svg" alt="" width="28" height="28">BYTE-SIZED FIX</a>
+<nav class="nav" aria-label="Main"><a href="../index.html">Home</a><a href="../dsa.html" aria-current="page">DSA</a><a href="../system-design.html">System Design</a><a href="../interview.html">Interview Craft</a><a href="../lessons.html">All lessons</a><a href="../calendar.html">Calendar</a></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<p class="crumbs"><a href="../index.html">Home</a> › <a href="../dsa.html">DSA</a> › <a href="../dsa.html#dg">DSA-6 · Trees &amp; Tries</a></p>
+<div class="lesson-head">
+<p class="eyebrow">DSA · Lesson L21 · DSA-6 · Trees &amp; Tries</p>
+<h1>Tree recursion: height, diameter, path sums, balanced</h1>
+<p class="lead hook">“Neeche se upar jawab: tree recursion patterns”</p>
+<div class="lesson-facts"><span class="badge soon">Coming Tue 30 Mar 2027</span><span>Lesson ~14 min</span><span>Short 60-90 s</span><span>Code on screen: Python</span><span>Cheat-sheet: <span class="badge kw">TREEDFS</span></span></div>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:D23"><span><strong>I’ve finished this lesson</strong></span></label>
+</div>
+<p class="storage-note" data-storage-note hidden>Your browser is blocking local storage, so ticks won’t be saved after you leave this page. Everything else works.</p>
+<div class="media-row"><div><div class="video placeholder" role="img" aria-label="Video placeholder: full lesson coming Tue 30 Mar 2027">
+<img src="../assets/kursor-320.webp" alt="" width="72" height="72">
+<strong>Full lesson coming Tue 30 Mar 2027</strong><span>Kursor is still drawing this one.</span></div></div></div>
+
+<h2>What you’ll learn</h2>
+<ul class="goals"><li>Return-value pattern (bottom-up) vs carry-down pattern (top-down)</li><li>Diameter and max path sum with a global best</li><li>Subtree and symmetric checks</li></ul>
+<h2>The story behind it</h2>
+<p>A company org chart: each manager asks their two reports &#x27;how deep is your team?&#x27; and passes the bigger answer up — that&#x27;s height. The longest chain between any two employees is the diameter.</p>
+<h2>Before this lesson</h2>
+<ul><li><a href="d22.html">Binary trees: DFS (pre/in/post) and BFS (level order)</a> <span class="meter-label" style="display:inline">(DSA L20)</span></li></ul>
+<h2>Practice <span class="meter-label js-only" style="display:inline;font-weight:400" data-pmeter="D23" hidden></span></h2>
+<p>Ordered from first try to stretch. All free.</p>
+<ul class="practice"><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D23|https://leetcode.com/problems/diameter-of-binary-tree/"><span class="visually-hidden">Mark 543. Diameter of Binary Tree as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/diameter-of-binary-tree/" rel="noopener">543. Diameter of Binary Tree</a><span class="src"><span class="diff Easy">Easy</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D23|https://leetcode.com/problems/balanced-binary-tree/"><span class="visually-hidden">Mark 110. Balanced Binary Tree as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/balanced-binary-tree/" rel="noopener">110. Balanced Binary Tree</a><span class="src"><span class="diff Easy">Easy</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D23|https://leetcode.com/problems/path-sum-ii/"><span class="visually-hidden">Mark 113. Path Sum II as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/path-sum-ii/" rel="noopener">113. Path Sum II</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D23|https://leetcode.com/problems/subtree-of-another-tree/"><span class="visually-hidden">Mark 572. Subtree of Another Tree as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/subtree-of-another-tree/" rel="noopener">572. Subtree of Another Tree</a><span class="src"><span class="diff Easy">Easy</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D23|https://leetcode.com/problems/count-good-nodes-in-binary-tree/"><span class="visually-hidden">Mark 1448. Count Good Nodes in Binary Tree as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/count-good-nodes-in-binary-tree/" rel="noopener">1448. Count Good Nodes in Binary Tree</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D23|https://leetcode.com/problems/binary-tree-maximum-path-sum/"><span class="visually-hidden">Mark 124. Binary Tree Maximum Path Sum as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/binary-tree-maximum-path-sum/" rel="noopener">124. Binary Tree Maximum Path Sum</a><span class="src"><span class="diff Hard">Hard</span> · LeetCode · free</span></span></li></ul>
+
+<h2>Get the cheat-sheet</h2>
+<div class="kwbox"><p>Comment <span class="badge kw">TREEDFS</span> on the Reel or Short and we’ll DM you the one-page cheat-sheet, the video link and this page.</p>
+<p class="meter-label">Find us on <a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a> and <a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a> as @thebytesizedfix.</p></div>
+<h2>Sources &amp; further reading</h2>
+<ul><li><a href="https://www.techinterviewhandbook.org/algorithms/tree/" rel="noopener">Tech Interview Handbook: Tree cheatsheet</a></li><li><a href="https://neetcode.io/roadmap" rel="noopener">NeetCode Roadmap (free, pattern-ordered problem tree)</a></li></ul>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:D23"><span>Mark this lesson as done</span></label>
+<nav class="pager" aria-label="Lessons"><a class="prev" href="d22.html" rel="prev"><small>← Previous</small>Binary trees: DFS (pre/in/post) and BFS (level order)</a><a class="next" href="d24.html" rel="next"><small>Next →</small>Binary search trees</a></nav>
+</div>
+</main>
+<footer class="site-foot">
+<div class="wrap">
+<p><strong>Free forever. Made by Khola Labs.</strong><br>No ads, no sign-up, no tracking. Your progress stays in your browser.</p>
+<ul>
+<li><a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a></li>
+<li><a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a></li>
+<li><a href="../lessons.html">All lessons</a></li>
+<li><a href="../calendar.html">Release calendar</a></li>
+</ul>
+</div>
+</footer>
+</body>
+</html>

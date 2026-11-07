@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Disjoint Set Union (Union-Find) (DSA L31) · Byte-Sized Fix</title>
+<meta name="description" content="Disjoint Set Union (Union-Find) — free animated lesson in Hinglish with 5 practice problems and a cheat-sheet. Kaun kiska rishtedaar? Union-Find (DSU).">
+<link rel="canonical" href="https://khola-labs.github.io/bytesizedfix/lessons/d33.html">
+<meta name="theme-color" content="#111a32">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Byte-Sized Fix">
+<meta property="og:title" content="Disjoint Set Union (Union-Find) (DSA L31) · Byte-Sized Fix">
+<meta property="og:description" content="Disjoint Set Union (Union-Find) — free animated lesson in Hinglish with 5 practice problems and a cheat-sheet. Kaun kiska rishtedaar? Union-Find (DSU).">
+<meta property="og:url" content="https://khola-labs.github.io/bytesizedfix/lessons/d33.html">
+<meta property="og:image" content="https://khola-labs.github.io/bytesizedfix/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+<div class="wrap">
+<a class="brand" href="../index.html"><img src="../assets/favicon.svg" alt="" width="28" height="28">BYTE-SIZED FIX</a>
+<nav class="nav" aria-label="Main"><a href="../index.html">Home</a><a href="../dsa.html" aria-current="page">DSA</a><a href="../system-design.html">System Design</a><a href="../interview.html">Interview Craft</a><a href="../lessons.html">All lessons</a><a href="../calendar.html">Calendar</a></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<p class="crumbs"><a href="../index.html">Home</a> › <a href="../dsa.html">DSA</a> › <a href="../dsa.html#di">DSA-8 · Graphs</a></p>
+<div class="lesson-head">
+<p class="eyebrow">DSA · Lesson L31 · DSA-8 · Graphs</p>
+<h1>Disjoint Set Union (Union-Find)</h1>
+<p class="lead hook">“Kaun kiska rishtedaar? Union-Find (DSU)”</p>
+<div class="lesson-facts"><span class="badge soon">Coming Tue 8 Jun 2027</span><span>Lesson ~12 min</span><span>Short 60-90 s</span><span>Code on screen: Python</span><span>Cheat-sheet: <span class="badge kw">UNION</span></span></div>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:D33"><span><strong>I’ve finished this lesson</strong></span></label>
+</div>
+<p class="storage-note" data-storage-note hidden>Your browser is blocking local storage, so ticks won’t be saved after you leave this page. Everything else works.</p>
+<div class="media-row"><div><div class="video placeholder" role="img" aria-label="Video placeholder: full lesson coming Tue 8 Jun 2027">
+<img src="../assets/kursor-320.webp" alt="" width="72" height="72">
+<strong>Full lesson coming Tue 8 Jun 2027</strong><span>Kursor is still drawing this one.</span></div></div></div>
+
+<h2>What you’ll learn</h2>
+<ul class="goals"><li>Union by rank/size + path compression</li><li>Connectivity, redundant connection, account merging</li><li>Near-O(1) amortised operations</li></ul>
+<h2>The story behind it</h2>
+<p>Wedding season: every time two families get connected by marriage they become one &#x27;khandaan&#x27;. Question: are Sharmas and Guptas now relatives? Find each family&#x27;s head.</p>
+<h2>Before this lesson</h2>
+<ul><li><a href="d30.html">Graph basics: representation, BFS, DFS</a> <span class="meter-label" style="display:inline">(DSA L28)</span></li></ul>
+<h2>Practice <span class="meter-label js-only" style="display:inline;font-weight:400" data-pmeter="D33" hidden></span></h2>
+<p>Ordered from first try to stretch. All free.</p>
+<ul class="practice"><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D33|https://leetcode.com/problems/redundant-connection/"><span class="visually-hidden">Mark 684. Redundant Connection as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/redundant-connection/" rel="noopener">684. Redundant Connection</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D33|https://leetcode.com/problems/number-of-provinces/"><span class="visually-hidden">Mark 547. Number of Provinces as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/number-of-provinces/" rel="noopener">547. Number of Provinces</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D33|https://leetcode.com/problems/accounts-merge/"><span class="visually-hidden">Mark 721. Accounts Merge as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/accounts-merge/" rel="noopener">721. Accounts Merge</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D33|https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/"><span class="visually-hidden">Mark 947. Most Stones Removed with Same Row or Column as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/" rel="noopener">947. Most Stones Removed with Same Row or Column</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D33|https://leetcode.com/problems/satisfiability-of-equality-equations/"><span class="visually-hidden">Mark 990. Satisfiability of Equality Equations as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/satisfiability-of-equality-equations/" rel="noopener">990. Satisfiability of Equality Equations</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li></ul>
+
+<h2>Get the cheat-sheet</h2>
+<div class="kwbox"><p>Comment <span class="badge kw">UNION</span> on the Reel or Short and we’ll DM you the one-page cheat-sheet, the video link and this page.</p>
+<p class="meter-label">Find us on <a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a> and <a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a> as @thebytesizedfix.</p></div>
+<h2>Sources &amp; further reading</h2>
+<ul><li><a href="https://cp-algorithms.com/data_structures/disjoint_set_union.html" rel="noopener">cp-algorithms: Disjoint Set Union</a></li><li><a href="https://visualgo.net/en/ufds" rel="noopener">VisuAlgo: Union-Find DS (animated)</a></li></ul>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:D33"><span>Mark this lesson as done</span></label>
+<nav class="pager" aria-label="Lessons"><a class="prev" href="d32.html" rel="prev"><small>← Previous</small>Topological sort &amp; DAGs</a><a class="next" href="d34.html" rel="next"><small>Next →</small>Shortest paths: Dijkstra, Bellman-Ford, 0-1 BFS</a></nav>
+</div>
+</main>
+<footer class="site-foot">
+<div class="wrap">
+<p><strong>Free forever. Made by Khola Labs.</strong><br>No ads, no sign-up, no tracking. Your progress stays in your browser.</p>
+<ul>
+<li><a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a></li>
+<li><a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a></li>
+<li><a href="../lessons.html">All lessons</a></li>
+<li><a href="../calendar.html">Release calendar</a></li>
+</ul>
+</div>
+</footer>
+</body>
+</html>

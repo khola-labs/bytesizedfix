@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stacks &amp; queues (DSA L18) · Byte-Sized Fix</title>
+<meta name="description" content="Stacks &amp; queues — free animated lesson in Hinglish with 6 practice problems and a cheat-sheet. Shaadi ki plates ka dher: stack &amp; queue.">
+<link rel="canonical" href="https://khola-labs.github.io/bytesizedfix/lessons/d19.html">
+<meta name="theme-color" content="#111a32">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Byte-Sized Fix">
+<meta property="og:title" content="Stacks &amp; queues (DSA L18) · Byte-Sized Fix">
+<meta property="og:description" content="Stacks &amp; queues — free animated lesson in Hinglish with 6 practice problems and a cheat-sheet. Shaadi ki plates ka dher: stack &amp; queue.">
+<meta property="og:url" content="https://khola-labs.github.io/bytesizedfix/lessons/d19.html">
+<meta property="og:image" content="https://khola-labs.github.io/bytesizedfix/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+<div class="wrap">
+<a class="brand" href="../index.html"><img src="../assets/favicon.svg" alt="" width="28" height="28">BYTE-SIZED FIX</a>
+<nav class="nav" aria-label="Main"><a href="../index.html">Home</a><a href="../dsa.html" aria-current="page">DSA</a><a href="../system-design.html">System Design</a><a href="../interview.html">Interview Craft</a><a href="../lessons.html">All lessons</a><a href="../calendar.html">Calendar</a></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<p class="crumbs"><a href="../index.html">Home</a> › <a href="../dsa.html">DSA</a> › <a href="../dsa.html#df">DSA-5 · Linked Lists, Stacks &amp; Queues</a></p>
+<div class="lesson-head">
+<p class="eyebrow">DSA · Lesson L18 · DSA-5 · Linked Lists, Stacks &amp; Queues</p>
+<h1>Stacks &amp; queues</h1>
+<p class="lead hook">“Shaadi ki plates ka dher: stack &amp; queue”</p>
+<div class="lesson-facts"><span class="badge soon">Coming Tue 9 Mar 2027</span><span>Lesson ~12 min</span><span>Short 60-90 s</span><span>Code on screen: Python</span><span>Cheat-sheet: <span class="badge kw">STACK</span></span></div>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:D19"><span><strong>I’ve finished this lesson</strong></span></label>
+</div>
+<p class="storage-note" data-storage-note hidden>Your browser is blocking local storage, so ticks won’t be saved after you leave this page. Everything else works.</p>
+<div class="media-row"><div><div class="video placeholder" role="img" aria-label="Video placeholder: full lesson coming Tue 9 Mar 2027">
+<img src="../assets/kursor-320.webp" alt="" width="72" height="72">
+<strong>Full lesson coming Tue 9 Mar 2027</strong><span>Kursor is still drawing this one.</span></div></div></div>
+
+<h2>What you’ll learn</h2>
+<ul class="goals"><li>LIFO vs FIFO and where each appears (undo, BFS, call stack)</li><li>Balanced brackets, evaluate expressions</li><li>Implement queue with stacks and a min-stack</li></ul>
+<h2>The story behind it</h2>
+<p>Plates at a wedding buffet: the last washed plate placed on top is the first one taken (stack). The ration-shop line: first come, first served (queue).</p>
+<h2>Before this lesson</h2>
+<ul><li><a href="d02.html">Memory model, arrays &amp; space complexity</a> <span class="meter-label" style="display:inline">(DSA L2)</span></li></ul>
+<h2>Practice <span class="meter-label js-only" style="display:inline;font-weight:400" data-pmeter="D19" hidden></span></h2>
+<p>Ordered from first try to stretch. All free.</p>
+<ul class="practice"><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D19|https://leetcode.com/problems/valid-parentheses/"><span class="visually-hidden">Mark 20. Valid Parentheses as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/valid-parentheses/" rel="noopener">20. Valid Parentheses</a><span class="src"><span class="diff Easy">Easy</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D19|https://leetcode.com/problems/min-stack/"><span class="visually-hidden">Mark 155. Min Stack as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/min-stack/" rel="noopener">155. Min Stack</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D19|https://leetcode.com/problems/evaluate-reverse-polish-notation/"><span class="visually-hidden">Mark 150. Evaluate Reverse Polish Notation as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/evaluate-reverse-polish-notation/" rel="noopener">150. Evaluate Reverse Polish Notation</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D19|https://leetcode.com/problems/implement-queue-using-stacks/"><span class="visually-hidden">Mark 232. Implement Queue using Stacks as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/implement-queue-using-stacks/" rel="noopener">232. Implement Queue using Stacks</a><span class="src"><span class="diff Easy">Easy</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D19|https://leetcode.com/problems/decode-string/"><span class="visually-hidden">Mark 394. Decode String as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/decode-string/" rel="noopener">394. Decode String</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D19|https://leetcode.com/problems/asteroid-collision/"><span class="visually-hidden">Mark 735. Asteroid Collision as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/asteroid-collision/" rel="noopener">735. Asteroid Collision</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li></ul>
+
+<h2>Get the cheat-sheet</h2>
+<div class="kwbox"><p>Comment <span class="badge kw">STACK</span> on the Reel or Short and we’ll DM you the one-page cheat-sheet, the video link and this page.</p>
+<p class="meter-label">Find us on <a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a> and <a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a> as @thebytesizedfix.</p></div>
+<h2>Sources &amp; further reading</h2>
+<ul><li><a href="https://www.techinterviewhandbook.org/algorithms/stack/" rel="noopener">Tech Interview Handbook: Stack cheatsheet</a></li><li><a href="https://www.techinterviewhandbook.org/algorithms/queue/" rel="noopener">Tech Interview Handbook: Queue cheatsheet</a></li><li><a href="https://cp-algorithms.com/data_structures/stack_queue_modification.html" rel="noopener">cp-algorithms: Min-stack / min-queue modification</a></li></ul>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:D19"><span>Mark this lesson as done</span></label>
+<nav class="pager" aria-label="Lessons"><a class="prev" href="d18.html" rel="prev"><small>← Previous</small>Fast &amp; slow pointers (cycle detection, middle)</a><a class="next" href="d20.html" rel="next"><small>Next →</small>Monotonic stack &amp; monotonic deque (next greater, sliding window max)</a></nav>
+</div>
+</main>
+<footer class="site-foot">
+<div class="wrap">
+<p><strong>Free forever. Made by Khola Labs.</strong><br>No ads, no sign-up, no tracking. Your progress stays in your browser.</p>
+<ul>
+<li><a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a></li>
+<li><a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a></li>
+<li><a href="../lessons.html">All lessons</a></li>
+<li><a href="../calendar.html">Release calendar</a></li>
+</ul>
+</div>
+</footer>
+</body>
+</html>

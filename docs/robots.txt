@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://khola-labs.github.io/bytesizedfix/sitemap.xml

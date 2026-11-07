@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>System Design track · Byte-Sized Fix</title>
+<meta name="description" content="System Design: From “what happens when you open a URL” to designing UPI, Tatkal and IPL streaming. Fundamentals, distributed systems, LLD and India-first case studies.">
+<link rel="canonical" href="https://khola-labs.github.io/bytesizedfix/system-design.html">
+<meta name="theme-color" content="#111a32">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Byte-Sized Fix">
+<meta property="og:title" content="System Design track · Byte-Sized Fix">
+<meta property="og:description" content="System Design: From “what happens when you open a URL” to designing UPI, Tatkal and IPL streaming. Fundamentals, distributed systems, LLD and India-first case studies.">
+<meta property="og:url" content="https://khola-labs.github.io/bytesizedfix/system-design.html">
+<meta property="og:image" content="https://khola-labs.github.io/bytesizedfix/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+<div class="wrap">
+<a class="brand" href="index.html"><img src="assets/favicon.svg" alt="" width="28" height="28">BYTE-SIZED FIX</a>
+<nav class="nav" aria-label="Main"><a href="index.html">Home</a><a href="dsa.html">DSA</a><a href="system-design.html" aria-current="page">System Design</a><a href="interview.html">Interview Craft</a><a href="lessons.html">All lessons</a><a href="calendar.html">Calendar</a></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<p class="crumbs"><a href="index.html">Home</a> › System Design</p>
+<p class="eyebrow">Track · 47 lessons</p>
+<h1>System Design</h1>
+<p class="lead">From “what happens when you open a URL” to designing UPI, Tatkal and IPL streaming. Fundamentals, distributed systems, LLD and India-first case studies.</p>
+<p class="storage-note" data-storage-note hidden>Your browser is blocking local storage, so ticks won’t be saved after you leave this page. Everything else works.</p>
+<div class="card"><div data-meter="S01 S02 S03 S04 S05 S06 S07 S08 S09 S10 S11 S12 S13 S14 S15 S16 S17 S18 S19 S20 S21 S22 S23 S24 S25 S26 S27 S28 S29 S30 S31 S32 S33 C01 C02 C03 C04 C05 C06 C07 C08 C09 C10 C11 C12 C13 C14" class="js-only" hidden><p class="meter-label"><strong>Track progress</strong></p>
+<div class="meter" role="meter" aria-label="Track progress" aria-valuemin="0" aria-valuemax="47" aria-valuenow="0"><span></span></div>
+<p class="meter-label" data-meter-label>0 / 47 lessons done</p></div><p class="meter-label">Lessons are listed in learning order. Release order differs a little; see the <a href="calendar.html">calendar</a>.</p></div>
+<nav aria-label="Modules"><h2>Modules</h2><ol><li><a href="#sa">SD-0 · How the Internet Actually Works</a></li><li><a href="#sb">SD-1 · Scaling the Web Tier</a></li><li><a href="#sc">SD-2 · The Data Layer</a></li><li><a href="#sd">SD-3 · Distributed Systems Core</a></li><li><a href="#se">SD-4 · Low-Level Design (Machine Coding)</a></li><li><a href="#sf">SD-5 · Case Studies (India-first)</a></li></ol></nav>
+<section class="module" id="sa" aria-labelledby="h-sa">
+<h2 id="h-sa">SD-0 · How the Internet Actually Works</h2>
+<p class="blurb">What happens between tapping a link and seeing a page — the vocabulary for everything after.</p>
+<div data-meter="S01 S02 S03 S04 S05 S06" class="js-only" hidden>
+<div class="meter" role="meter" aria-label="Progress" aria-valuemin="0" aria-valuemax="6" aria-valuenow="0"><span></span></div>
+<p class="meter-label" data-meter-label>0 / 6 lessons done</p></div>
+<ul class="lessons"><li class="lesson-row" data-row data-lesson="S01" data-track="System Design" data-module="SA" data-out="0" data-search="s01 what happens when you open a url (client-server, ip, tcp/udp) link dabaya, page aaya — beech mein kya hua? system design sd-0 · how the internet actually works internet client-server model; ip addresses and ports tcp (reliable, ordered, handshake) vs udp (fast, lossy) packets, routers, latency vs bandwidth hands-on: run `traceroute`/`tracert` to a website and count hops hello interview: networking essentials latency numbers every programmer should know (jeff dean / jboner gist)">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:S01"><span class="visually-hidden">Mark What happens when you open a URL (client-server, IP, TCP/UDP) as done</span></label></span>
+<span class="body"><a class="t" href="lessons/s01.html"><span class="num">L1</span>What happens when you open a URL (client-server, IP, TCP/UDP)</a>
+<span class="sub">Link dabaya, page aaya — beech mein kya hua?</span>
+<span class="meta"><span class="badge soon">Coming Fri 27 Nov 2026</span><span>~14 min</span><span>3 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="S02" data-track="System Design" data-module="SA" data-out="0" data-search="s02 dns: resolution, records, ttl, caching internet ki phone directory: dns system design sd-0 · how the internet actually works dns recursive resolver → root → tld → authoritative a, aaaa, cname, mx, ns records; ttl dns as a load-balancing and failover tool hands-on: `dig +trace` your college/company domain and label each hop system design primer: domain name system exercise: draw the full lookup path for www.&lt;yourcollege&gt;.ac.in and mark where each cache could answer">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:S02"><span class="visually-hidden">Mark DNS: resolution, records, TTL, caching as done</span></label></span>
+<span class="body"><a class="t" href="lessons/s02.html"><span class="num">L2</span>DNS: resolution, records, TTL, caching</a>
+<span class="sub">Internet ki phone directory: DNS</span>
+<span class="meta"><span class="badge soon">Coming Fri 25 Dec 2026</span><span>~11 min</span><span>3 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="S03" data-track="System Design" data-module="SA" data-out="0" data-search="s03 http/1.1, http/2, http/3, https &amp; tls request-response ki chitthi: http, https &amp; tls system design sd-0 · how the internet actually works http request/response anatomy: methods, status codes, headers why https: tls handshake, certificates http/2 multiplexing and http/3 over quic at a glance hands-on: open devtools → network on any site; list 5 headers and explain them the illustrated tls 1.3 connection (byte by byte) 468. validate ip address exercise: for a login request, list method, path, 4 headers and the 3 status codes you&#x27;d return">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:S03"><span class="visually-hidden">Mark HTTP/1.1, HTTP/2, HTTP/3, HTTPS &amp; TLS as done</span></label></span>
+<span class="body"><a class="t" href="lessons/s03.html"><span class="num">L3</span>HTTP/1.1, HTTP/2, HTTP/3, HTTPS &amp; TLS</a>
+<span class="sub">Request-response ki chitthi: HTTP, HTTPS &amp; TLS</span>
+<span class="meta"><span class="badge soon">Coming Fri 1 Jan 2027</span><span>~13 min</span><span>4 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="S04" data-track="System Design" data-module="SA" data-out="0" data-search="s04 api design: rest, rpc/grpc, graphql, pagination, versioning restaurant ka menu card: api design (rest, grpc, graphql) system design sd-0 · how the internet actually works api resource-oriented rest and good endpoint naming grpc vs rest vs graphql trade-offs pagination (offset vs cursor), versioning, error design 1396. design underground system 1472. design browser history hello interview: api design exercise: write the rest api for a railway pnr-status service (5 endpoints)">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:S04"><span class="visually-hidden">Mark API design: REST, RPC/gRPC, GraphQL, pagination, versioning as done</span></label></span>
+<span class="body"><a class="t" href="lessons/s04.html"><span class="num">L4</span>API design: REST, RPC/gRPC, GraphQL, pagination, versioning</a>
+<span class="sub">Restaurant ka menu card: API design (REST, gRPC, GraphQL)</span>
+<span class="meta"><span class="badge soon">Coming Fri 29 Jan 2027</span><span>~14 min</span><span>4 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="S05" data-track="System Design" data-module="SA" data-out="0" data-search="s05 real-time communication: polling, long polling, websockets, sse live score kaise update hota hai? polling, websockets, sse system design sd-0 · how the internet actually works realtime short vs long polling cost websockets (bi-directional) vs sse (server push) scaling persistent connections hello interview: real-time updates pattern hello interview breakdown: live comments mdn: websockets api">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:S05"><span class="visually-hidden">Mark Real-time communication: polling, long polling, WebSockets, SSE as done</span></label></span>
+<span class="body"><a class="t" href="lessons/s05.html"><span class="num">L5</span>Real-time communication: polling, long polling, WebSockets, SSE</a>
+<span class="sub">Live score kaise update hota hai? Polling, WebSockets, SSE</span>
+<span class="meta"><span class="badge soon">Coming Fri 5 Feb 2027</span><span>~12 min</span><span>3 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="S06" data-track="System Design" data-module="SA" data-out="0" data-search="s06 capacity estimation &amp; numbers to know kitne servers chahiye? back-of-the-envelope maths system design sd-0 · how the internet actually works estimate latency numbers (memory vs ssd vs network) qps, storage and bandwidth estimates from dau powers of two and rounding tricks hello interview: numbers to know latency numbers every programmer should know (jeff dean / jboner gist) exercise: estimate storage for 5 years of a upi-like transaction log (assume 50 crore txns/day, 1 kb each)">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:S06"><span class="visually-hidden">Mark Capacity estimation &amp; numbers to know as done</span></label></span>
+<span class="body"><a class="t" href="lessons/s06.html"><span class="num">L6</span>Capacity estimation &amp; numbers to know</a>
+<span class="sub">Kitne servers chahiye? Back-of-the-envelope maths</span>
+<span class="meta"><span class="badge soon">Coming Fri 12 Feb 2027</span><span>~12 min</span><span>3 practice</span></span></span>
+</li></ul>
+</section><section class="module" id="sb" aria-labelledby="h-sb">
+<h2 id="h-sb">SD-1 · Scaling the Web Tier</h2>
+<p class="blurb">From one server to many: statelessness, load balancers, gateways, CDNs, caches.</p>
+<div data-meter="S07 S08 S09 S10 S11" class="js-only" hidden>
+<div class="meter" role="meter" aria-label="Progress" aria-valuemin="0" aria-valuemax="5" aria-valuenow="0"><span></span></div>
+<p class="meter-label" data-meter-label>0 / 5 lessons done</p></div>
+<ul class="lessons"><li class="lesson-row" data-row data-lesson="S07" data-track="System Design" data-module="SB" data-out="0" data-search="s07 scaling basics: vertical vs horizontal, stateless servers, sessions ek dukaan se franchise tak: vertical vs horizontal scaling system design sd-1 · scaling the web tier scale scale-up vs scale-out trade-offs why stateless app servers; where session state goes single points of failure system design primer: scaling to millions of users on aws hello interview: system design in a hurry exercise: a college fest site gets 50x traffic on result day — list what must change to go from 1 to 5 servers">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:S07"><span class="visually-hidden">Mark Scaling basics: vertical vs horizontal, stateless servers, sessions as done</span></label></span>
+<span class="body"><a class="t" href="lessons/s07.html"><span class="num">L7</span>Scaling basics: vertical vs horizontal, stateless servers, sessions</a>
+<span class="sub">Ek dukaan se franchise tak: vertical vs horizontal scaling</span>
+<span class="meta"><span class="badge soon">Coming Fri 8 Jan 2027</span><span>~11 min</span><span>3 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="S08" data-track="System Design" data-module="SB" data-out="0" data-search="s08 load balancers: l4 vs l7, algorithms, health checks stadium ke gates pe bheed: load balancer system design sd-1 · scaling the web tier balance round robin, least connections, ip-hash l4 vs l7; sticky sessions and their cost health checks, active-passive vs active-active system design primer: load balancer nginx docs: http load balancing hands-on: run 2 tiny servers behind nginx upstream and kill one">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:S08"><span class="visually-hidden">Mark Load balancers: L4 vs L7, algorithms, health checks as done</span></label></span>
+<span class="body"><a class="t" href="lessons/s08.html"><span class="num">L8</span>Load balancers: L4 vs L7, algorithms, health checks</a>
+<span class="sub">Stadium ke gates pe bheed: load balancer</span>
+<span class="meta"><span class="badge soon">Coming Fri 15 Jan 2027</span><span>~12 min</span><span>3 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="S09" data-track="System Design" data-module="SB" data-out="0" data-search="s09 reverse proxy, api gateway, service discovery hotel ka reception: reverse proxy &amp; api gateway system design sd-1 · scaling the web tier gateway reverse proxy duties: tls termination, compression, caching api gateway: routing, auth, rate limits, aggregation gateway as bottleneck; service discovery basics hello interview deep dive: api gateway system design primer: reverse proxy exercise: list 6 responsibilities you&#x27;d put in a gateway for a food-delivery app and 2 you&#x27;d keep out nginx docs: reverse proxy">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:S09"><span class="visually-hidden">Mark Reverse proxy, API gateway, service discovery as done</span></label></span>
+<span class="body"><a class="t" href="lessons/s09.html"><span class="num">L9</span>Reverse proxy, API gateway, service discovery</a>
+<span class="sub">Hotel ka reception: reverse proxy &amp; API gateway</span>
+<span class="meta"><span class="badge soon">Coming Fri 26 Feb 2027</span><span>~11 min</span><span>4 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="S10" data-track="System Design" data-module="SB" data-out="0" data-search="s10 cdns: edge caching, push vs pull, invalidation mithai ki branches har mohalle mein: cdn system design sd-1 · scaling the web tier cdn edge locations and why distance = latency push vs pull cdns; cache keys invalidation, versioned urls system design primer: content delivery network mdn: http caching exercise: a cricket app&#x27;s team-photo assets change every match — choose push vs pull cdn and a cache-busting scheme">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:S10"><span class="visually-hidden">Mark CDNs: edge caching, push vs pull, invalidation as done</span></label></span>
+<span class="body"><a class="t" href="lessons/s10.html"><span class="num">L10</span>CDNs: edge caching, push vs pull, invalidation</a>
+<span class="sub">Mithai ki branches har mohalle mein: CDN</span>
+<span class="meta"><span class="badge soon">Coming Fri 5 Mar 2027</span><span>~10 min</span><span>3 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="S11" data-track="System Design" data-module="SB" data-out="0" data-search="s11 caching: cache-aside, write-through/back, eviction, ttl, stampede chai ka flask desk pe: caching patterns system design sd-1 · scaling the web tier cache where to cache (client, cdn, app, db) cache-aside vs write-through vs write-back; ttl; lru/lfu stale data, thundering herd, hot keys 146. lru cache 981. time based key-value store hello interview: caching hello interview breakdown: distributed cache">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:S11"><span class="visually-hidden">Mark Caching: cache-aside, write-through/back, eviction, TTL, stampede as done</span></label></span>
+<span class="body"><a class="t" href="lessons/s11.html"><span class="num">L11</span>Caching: cache-aside, write-through/back, eviction, TTL, stampede</a>
+<span class="sub">Chai ka flask desk pe: caching patterns</span>
+<span class="meta"><span class="badge soon">Coming Fri 4 Dec 2026</span><span>~15 min</span><span>4 practice</span></span></span>
+</li></ul>
+</section><section class="module" id="sc" aria-labelledby="h-sc">
+<h2 id="h-sc">SD-2 · The Data Layer</h2>
+<p class="blurb">Where data lives and how it survives scale: models, indexes, transactions, replication, sharding.</p>
+<div data-meter="S12 S13 S14 S15 S16 S17 S18" class="js-only" hidden>
+<div class="meter" role="meter" aria-label="Progress" aria-valuemin="0" aria-valuemax="7" aria-valuenow="0"><span></span></div>
+<p class="meter-label" data-meter-label>0 / 7 lessons done</p></div>
+<ul class="lessons"><li class="lesson-row" data-row data-lesson="S12" data-track="System Design" data-module="SC" data-out="0" data-search="s12 data modelling: sql vs nosql (kv, document, wide-column, graph) bahi-khata ya almirah? sql vs nosql &amp; data modelling system design sd-2 · the data layer sqlnosql relational modelling, normalisation, joins nosql families and their access patterns choosing by access pattern, not hype hello interview: data modeling exercise: model a railway reservation (trains, coaches, seats, pnrs) in sql, then as documents 175. combine two tables 176. second highest salary 185. department top three salaries">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:S12"><span class="visually-hidden">Mark Data modelling: SQL vs NoSQL (KV, document, wide-column, graph) as done</span></label></span>
+<span class="body"><a class="t" href="lessons/s12.html"><span class="num">L12</span>Data modelling: SQL vs NoSQL (KV, document, wide-column, graph)</a>
+<span class="sub">Bahi-khata ya almirah? SQL vs NoSQL &amp; data modelling</span>
+<span class="meta"><span class="badge soon">Coming Fri 12 Mar 2027</span><span>~15 min</span><span>5 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="S13" data-track="System Design" data-module="SC" data-out="0" data-search="s13 indexes: b-trees, lsm trees, composite &amp; covering indexes kitaab ke peeche ka index: database indexes system design sd-2 · the data layer index full scan vs index lookup b-tree vs lsm-tree (read vs write optimised) composite index column order; cost on writes hello interview: database indexing use the index, luke! (free sql indexing book) 183. customers who never order 197. rising temperature">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:S13"><span class="visually-hidden">Mark Indexes: B-trees, LSM trees, composite &amp; covering indexes as done</span></label></span>
+<span class="body"><a class="t" href="lessons/s13.html"><span class="num">L13</span>Indexes: B-trees, LSM trees, composite &amp; covering indexes</a>
+<span class="sub">Kitaab ke peeche ka index: database indexes</span>
+<span class="meta"><span class="badge soon">Coming Fri 19 Mar 2027</span><span>~14 min</span><span>4 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="S14" data-track="System Design" data-module="SC" data-out="0" data-search="s14 transactions: acid, isolation levels, locking vs mvcc paisa gaya par aaya nahi? transactions, acid &amp; isolation system design sd-2 · the data layer acid atomicity, consistency, isolation, durability with examples dirty/non-repeatable/phantom reads; isolation levels pessimistic vs optimistic locking; mvcc postgresql docs: transaction isolation hello interview: dealing with contention 2043. simple bank system">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:S14"><span class="visually-hidden">Mark Transactions: ACID, isolation levels, locking vs MVCC as done</span></label></span>
+<span class="body"><a class="t" href="lessons/s14.html"><span class="num">L14</span>Transactions: ACID, isolation levels, locking vs MVCC</a>
+<span class="sub">Paisa gaya par aaya nahi? Transactions, ACID &amp; isolation</span>
+<span class="meta"><span class="badge soon">Coming Fri 26 Mar 2027</span><span>~15 min</span><span>3 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="S15" data-track="System Design" data-module="SC" data-out="0" data-search="s15 replication: leader-follower, multi-leader, leaderless, lag class notes ki photocopy: replication system design sd-2 · the data layer replica sync vs async replication read replicas and replication lag anomalies (read-your-writes) failover and split brain hello interview: scaling reads postgresql docs: high availability &amp; replication exercise: a user updates their profile photo and still sees the old one — list 3 fixes using read-your-writes">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:S15"><span class="visually-hidden">Mark Replication: leader-follower, multi-leader, leaderless, lag as done</span></label></span>
+<span class="body"><a class="t" href="lessons/s15.html"><span class="num">L15</span>Replication: leader-follower, multi-leader, leaderless, lag</a>
+<span class="sub">Class notes ki photocopy: replication</span>
+<span class="meta"><span class="badge soon">Coming Fri 2 Apr 2027</span><span>~13 min</span><span>3 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="S16" data-track="System Design" data-module="SC" data-out="0" data-search="s16 partitioning/sharding: range, hash, hot shards, resharding register ko a–m aur n–z mein baanto: sharding system design sd-2 · the data layer shard range vs hash partitioning choosing a shard key; hot partitions cross-shard queries and secondary indexes hello interview: sharding hello interview: scaling writes exercise: pick a shard key for (a) chat messages, (b) upi transactions, (c) ipl ball-by-ball events and justify">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:S16"><span class="visually-hidden">Mark Partitioning/sharding: range, hash, hot shards, resharding as done</span></label></span>
+<span class="body"><a class="t" href="lessons/s16.html"><span class="num">L16</span>Partitioning/sharding: range, hash, hot shards, resharding</a>
+<span class="sub">Register ko A–M aur N–Z mein baanto: sharding</span>
+<span class="meta"><span class="badge soon">Coming Fri 9 Apr 2027</span><span>~14 min</span><span>3 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="S17" data-track="System Design" data-module="SC" data-out="0" data-search="s17 consistent hashing &amp; virtual nodes gol table pe mehmaan: consistent hashing system design sd-2 · the data layer ring why hash(key) % n breaks when n changes hash ring, moving only neighbouring keys virtual nodes for balance hello interview: consistent hashing amazon dynamo paper (2007) exercise: with 4 nodes and 1,000 keys, compute how many keys move when a 5th node joins: mod-n vs ring">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:S17"><span class="visually-hidden">Mark Consistent hashing &amp; virtual nodes as done</span></label></span>
+<span class="body"><a class="t" href="lessons/s17.html"><span class="num">L17</span>Consistent hashing &amp; virtual nodes</a>
+<span class="sub">Gol table pe mehmaan: consistent hashing</span>
+<span class="meta"><span class="badge soon">Coming Fri 14 May 2027</span><span>~11 min</span><span>3 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="S18" data-track="System Design" data-module="SC" data-out="0" data-search="s18 blob/object storage, pre-signed urls, chunked uploads photos aur videos kahan rakhte hain? object storage system design sd-2 · the data layer blob object store vs db vs file system pre-signed urls and direct-to-storage uploads multipart/resumable uploads; metadata in db hello interview: handling large blobs hello interview breakdown: dropbox aws docs: what is amazon s3? exercise: design resumable upload for a 2 gb wedding video over flaky 4g">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:S18"><span class="visually-hidden">Mark Blob/object storage, pre-signed URLs, chunked uploads as done</span></label></span>
+<span class="body"><a class="t" href="lessons/s18.html"><span class="num">L18</span>Blob/object storage, pre-signed URLs, chunked uploads</a>
+<span class="sub">Photos aur videos kahan rakhte hain? Object storage</span>
+<span class="meta"><span class="badge soon">Coming Fri 21 May 2027</span><span>~10 min</span><span>4 practice</span></span></span>
+</li></ul>
+</section><section class="module" id="sd" aria-labelledby="h-sd">
+<h2 id="h-sd">SD-3 · Distributed Systems Core</h2>
+<p class="blurb">What goes wrong when machines talk over a network — and the patterns that tame it.</p>
+<div data-meter="S19 S20 S21 S22 S23 S24 S25 S26 S27 S28 S29" class="js-only" hidden>
+<div class="meter" role="meter" aria-label="Progress" aria-valuemin="0" aria-valuemax="11" aria-valuenow="0"><span></span></div>
+<p class="meter-label" data-meter-label>0 / 11 lessons done</p></div>
+<ul class="lessons"><li class="lesson-row" data-row data-lesson="S19" data-track="System Design" data-module="SD" data-out="0" data-search="s19 cap theorem &amp; pacelc phone line kat gayi, ab kya? cap &amp; pacelc system design sd-3 · distributed systems core cap partitions are not optional; choose c or a during one cp vs ap examples pacelc: latency vs consistency when healthy hello interview: cap theorem system design primer: availability vs consistency exercise: classify: bank balance, instagram likes count, train seat map, cricket score — cp or ap, and why">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:S19"><span class="visually-hidden">Mark CAP theorem &amp; PACELC as done</span></label></span>
+<span class="body"><a class="t" href="lessons/s19.html"><span class="num">L19</span>CAP theorem &amp; PACELC</a>
+<span class="sub">Phone line kat gayi, ab kya? CAP &amp; PACELC</span>
+<span class="meta"><span class="badge soon">Coming Fri 28 May 2027</span><span>~11 min</span><span>3 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="S20" data-track="System Design" data-module="SD" data-out="0" data-search="s20 consistency models: strong, eventual, read-your-writes, causal kab sab ko same dikhega? consistency models system design sd-3 · distributed systems core consistent linearisable vs eventual consistency session guarantees: read-your-writes, monotonic reads quorums (r + w &gt; n) jepsen: consistency models map amazon dynamo paper (2007) exercise: with n=3 replicas, list all (r, w) pairs that guarantee reading the latest write">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:S20"><span class="visually-hidden">Mark Consistency models: strong, eventual, read-your-writes, causal as done</span></label></span>
+<span class="body"><a class="t" href="lessons/s20.html"><span class="num">L20</span>Consistency models: strong, eventual, read-your-writes, causal</a>
+<span class="sub">Kab sab ko same dikhega? Consistency models</span>
+<span class="meta"><span class="badge soon">Coming Fri 4 Jun 2027</span><span>~12 min</span><span>3 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="S21" data-track="System Design" data-module="SD" data-out="0" data-search="s21 message queues, pub/sub, kafka-style logs mithai shop ka token system: message queues &amp; kafka system design sd-3 · distributed systems core queue decoupling producers and consumers; back pressure queue vs pub/sub vs log (offsets, partitions, consumer groups) at-least-once delivery, ordering, dlqs hello interview deep dive: kafka system design primer: asynchronism (queues, back pressure) apache kafka: introduction">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:S21"><span class="visually-hidden">Mark Message queues, pub/sub, Kafka-style logs as done</span></label></span>
+<span class="body"><a class="t" href="lessons/s21.html"><span class="num">L21</span>Message queues, pub/sub, Kafka-style logs</a>
+<span class="sub">Mithai shop ka token system: message queues &amp; Kafka</span>
+<span class="meta"><span class="badge soon">Coming Fri 23 Apr 2027</span><span>~15 min</span><span>3 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="S22" data-track="System Design" data-module="SD" data-out="0" data-search="s22 idempotency, retries, timeouts, exactly-once (effectively) lift ka button 5 baar dabaya: idempotency &amp; retries system design sd-3 · distributed systems core retry why networks force retries; timeouts idempotency keys and dedup tables exponential backoff with jitter; &#x27;exactly-once&#x27; = at-least-once + idempotent stripe api docs: idempotent requests aws builders&#x27; library: timeouts, retries and backoff with jitter hello interview breakdown: payment system">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:S22"><span class="visually-hidden">Mark Idempotency, retries, timeouts, exactly-once (effectively) as done</span></label></span>
+<span class="body"><a class="t" href="lessons/s22.html"><span class="num">L22</span>Idempotency, retries, timeouts, exactly-once (effectively)</a>
+<span class="sub">Lift ka button 5 baar dabaya: idempotency &amp; retries</span>
+<span class="meta"><span class="badge soon">Coming Fri 25 Jun 2027</span><span>~13 min</span><span>3 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="S23" data-track="System Design" data-module="SD" data-out="0" data-search="s23 rate limiting algorithms &amp; distributed limiters society ka watchman: rate limiting system design sd-3 · distributed systems core limit token bucket, leaky bucket, fixed &amp; sliding window per-user/ip/api-key limits; 429 + retry-after distributed counters with redis; failure modes hello interview breakdown: distributed rate limiter mdn: 429 too many requests 933. number of recent calls">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:S23"><span class="visually-hidden">Mark Rate limiting algorithms &amp; distributed limiters as done</span></label></span>
+<span class="body"><a class="t" href="lessons/s23.html"><span class="num">L23</span>Rate limiting algorithms &amp; distributed limiters</a>
+<span class="sub">Society ka watchman: rate limiting</span>
+<span class="meta"><span class="badge soon">Coming Fri 22 Jan 2027</span><span>~13 min</span><span>3 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="S24" data-track="System Design" data-module="SD" data-out="0" data-search="s24 consensus (raft), leader election, distributed locks, fencing class monitor ka chunaav: leader election, consensus &amp; locks system design sd-3 · distributed systems core consensus why agreement is hard (failures, partitions) raft: terms, votes, log replication (intuition) distributed locks, leases and fencing tokens the raft consensus algorithm (visualisation + paper) hello interview breakdown: job scheduler exercise: two cron servers both think they are leader and both send the salary sms — fix it with a lease + fencing token">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:S24"><span class="visually-hidden">Mark Consensus (Raft), leader election, distributed locks, fencing as done</span></label></span>
+<span class="body"><a class="t" href="lessons/s24.html"><span class="num">L24</span>Consensus (Raft), leader election, distributed locks, fencing</a>
+<span class="sub">Class monitor ka chunaav: leader election, consensus &amp; locks</span>
+<span class="meta"><span class="badge soon">Coming Fri 9 Jul 2027</span><span>~14 min</span><span>3 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="S25" data-track="System Design" data-module="SD" data-out="0" data-search="s25 distributed transactions: 2pc, sagas, transactional outbox shaadi ka booking chain: distributed transactions &amp; sagas system design sd-3 · distributed systems core saga 2pc and why it blocks saga with compensating actions (orchestration vs choreography) outbox pattern for db + event consistency hello interview: multi-step processes (sagas, workflows) microservices.io: saga pattern microservices.io: transactional outbox">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:S25"><span class="visually-hidden">Mark Distributed transactions: 2PC, sagas, transactional outbox as done</span></label></span>
+<span class="body"><a class="t" href="lessons/s25.html"><span class="num">L25</span>Distributed transactions: 2PC, sagas, transactional outbox</a>
+<span class="sub">Shaadi ka booking chain: distributed transactions &amp; sagas</span>
+<span class="meta"><span class="badge soon">Coming Fri 16 Jul 2027</span><span>~14 min</span><span>3 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="S26" data-track="System Design" data-module="SD" data-out="0" data-search="s26 monolith vs microservices, service boundaries, communication joint family ya alag flats? monolith vs microservices system design sd-3 · distributed systems core micro when a monolith is the right answer service boundaries, sync vs async calls distributed-system tax: latency, failures, data ownership martin fowler: microservices martin fowler: monolith first exercise: split a food-delivery monolith into services; name each service&#x27;s data and one sync + one async call">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:S26"><span class="visually-hidden">Mark Monolith vs microservices, service boundaries, communication as done</span></label></span>
+<span class="body"><a class="t" href="lessons/s26.html"><span class="num">L26</span>Monolith vs microservices, service boundaries, communication</a>
+<span class="sub">Joint family ya alag flats? Monolith vs microservices</span>
+<span class="meta"><span class="badge soon">Coming Fri 30 Jul 2027</span><span>~12 min</span><span>3 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="S27" data-track="System Design" data-module="SD" data-out="0" data-search="s27 reliability: slos, monitoring, circuit breakers, graceful degradation server down? circuit breaker, slos &amp; observability system design sd-3 · distributed systems core reliable sli/slo/sla and error budgets logs, metrics, traces circuit breakers, bulkheads, load shedding google sre book: service level objectives martin fowler: circuit breaker google sre book: handling overload">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:S27"><span class="visually-hidden">Mark Reliability: SLOs, monitoring, circuit breakers, graceful degradation as done</span></label></span>
+<span class="body"><a class="t" href="lessons/s27.html"><span class="num">L27</span>Reliability: SLOs, monitoring, circuit breakers, graceful degradation</a>
+<span class="sub">Server down? Circuit breaker, SLOs &amp; observability</span>
+<span class="meta"><span class="badge soon">Coming Fri 6 Aug 2027</span><span>~13 min</span><span>3 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="S28" data-track="System Design" data-module="SD" data-out="0" data-search="s28 search: inverted indexes, ranking, elasticsearch search box ke peeche: inverted index system design sd-3 · distributed systems core search inverted index from documents tokenisation, relevance (tf-idf/bm25 intuition) keeping search in sync with the primary db (cdc) hello interview deep dive: elasticsearch elastic docs: documents and indices exercise: build by hand the inverted index for 4 recipe titles and run the query &#x27;paneer tikka&#x27; 1268. search suggestions system">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:S28"><span class="visually-hidden">Mark Search: inverted indexes, ranking, Elasticsearch as done</span></label></span>
+<span class="body"><a class="t" href="lessons/s28.html"><span class="num">L28</span>Search: inverted indexes, ranking, Elasticsearch</a>
+<span class="sub">Search box ke peeche: inverted index</span>
+<span class="meta"><span class="badge soon">Coming Fri 11 Jun 2027</span><span>~12 min</span><span>4 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="S29" data-track="System Design" data-module="SD" data-out="0" data-search="s29 security basics: authn vs authz, sessions vs jwt, oauth, owasp otp, login aur tokens: auth ka system design system design sd-3 · distributed systems core auth authentication vs authorisation session cookies vs jwt; refresh tokens oauth 2.0 &#x27;login with…&#x27; flow; top web vulnerabilities oauth 2.0 (oauth.net) jwt introduction (jwt.io) owasp top ten">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:S29"><span class="visually-hidden">Mark Security basics: authN vs authZ, sessions vs JWT, OAuth, OWASP as done</span></label></span>
+<span class="body"><a class="t" href="lessons/s29.html"><span class="num">L29</span>Security basics: authN vs authZ, sessions vs JWT, OAuth, OWASP</a>
+<span class="sub">OTP, login aur tokens: auth ka system design</span>
+<span class="meta"><span class="badge soon">Coming Fri 20 Aug 2027</span><span>~13 min</span><span>3 practice</span></span></span>
+</li></ul>
+</section><section class="module" id="se" aria-labelledby="h-se">
+<h2 id="h-se">SD-4 · Low-Level Design (Machine Coding)</h2>
+<p class="blurb">OOP, SOLID, patterns and the 90-minute machine-coding round common in Indian product companies.</p>
+<div data-meter="S30 S31 S32 S33" class="js-only" hidden>
+<div class="meter" role="meter" aria-label="Progress" aria-valuemin="0" aria-valuemax="4" aria-valuenow="0"><span></span></div>
+<p class="meter-label" data-meter-label>0 / 4 lessons done</p></div>
+<ul class="lessons"><li class="lesson-row" data-row data-lesson="S30" data-track="System Design" data-module="SE" data-out="0" data-search="s30 oop fundamentals &amp; solid principles code jo badalne pe toote nahi: oop &amp; solid system design sd-4 · low-level design (machine coding) solid encapsulation, inheritance vs composition, polymorphism solid with before/after code class diagrams for interviews digitalocean: solid principles explained awesome-low-level-design (free lld problems &amp; solutions) 1603. design parking system 2241. design an atm machine">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:S30"><span class="visually-hidden">Mark OOP fundamentals &amp; SOLID principles as done</span></label></span>
+<span class="body"><a class="t" href="lessons/s30.html"><span class="num">L30</span>OOP fundamentals &amp; SOLID principles</a>
+<span class="sub">Code jo badalne pe toote nahi: OOP &amp; SOLID</span>
+<span class="meta"><span class="badge soon">Coming Fri 24 Sep 2027</span><span>~15 min</span><span>4 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="S31" data-track="System Design" data-module="SE" data-out="0" data-search="s31 design patterns for interviews (strategy, observer, factory, singleton, state, builder) har baar naya jugaad nahi: design patterns jo interview mein aate hain system design sd-4 · low-level design (machine coding) patterns six patterns that cover most lld rounds when not to use a pattern mapping patterns to real features (payments, notifications) refactoring.guru: design patterns catalog awesome-low-level-design (free lld problems &amp; solutions) exercise: implement a notification sender with strategy (channel) + observer (subscribers) in your language 1472. design browser history">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:S31"><span class="visually-hidden">Mark Design patterns for interviews (Strategy, Observer, Factory, Singleton, State, Builder) as done</span></label></span>
+<span class="body"><a class="t" href="lessons/s31.html"><span class="num">L31</span>Design patterns for interviews (Strategy, Observer, Factory, Singleton, State, Builder)</a>
+<span class="sub">Har baar naya jugaad nahi: design patterns jo interview mein aate hain</span>
+<span class="meta"><span class="badge soon">Coming Fri 1 Oct 2027</span><span>~16 min</span><span>4 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="S32" data-track="System Design" data-module="SE" data-out="0" data-search="s32 lld case: parking lot (machine-coding walkthrough) mall ki parking ka software: machine coding round system design sd-4 · low-level design (machine coding) parking requirements → entities → classes → apis in 90 minutes extensibility (new vehicle types, pricing rules) concurrency on spot allocation system design primer: oo design — parking lot (notebook) awesome-low-level-design (free lld problems &amp; solutions) 1603. design parking system">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:S32"><span class="visually-hidden">Mark LLD case: Parking lot (machine-coding walkthrough) as done</span></label></span>
+<span class="body"><a class="t" href="lessons/s32.html"><span class="num">L32</span>LLD case: Parking lot (machine-coding walkthrough)</a>
+<span class="sub">Mall ki parking ka software: machine coding round</span>
+<span class="meta"><span class="badge soon">Coming Fri 8 Oct 2027</span><span>~18 min</span><span>3 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="S33" data-track="System Design" data-module="SE" data-out="0" data-search="s33 lld case: expense sharing (splitwise-style) + snake &amp; ladder trip ka hisaab kaun rakhega? splitwise lld system design sd-4 · low-level design (machine coding) splitwise modelling users, groups, expenses, split strategies simplifying debts (graph + greedy/heap) writing testable, extensible code under time pressure awesome-low-level-design (free lld problems &amp; solutions) 2353. design a food rating system 909. snakes and ladders">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:S33"><span class="visually-hidden">Mark LLD case: Expense sharing (Splitwise-style) + snake &amp; ladder as done</span></label></span>
+<span class="body"><a class="t" href="lessons/s33.html"><span class="num">L33</span>LLD case: Expense sharing (Splitwise-style) + snake &amp; ladder</a>
+<span class="sub">Trip ka hisaab kaun rakhega? Splitwise LLD</span>
+<span class="meta"><span class="badge soon">Coming Fri 15 Oct 2027</span><span>~17 min</span><span>3 practice</span></span></span>
+</li></ul>
+</section><section class="module" id="sf" aria-labelledby="h-sf">
+<h2 id="h-sf">SD-5 · Case Studies (India-first)</h2>
+<p class="blurb">Full designs end-to-end using the interview framework, built on systems Indians use every day.</p>
+<div data-meter="C01 C02 C03 C04 C05 C06 C07 C08 C09 C10 C11 C12 C13 C14" class="js-only" hidden>
+<div class="meter" role="meter" aria-label="Progress" aria-valuemin="0" aria-valuemax="14" aria-valuenow="0"><span></span></div>
+<p class="meter-label" data-meter-label>0 / 14 lessons done</p></div>
+<ul class="lessons"><li class="lesson-row" data-row data-lesson="C01" data-track="System Design" data-module="SF" data-out="0" data-search="c01 design a url shortener lamba link, chhota link: url shortener design system design sd-5 · case studies (india-first) tiny full interview flow on the simplest system id generation: counter + base62 vs hashing; collisions read-heavy caching, redirects (301 vs 302), analytics hello interview breakdown: bitly 535. encode and decode tinyurl system design primer: design pastebin / bit.ly (solution)">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:C01"><span class="visually-hidden">Mark Design a URL shortener as done</span></label></span>
+<span class="body"><a class="t" href="lessons/c01.html"><span class="num">L34</span>Design a URL shortener</a>
+<span class="sub">Lamba link, chhota link: URL shortener design</span>
+<span class="meta"><span class="badge soon">Coming Fri 16 Apr 2027</span><span>~16 min</span><span>3 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="C02" data-track="System Design" data-module="SF" data-out="1" data-search="c02 design a upi-like real-time payment system paisa kat gaya, pahuncha nahi? upi jaisa payment system system design sd-5 · case studies (india-first) upi actors: payer app (psp), switch, issuer &amp; acquirer banks idempotency, timeouts, pending states, reconciliation &amp; reversals ledger design (double entry) and audit hello interview breakdown: payment system stripe blog: designing robust apis with idempotency npci: upi product overview">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:C02"><span class="visually-hidden">Mark Design a UPI-like real-time payment system as done</span></label></span>
+<span class="body"><a class="t" href="lessons/c02.html"><span class="num">L35</span>Design a UPI-like real-time payment system</a>
+<span class="sub">Paisa kat gaya, pahuncha nahi? UPI jaisa payment system</span>
+<span class="meta"><span class="badge out">Short out now</span> <span class="badge soon">Full lesson Fri 13 Nov 2026</span><span>~18 min</span><span>3 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="C03" data-track="System Design" data-module="SF" data-out="0" data-search="c03 design a ticket booking system (train/movie seats under contention) 10 baje tatkal, 10:01 pe sold out: ticket booking system system design sd-5 · case studies (india-first) tatkal seat inventory modelling; holds with expiry contention: locks, optimistic concurrency, queues/virtual waiting room fairness and bot defence at a burst hello interview breakdown: ticketmaster hello interview: dealing with contention hello interview breakdown: flash sale">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:C03"><span class="visually-hidden">Mark Design a ticket booking system (train/movie seats under contention) as done</span></label></span>
+<span class="body"><a class="t" href="lessons/c03.html"><span class="num">L36</span>Design a ticket booking system (train/movie seats under contention)</a>
+<span class="sub">10 baje Tatkal, 10:01 pe sold out: ticket booking system</span>
+<span class="meta"><span class="badge soon">Coming Fri 20 Nov 2026</span><span>~18 min</span><span>3 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="C04" data-track="System Design" data-module="SF" data-out="0" data-search="c04 design a chat app (1:1, groups, receipts, presence) blue tick kaise aata hai? chat app design system design sd-5 · case studies (india-first) chat persistent connections and a connection registry message storage, ordering, delivery receipts, offline sync group fan-out and presence hello interview breakdown: whatsapp discord engineering: how discord stores trillions of messages exercise: design the &#x27;last seen&#x27; / presence feature for 50 crore users">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:C04"><span class="visually-hidden">Mark Design a chat app (1:1, groups, receipts, presence) as done</span></label></span>
+<span class="body"><a class="t" href="lessons/c04.html"><span class="num">L37</span>Design a chat app (1:1, groups, receipts, presence)</a>
+<span class="sub">Blue tick kaise aata hai? Chat app design</span>
+<span class="meta"><span class="badge soon">Coming Fri 30 Apr 2027</span><span>~18 min</span><span>3 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="C05" data-track="System Design" data-module="SF" data-out="0" data-search="c05 design a ride-hailing service (location updates, matching) auto kaise milta hai paas mein? ride-hailing design system design sd-5 · case studies (india-first) ride high-frequency location ingestion geospatial indexing: geohash / quadtree / h3 matching, surge, trip state machine hello interview breakdown: uber hello interview breakdown: yelp (proximity search) wikipedia: geohash">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:C05"><span class="visually-hidden">Mark Design a ride-hailing service (location updates, matching) as done</span></label></span>
+<span class="body"><a class="t" href="lessons/c05.html"><span class="num">L38</span>Design a ride-hailing service (location updates, matching)</a>
+<span class="sub">Auto kaise milta hai paas mein? Ride-hailing design</span>
+<span class="meta"><span class="badge soon">Coming Fri 18 Jun 2027</span><span>~18 min</span><span>3 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="C06" data-track="System Design" data-module="SF" data-out="0" data-search="c06 design a social news feed insta feed itna fast kaise? news feed design system design sd-5 · case studies (india-first) feed fan-out on write vs on read; the celebrity problem feed ranking at a high level; pagination caching feeds and media hello interview breakdown: news feed system design primer: design twitter timeline &amp; search (solution) 355. design twitter">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:C06"><span class="visually-hidden">Mark Design a social news feed as done</span></label></span>
+<span class="body"><a class="t" href="lessons/c06.html"><span class="num">L39</span>Design a social news feed</a>
+<span class="sub">Insta feed itna fast kaise? News feed design</span>
+<span class="meta"><span class="badge soon">Coming Fri 7 May 2027</span><span>~17 min</span><span>3 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="C07" data-track="System Design" data-module="SF" data-out="0" data-search="c07 design video streaming (upload, transcode, adaptive bitrate, live) ipl final, crore log live: video streaming design system design sd-5 · case studies (india-first) stream upload pipeline and transcoding into renditions hls/dash segments and adaptive bitrate cdn-heavy delivery and live-event spikes hello interview breakdown: youtube apple: http live streaming exercise: estimate cdn egress for 3 crore concurrent viewers at an average 1.5 mbps">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:C07"><span class="visually-hidden">Mark Design video streaming (upload, transcode, adaptive bitrate, live) as done</span></label></span>
+<span class="body"><a class="t" href="lessons/c07.html"><span class="num">L40</span>Design video streaming (upload, transcode, adaptive bitrate, live)</a>
+<span class="sub">IPL final, crore log live: video streaming design</span>
+<span class="meta"><span class="badge soon">Coming Fri 11 Dec 2026</span><span>~18 min</span><span>3 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="C08" data-track="System Design" data-module="SF" data-out="0" data-search="c08 design a notification system (push, sms, email) sale ka notification sab ko ek saath? notification system system design sd-5 · case studies (india-first) notify fan-out via queues, per-channel workers user preferences, rate limits, dedup, retries priority (otp vs marketing) hello interview breakdown: notification system firebase cloud messaging docs exercise: design otp delivery with a 5-second slo and sms-provider failover">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:C08"><span class="visually-hidden">Mark Design a notification system (push, SMS, email) as done</span></label></span>
+<span class="body"><a class="t" href="lessons/c08.html"><span class="num">L41</span>Design a notification system (push, SMS, email)</a>
+<span class="sub">Sale ka notification sab ko ek saath? Notification system</span>
+<span class="meta"><span class="badge soon">Coming Fri 2 Jul 2027</span><span>~15 min</span><span>3 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="C09" data-track="System Design" data-module="SF" data-out="0" data-search="c09 design search typeahead / autocomplete type karte hi suggestions: search autocomplete system design sd-5 · case studies (india-first) autocomplete trie with top-k per prefix offline aggregation of query logs latency budget (&lt;100 ms), caching per prefix 1268. search suggestions system 208. implement trie (prefix tree) hello interview breakdown: top-k (youtube top videos)">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:C09"><span class="visually-hidden">Mark Design search typeahead / autocomplete as done</span></label></span>
+<span class="body"><a class="t" href="lessons/c09.html"><span class="num">L42</span>Design search typeahead / autocomplete</a>
+<span class="sub">Type karte hi suggestions: search autocomplete</span>
+<span class="meta"><span class="badge soon">Coming Fri 13 Aug 2027</span><span>~14 min</span><span>3 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="C10" data-track="System Design" data-module="SF" data-out="0" data-search="c10 design a web crawler poora internet kaise padha jaata hai? web crawler system design sd-5 · case studies (india-first) crawler url frontier, politeness, robots.txt dedup with hashes / bloom filters distributed workers and failure handling hello interview breakdown: web crawler system design primer: design a web crawler (solution) google search central: robots.txt introduction">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:C10"><span class="visually-hidden">Mark Design a web crawler as done</span></label></span>
+<span class="body"><a class="t" href="lessons/c10.html"><span class="num">L43</span>Design a web crawler</a>
+<span class="sub">Poora internet kaise padha jaata hai? Web crawler</span>
+<span class="meta"><span class="badge soon">Coming Fri 3 Sep 2027</span><span>~15 min</span><span>3 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="C11" data-track="System Design" data-module="SF" data-out="0" data-search="c11 design quick-commerce delivery (inventory, dark stores, eta) 10 minute mein ghar pe: quick-commerce delivery design system design sd-5 · case studies (india-first) delivery nearest dark-store lookup and live inventory reserving stock under concurrency order state machine and rider assignment hello interview breakdown: local delivery (gopuff) hello interview: dealing with contention hello interview breakdown: uber exercise: reserve stock for a cart of 6 items across one dark store without overselling">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:C11"><span class="visually-hidden">Mark Design quick-commerce delivery (inventory, dark stores, ETA) as done</span></label></span>
+<span class="body"><a class="t" href="lessons/c11.html"><span class="num">L44</span>Design quick-commerce delivery (inventory, dark stores, ETA)</a>
+<span class="sub">10 minute mein ghar pe: quick-commerce delivery design</span>
+<span class="meta"><span class="badge soon">Coming Fri 23 Jul 2027</span><span>~17 min</span><span>4 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="C12" data-track="System Design" data-module="SF" data-out="0" data-search="c12 design a real-time leaderboard / contest system fantasy cricket ka live leaderboard: top-k at scale system design sd-5 · case studies (india-first) leaderboard sorted sets for ranking; sharded leaderboards burst writes when a wicket falls approximate vs exact ranks hello interview breakdown: top-k (youtube top videos) hello interview deep dive: redis hello interview breakdown: ad click aggregator">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:C12"><span class="visually-hidden">Mark Design a real-time leaderboard / contest system as done</span></label></span>
+<span class="body"><a class="t" href="lessons/c12.html"><span class="num">L45</span>Design a real-time leaderboard / contest system</a>
+<span class="sub">Fantasy cricket ka live leaderboard: top-K at scale</span>
+<span class="meta"><span class="badge soon">Coming Fri 27 Aug 2027</span><span>~15 min</span><span>3 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="C13" data-track="System Design" data-module="SF" data-out="0" data-search="c13 design a distributed key-value store / cache apna redis/dynamo banao: distributed key-value store system design sd-5 · case studies (india-first) kvstore partitioning with consistent hashing; replication with quorums failure detection, hinted handoff, anti-entropy (intuition) eviction for caches hello interview breakdown: distributed cache amazon dynamo paper (2007) 706. design hashmap">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:C13"><span class="visually-hidden">Mark Design a distributed key-value store / cache as done</span></label></span>
+<span class="body"><a class="t" href="lessons/c13.html"><span class="num">L46</span>Design a distributed key-value store / cache</a>
+<span class="sub">Apna Redis/Dynamo banao: distributed key-value store</span>
+<span class="meta"><span class="badge soon">Coming Fri 10 Sep 2027</span><span>~17 min</span><span>3 practice</span></span></span>
+</li><li class="lesson-row" data-row data-lesson="C14" data-track="System Design" data-module="SF" data-out="0" data-search="c14 design a collaborative editor (google docs-style) ek doc, dus log ek saath: collaborative editor system design sd-5 · case studies (india-first) docs operational transform vs crdts (intuition) websocket sessions per document versioning, snapshots, presence cursors hello interview breakdown: google docs crdt.tech: conflict-free replicated data types figma engineering: how multiplayer technology works">
+<span class="tick"><label class="js-only" hidden><input type="checkbox" data-progress="L:C14"><span class="visually-hidden">Mark Design a collaborative editor (Google Docs-style) as done</span></label></span>
+<span class="body"><a class="t" href="lessons/c14.html"><span class="num">L47</span>Design a collaborative editor (Google Docs-style)</a>
+<span class="sub">Ek doc, dus log ek saath: collaborative editor</span>
+<span class="meta"><span class="badge soon">Coming Fri 17 Sep 2027</span><span>~16 min</span><span>3 practice</span></span></span>
+</li></ul>
+</section>
+</div>
+</main>
+<footer class="site-foot">
+<div class="wrap">
+<p><strong>Free forever. Made by Khola Labs.</strong><br>No ads, no sign-up, no tracking. Your progress stays in your browser.</p>
+<ul>
+<li><a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a></li>
+<li><a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a></li>
+<li><a href="lessons.html">All lessons</a></li>
+<li><a href="calendar.html">Release calendar</a></li>
+</ul>
+</div>
+</footer>
+</body>
+</html>

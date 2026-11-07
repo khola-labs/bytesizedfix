@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2D arrays / matrix traversal (DSA L7) · Byte-Sized Fix</title>
+<meta name="description" content="2D arrays / matrix traversal — free animated lesson in Hinglish with 6 practice problems and a cheat-sheet. Theatre ki seats: 2D arrays aur matrix tricks.">
+<link rel="canonical" href="https://khola-labs.github.io/bytesizedfix/lessons/d08.html">
+<meta name="theme-color" content="#111a32">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Byte-Sized Fix">
+<meta property="og:title" content="2D arrays / matrix traversal (DSA L7) · Byte-Sized Fix">
+<meta property="og:description" content="2D arrays / matrix traversal — free animated lesson in Hinglish with 6 practice problems and a cheat-sheet. Theatre ki seats: 2D arrays aur matrix tricks.">
+<meta property="og:url" content="https://khola-labs.github.io/bytesizedfix/lessons/d08.html">
+<meta property="og:image" content="https://khola-labs.github.io/bytesizedfix/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+<div class="wrap">
+<a class="brand" href="../index.html"><img src="../assets/favicon.svg" alt="" width="28" height="28">BYTE-SIZED FIX</a>
+<nav class="nav" aria-label="Main"><a href="../index.html">Home</a><a href="../dsa.html" aria-current="page">DSA</a><a href="../system-design.html">System Design</a><a href="../interview.html">Interview Craft</a><a href="../lessons.html">All lessons</a><a href="../calendar.html">Calendar</a></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<p class="crumbs"><a href="../index.html">Home</a> › <a href="../dsa.html">DSA</a> › <a href="../dsa.html#db">DSA-1 · Arrays, Strings &amp; Hashing</a></p>
+<div class="lesson-head">
+<p class="eyebrow">DSA · Lesson L7 · DSA-1 · Arrays, Strings &amp; Hashing</p>
+<h1>2D arrays / matrix traversal</h1>
+<p class="lead hook">“Theatre ki seats: 2D arrays aur matrix tricks”</p>
+<div class="lesson-facts"><span class="badge soon">Coming Tue 5 Jan 2027</span><span>Lesson ~11 min</span><span>Short 60-90 s</span><span>Code on screen: Python</span><span>Cheat-sheet: <span class="badge kw">MATRIX</span></span></div>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:D08"><span><strong>I’ve finished this lesson</strong></span></label>
+</div>
+<p class="storage-note" data-storage-note hidden>Your browser is blocking local storage, so ticks won’t be saved after you leave this page. Everything else works.</p>
+<div class="media-row"><div><div class="video placeholder" role="img" aria-label="Video placeholder: full lesson coming Tue 5 Jan 2027">
+<img src="../assets/kursor-320.webp" alt="" width="72" height="72">
+<strong>Full lesson coming Tue 5 Jan 2027</strong><span>Kursor is still drawing this one.</span></div></div></div>
+
+<h2>What you’ll learn</h2>
+<ul class="goals"><li>Row-major indexing and boundaries</li><li>Spiral, rotate, transpose in place</li><li>Using the matrix itself as a marker to save space</li></ul>
+<h2>The story behind it</h2>
+<p>A single-screen cinema hall: row letter + seat number. The usher walking the spiral to collect tickets; rotating the seating chart for a new screen.</p>
+<h2>Before this lesson</h2>
+<ul><li><a href="d04.html">Arrays &amp; prefix sums</a> <span class="meter-label" style="display:inline">(DSA L3)</span></li></ul>
+<h2>Practice <span class="meter-label js-only" style="display:inline;font-weight:400" data-pmeter="D08" hidden></span></h2>
+<p>Ordered from first try to stretch. All free.</p>
+<ul class="practice"><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D08|https://leetcode.com/problems/spiral-matrix/"><span class="visually-hidden">Mark 54. Spiral Matrix as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/spiral-matrix/" rel="noopener">54. Spiral Matrix</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D08|https://leetcode.com/problems/rotate-image/"><span class="visually-hidden">Mark 48. Rotate Image as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/rotate-image/" rel="noopener">48. Rotate Image</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D08|https://leetcode.com/problems/set-matrix-zeroes/"><span class="visually-hidden">Mark 73. Set Matrix Zeroes as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/set-matrix-zeroes/" rel="noopener">73. Set Matrix Zeroes</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D08|https://leetcode.com/problems/valid-sudoku/"><span class="visually-hidden">Mark 36. Valid Sudoku as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/valid-sudoku/" rel="noopener">36. Valid Sudoku</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D08|https://leetcode.com/problems/search-a-2d-matrix/"><span class="visually-hidden">Mark 74. Search a 2D Matrix as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/search-a-2d-matrix/" rel="noopener">74. Search a 2D Matrix</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D08|https://leetcode.com/problems/game-of-life/"><span class="visually-hidden">Mark 289. Game of Life as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/game-of-life/" rel="noopener">289. Game of Life</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li></ul>
+
+<h2>Get the cheat-sheet</h2>
+<div class="kwbox"><p>Comment <span class="badge kw">MATRIX</span> on the Reel or Short and we’ll DM you the one-page cheat-sheet, the video link and this page.</p>
+<p class="meter-label">Find us on <a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a> and <a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a> as @thebytesizedfix.</p></div>
+<h2>Sources &amp; further reading</h2>
+<ul><li><a href="https://www.techinterviewhandbook.org/algorithms/matrix/" rel="noopener">Tech Interview Handbook: Matrix cheatsheet</a></li></ul>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:D08"><span>Mark this lesson as done</span></label>
+<nav class="pager" aria-label="Lessons"><a class="prev" href="d07.html" rel="prev"><small>← Previous</small>Sorting: merge sort, quick sort, counting sort</a><a class="next" href="d09.html" rel="next"><small>Next →</small>Two pointers</a></nav>
+</div>
+</main>
+<footer class="site-foot">
+<div class="wrap">
+<p><strong>Free forever. Made by Khola Labs.</strong><br>No ads, no sign-up, no tracking. Your progress stays in your browser.</p>
+<ul>
+<li><a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a></li>
+<li><a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a></li>
+<li><a href="../lessons.html">All lessons</a></li>
+<li><a href="../calendar.html">Release calendar</a></li>
+</ul>
+</div>
+</footer>
+</body>
+</html>

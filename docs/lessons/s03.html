@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HTTP/1.1, HTTP/2, HTTP/3, HTTPS &amp; TLS (System Design L3) · Byte-Sized Fix</title>
+<meta name="description" content="HTTP/1.1, HTTP/2, HTTP/3, HTTPS &amp; TLS — free animated lesson in Hinglish with 4 practice problems and a cheat-sheet. Request-response ki chitthi: HTTP, HTTPS &amp; TLS.">
+<link rel="canonical" href="https://khola-labs.github.io/bytesizedfix/lessons/s03.html">
+<meta name="theme-color" content="#111a32">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Byte-Sized Fix">
+<meta property="og:title" content="HTTP/1.1, HTTP/2, HTTP/3, HTTPS &amp; TLS (System Design L3) · Byte-Sized Fix">
+<meta property="og:description" content="HTTP/1.1, HTTP/2, HTTP/3, HTTPS &amp; TLS — free animated lesson in Hinglish with 4 practice problems and a cheat-sheet. Request-response ki chitthi: HTTP, HTTPS &amp; TLS.">
+<meta property="og:url" content="https://khola-labs.github.io/bytesizedfix/lessons/s03.html">
+<meta property="og:image" content="https://khola-labs.github.io/bytesizedfix/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+<div class="wrap">
+<a class="brand" href="../index.html"><img src="../assets/favicon.svg" alt="" width="28" height="28">BYTE-SIZED FIX</a>
+<nav class="nav" aria-label="Main"><a href="../index.html">Home</a><a href="../dsa.html">DSA</a><a href="../system-design.html" aria-current="page">System Design</a><a href="../interview.html">Interview Craft</a><a href="../lessons.html">All lessons</a><a href="../calendar.html">Calendar</a></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<p class="crumbs"><a href="../index.html">Home</a> › <a href="../system-design.html">System Design</a> › <a href="../system-design.html#sa">SD-0 · How the Internet Actually Works</a></p>
+<div class="lesson-head">
+<p class="eyebrow">System Design · Lesson L3 · SD-0 · How the Internet Actually Works</p>
+<h1>HTTP/1.1, HTTP/2, HTTP/3, HTTPS &amp; TLS</h1>
+<p class="lead hook">“Request-response ki chitthi: HTTP, HTTPS &amp; TLS”</p>
+<div class="lesson-facts"><span class="badge soon">Coming Fri 1 Jan 2027</span><span>Lesson ~13 min</span><span>Short 60-90 s</span><span>Cheat-sheet: <span class="badge kw">HTTP</span></span></div>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:S03"><span><strong>I’ve finished this lesson</strong></span></label>
+</div>
+<p class="storage-note" data-storage-note hidden>Your browser is blocking local storage, so ticks won’t be saved after you leave this page. Everything else works.</p>
+<div class="media-row"><div><div class="video placeholder" role="img" aria-label="Video placeholder: full lesson coming Fri 1 Jan 2027">
+<img src="../assets/kursor-320.webp" alt="" width="72" height="72">
+<strong>Full lesson coming Fri 1 Jan 2027</strong><span>Kursor is still drawing this one.</span></div></div></div>
+
+<h2>What you’ll learn</h2>
+<ul class="goals"><li>Request/response anatomy: methods, status codes, headers</li><li>Why HTTPS: TLS handshake, certificates</li><li>HTTP/2 multiplexing and HTTP/3 over QUIC at a glance</li></ul>
+<h2>The story behind it</h2>
+<p>A registered post with a sealed envelope: the address and stamp are headers, the letter is the body, the tamper-proof seal + post office ID check is TLS.</p>
+<h2>Before this lesson</h2>
+<ul><li><a href="s01.html">What happens when you open a URL (client-server, IP, TCP/UDP)</a> <span class="meter-label" style="display:inline">(System Design L1)</span></li></ul>
+<h2>Practice <span class="meter-label js-only" style="display:inline;font-weight:400" data-pmeter="S03" hidden></span></h2>
+<p>Ordered from first try to stretch. All free.</p>
+<ul class="practice"><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:S03|https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview"><span class="visually-hidden">Mark Hands-on: open DevTools → Network on any site; list 5 headers and explain them as solved</span></label>
+<span class="p-main"><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview" rel="noopener">Hands-on: open DevTools → Network on any site; list 5 headers and explain them</a><span class="src">Reading / hands-on · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:S03|https://tls13.xargs.org/"><span class="visually-hidden">Mark The Illustrated TLS 1.3 Connection (byte by byte) as solved</span></label>
+<span class="p-main"><a href="https://tls13.xargs.org/" rel="noopener">The Illustrated TLS 1.3 Connection (byte by byte)</a><span class="src">Reading / hands-on · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:S03|https://leetcode.com/problems/validate-ip-address/"><span class="visually-hidden">Mark 468. Validate IP Address as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/validate-ip-address/" rel="noopener">468. Validate IP Address</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:S03|https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview"><span class="visually-hidden">Mark Exercise: for a login request, list method, path, 4 headers and the 3 status codes you&#x27;d return as solved</span></label>
+<span class="p-main"><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview" rel="noopener">Exercise: for a login request, list method, path, 4 headers and the 3 status codes you&#x27;d return</a><span class="src">Reading / hands-on · free</span><span class="note">Try it yourself first; the link is the answer key / reference</span></span></li></ul>
+
+<h2>Get the cheat-sheet</h2>
+<div class="kwbox"><p>Comment <span class="badge kw">HTTP</span> on the Reel or Short and we’ll DM you the one-page cheat-sheet, the video link and this page.</p>
+<p class="meter-label">Find us on <a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a> and <a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a> as @thebytesizedfix.</p></div>
+<h2>Sources &amp; further reading</h2>
+<ul><li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview" rel="noopener">MDN: An overview of HTTP</a></li><li><a href="https://tls13.xargs.org/" rel="noopener">The Illustrated TLS 1.3 Connection (byte by byte)</a></li><li><a href="https://hpbn.co/" rel="noopener">High Performance Browser Networking (Ilya Grigorik, free book): TCP/UDP/TLS chapters</a></li></ul>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:S03"><span>Mark this lesson as done</span></label>
+<nav class="pager" aria-label="Lessons"><a class="prev" href="s02.html" rel="prev"><small>← Previous</small>DNS: resolution, records, TTL, caching</a><a class="next" href="s04.html" rel="next"><small>Next →</small>API design: REST, RPC/gRPC, GraphQL, pagination, versioning</a></nav>
+</div>
+</main>
+<footer class="site-foot">
+<div class="wrap">
+<p><strong>Free forever. Made by Khola Labs.</strong><br>No ads, no sign-up, no tracking. Your progress stays in your browser.</p>
+<ul>
+<li><a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a></li>
+<li><a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a></li>
+<li><a href="../lessons.html">All lessons</a></li>
+<li><a href="../calendar.html">Release calendar</a></li>
+</ul>
+</div>
+</footer>
+</body>
+</html>

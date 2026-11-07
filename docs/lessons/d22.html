@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Binary trees: DFS (pre/in/post) and BFS (level order) (DSA L20) · Byte-Sized Fix</title>
+<meta name="description" content="Binary trees: DFS (pre/in/post) and BFS (level order) — free animated lesson in Hinglish with 6 practice problems and a cheat-sheet. Khandaan ka family tree: binary tree traversals.">
+<link rel="canonical" href="https://khola-labs.github.io/bytesizedfix/lessons/d22.html">
+<meta name="theme-color" content="#111a32">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Byte-Sized Fix">
+<meta property="og:title" content="Binary trees: DFS (pre/in/post) and BFS (level order) (DSA L20) · Byte-Sized Fix">
+<meta property="og:description" content="Binary trees: DFS (pre/in/post) and BFS (level order) — free animated lesson in Hinglish with 6 practice problems and a cheat-sheet. Khandaan ka family tree: binary tree traversals.">
+<meta property="og:url" content="https://khola-labs.github.io/bytesizedfix/lessons/d22.html">
+<meta property="og:image" content="https://khola-labs.github.io/bytesizedfix/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+<div class="wrap">
+<a class="brand" href="../index.html"><img src="../assets/favicon.svg" alt="" width="28" height="28">BYTE-SIZED FIX</a>
+<nav class="nav" aria-label="Main"><a href="../index.html">Home</a><a href="../dsa.html" aria-current="page">DSA</a><a href="../system-design.html">System Design</a><a href="../interview.html">Interview Craft</a><a href="../lessons.html">All lessons</a><a href="../calendar.html">Calendar</a></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<p class="crumbs"><a href="../index.html">Home</a> › <a href="../dsa.html">DSA</a> › <a href="../dsa.html#dg">DSA-6 · Trees &amp; Tries</a></p>
+<div class="lesson-head">
+<p class="eyebrow">DSA · Lesson L20 · DSA-6 · Trees &amp; Tries</p>
+<h1>Binary trees: DFS (pre/in/post) and BFS (level order)</h1>
+<p class="lead hook">“Khandaan ka family tree: binary tree traversals”</p>
+<div class="lesson-facts"><span class="badge soon">Coming Tue 23 Mar 2027</span><span>Lesson ~15 min</span><span>Short 60-90 s</span><span>Code on screen: Python</span><span>Cheat-sheet: <span class="badge kw">TREE</span></span></div>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:D22"><span><strong>I’ve finished this lesson</strong></span></label>
+</div>
+<p class="storage-note" data-storage-note hidden>Your browser is blocking local storage, so ticks won’t be saved after you leave this page. Everything else works.</p>
+<div class="media-row"><div><div class="video placeholder" role="img" aria-label="Video placeholder: full lesson coming Tue 23 Mar 2027">
+<img src="../assets/kursor-320.webp" alt="" width="72" height="72">
+<strong>Full lesson coming Tue 23 Mar 2027</strong><span>Kursor is still drawing this one.</span></div></div></div>
+
+<h2>What you’ll learn</h2>
+<ul class="goals"><li>Tree vocabulary: root, leaf, height, depth</li><li>Recursive and iterative DFS; BFS with a queue</li><li>Which traversal answers which question</li></ul>
+<h2>The story behind it</h2>
+<p>Dadaji&#x27;s family tree on the wall: introducing the family generation by generation at a wedding is BFS; telling one branch&#x27;s whole story before moving on is DFS.</p>
+<h2>Before this lesson</h2>
+<ul><li><a href="d12.html">Recursion &amp; the call stack</a> <span class="meter-label" style="display:inline">(DSA L11)</span></li><li><a href="d19.html">Stacks &amp; queues</a> <span class="meter-label" style="display:inline">(DSA L18)</span></li></ul>
+<h2>Practice <span class="meter-label js-only" style="display:inline;font-weight:400" data-pmeter="D22" hidden></span></h2>
+<p>Ordered from first try to stretch. All free.</p>
+<ul class="practice"><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D22|https://leetcode.com/problems/binary-tree-inorder-traversal/"><span class="visually-hidden">Mark 94. Binary Tree Inorder Traversal as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/binary-tree-inorder-traversal/" rel="noopener">94. Binary Tree Inorder Traversal</a><span class="src"><span class="diff Easy">Easy</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D22|https://leetcode.com/problems/binary-tree-level-order-traversal/"><span class="visually-hidden">Mark 102. Binary Tree Level Order Traversal as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/binary-tree-level-order-traversal/" rel="noopener">102. Binary Tree Level Order Traversal</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D22|https://leetcode.com/problems/maximum-depth-of-binary-tree/"><span class="visually-hidden">Mark 104. Maximum Depth of Binary Tree as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/maximum-depth-of-binary-tree/" rel="noopener">104. Maximum Depth of Binary Tree</a><span class="src"><span class="diff Easy">Easy</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D22|https://leetcode.com/problems/invert-binary-tree/"><span class="visually-hidden">Mark 226. Invert Binary Tree as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/invert-binary-tree/" rel="noopener">226. Invert Binary Tree</a><span class="src"><span class="diff Easy">Easy</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D22|https://leetcode.com/problems/same-tree/"><span class="visually-hidden">Mark 100. Same Tree as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/same-tree/" rel="noopener">100. Same Tree</a><span class="src"><span class="diff Easy">Easy</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D22|https://leetcode.com/problems/binary-tree-right-side-view/"><span class="visually-hidden">Mark 199. Binary Tree Right Side View as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/binary-tree-right-side-view/" rel="noopener">199. Binary Tree Right Side View</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li></ul>
+
+<h2>Get the cheat-sheet</h2>
+<div class="kwbox"><p>Comment <span class="badge kw">TREE</span> on the Reel or Short and we’ll DM you the one-page cheat-sheet, the video link and this page.</p>
+<p class="meter-label">Find us on <a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a> and <a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a> as @thebytesizedfix.</p></div>
+<h2>Sources &amp; further reading</h2>
+<ul><li><a href="https://www.techinterviewhandbook.org/algorithms/tree/" rel="noopener">Tech Interview Handbook: Tree cheatsheet</a></li><li><a href="https://visualgo.net/en/bst" rel="noopener">VisuAlgo: BST / AVL (animated)</a></li></ul>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:D22"><span>Mark this lesson as done</span></label>
+<nav class="pager" aria-label="Lessons"><a class="prev" href="d20.html" rel="prev"><small>← Previous</small>Monotonic stack &amp; monotonic deque (next greater, sliding window max)</a><a class="next" href="d23.html" rel="next"><small>Next →</small>Tree recursion: height, diameter, path sums, balanced</a></nav>
+</div>
+</main>
+<footer class="site-foot">
+<div class="wrap">
+<p><strong>Free forever. Made by Khola Labs.</strong><br>No ads, no sign-up, no tracking. Your progress stays in your browser.</p>
+<ul>
+<li><a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a></li>
+<li><a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a></li>
+<li><a href="../lessons.html">All lessons</a></li>
+<li><a href="../calendar.html">Release calendar</a></li>
+</ul>
+</div>
+</footer>
+</body>
+</html>

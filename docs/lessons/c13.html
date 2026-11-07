@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design a distributed key-value store / cache (System Design L46) · Byte-Sized Fix</title>
+<meta name="description" content="Design a distributed key-value store / cache — free animated lesson in Hinglish with 3 practice problems and a cheat-sheet. Apna Redis/Dynamo banao: distributed key-value store.">
+<link rel="canonical" href="https://khola-labs.github.io/bytesizedfix/lessons/c13.html">
+<meta name="theme-color" content="#111a32">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Byte-Sized Fix">
+<meta property="og:title" content="Design a distributed key-value store / cache (System Design L46) · Byte-Sized Fix">
+<meta property="og:description" content="Design a distributed key-value store / cache — free animated lesson in Hinglish with 3 practice problems and a cheat-sheet. Apna Redis/Dynamo banao: distributed key-value store.">
+<meta property="og:url" content="https://khola-labs.github.io/bytesizedfix/lessons/c13.html">
+<meta property="og:image" content="https://khola-labs.github.io/bytesizedfix/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+<div class="wrap">
+<a class="brand" href="../index.html"><img src="../assets/favicon.svg" alt="" width="28" height="28">BYTE-SIZED FIX</a>
+<nav class="nav" aria-label="Main"><a href="../index.html">Home</a><a href="../dsa.html">DSA</a><a href="../system-design.html" aria-current="page">System Design</a><a href="../interview.html">Interview Craft</a><a href="../lessons.html">All lessons</a><a href="../calendar.html">Calendar</a></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<p class="crumbs"><a href="../index.html">Home</a> › <a href="../system-design.html">System Design</a> › <a href="../system-design.html#sf">SD-5 · Case Studies (India-first)</a></p>
+<div class="lesson-head">
+<p class="eyebrow">System Design · Lesson L46 · SD-5 · Case Studies (India-first)</p>
+<h1>Design a distributed key-value store / cache</h1>
+<p class="lead hook">“Apna Redis/Dynamo banao: distributed key-value store”</p>
+<div class="lesson-facts"><span class="badge soon">Coming Fri 10 Sep 2027</span><span>Lesson ~17 min</span><span>Short 60-90 s</span><span>Cheat-sheet: <span class="badge kw">KVSTORE</span></span></div>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:C13"><span><strong>I’ve finished this lesson</strong></span></label>
+</div>
+<p class="storage-note" data-storage-note hidden>Your browser is blocking local storage, so ticks won’t be saved after you leave this page. Everything else works.</p>
+<div class="media-row"><div><div class="video placeholder" role="img" aria-label="Video placeholder: full lesson coming Fri 10 Sep 2027">
+<img src="../assets/kursor-320.webp" alt="" width="72" height="72">
+<strong>Full lesson coming Fri 10 Sep 2027</strong><span>Kursor is still drawing this one.</span></div></div></div>
+<p class="disclaimer">This is a learning design for a system <em>like</em> the one named. It is not a description of any company’s internal architecture.</p>
+<h2>What you’ll learn</h2>
+<ul class="goals"><li>Partitioning with consistent hashing; replication with quorums</li><li>Failure detection, hinted handoff, anti-entropy (intuition)</li><li>Eviction for caches</li></ul>
+<h2>The story behind it</h2>
+<p>A city-wide network of lockers where any locker can store your bag and you can always get it back even if one locker room floods.</p>
+<h2>Before this lesson</h2>
+<ul><li><a href="s17.html">Consistent hashing &amp; virtual nodes</a> <span class="meter-label" style="display:inline">(System Design L17)</span></li><li><a href="s20.html">Consistency models: strong, eventual, read-your-writes, causal</a> <span class="meter-label" style="display:inline">(System Design L20)</span></li></ul>
+<h2>Practice <span class="meter-label js-only" style="display:inline;font-weight:400" data-pmeter="C13" hidden></span></h2>
+<p>Ordered from first try to stretch. All free.</p>
+<ul class="practice"><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:C13|https://www.hellointerview.com/learn/system-design/problem-breakdowns/distributed-cache"><span class="visually-hidden">Mark Hello Interview breakdown: Distributed cache as solved</span></label>
+<span class="p-main"><a href="https://www.hellointerview.com/learn/system-design/problem-breakdowns/distributed-cache" rel="noopener">Hello Interview breakdown: Distributed cache</a><span class="src">Hello Interview · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:C13|https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf"><span class="visually-hidden">Mark Amazon Dynamo paper (2007) as solved</span></label>
+<span class="p-main"><a href="https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf" rel="noopener">Amazon Dynamo paper (2007)</a><span class="src">Reading / hands-on · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:C13|https://leetcode.com/problems/design-hashmap/"><span class="visually-hidden">Mark 706. Design HashMap as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/design-hashmap/" rel="noopener">706. Design HashMap</a><span class="src"><span class="diff Easy">Easy</span> · LeetCode · free</span></span></li></ul>
+
+<h2>Get the cheat-sheet</h2>
+<div class="kwbox"><p>Comment <span class="badge kw">KVSTORE</span> on the Reel or Short and we’ll DM you the one-page cheat-sheet, the video link and this page.</p>
+<p class="meter-label">Find us on <a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a> and <a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a> as @thebytesizedfix.</p></div>
+<h2>Sources &amp; further reading</h2>
+<ul><li><a href="https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf" rel="noopener">Amazon Dynamo paper (2007)</a></li><li><a href="https://www.hellointerview.com/learn/system-design/problem-breakdowns/distributed-cache" rel="noopener">Hello Interview breakdown: Distributed cache</a></li><li><a href="https://dataintensive.net/" rel="noopener">Designing Data-Intensive Applications (Kleppmann) — book site</a></li></ul>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:C13"><span>Mark this lesson as done</span></label>
+<nav class="pager" aria-label="Lessons"><a class="prev" href="c12.html" rel="prev"><small>← Previous</small>Design a real-time leaderboard / contest system</a><a class="next" href="c14.html" rel="next"><small>Next →</small>Design a collaborative editor (Google Docs-style)</a></nav>
+</div>
+</main>
+<footer class="site-foot">
+<div class="wrap">
+<p><strong>Free forever. Made by Khola Labs.</strong><br>No ads, no sign-up, no tracking. Your progress stays in your browser.</p>
+<ul>
+<li><a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a></li>
+<li><a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a></li>
+<li><a href="../lessons.html">All lessons</a></li>
+<li><a href="../calendar.html">Release calendar</a></li>
+</ul>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monolith vs microservices, service boundaries, communication (System Design L26) · Byte-Sized Fix</title>
+<meta name="description" content="Monolith vs microservices, service boundaries, communication — free animated lesson in Hinglish with 3 practice problems and a cheat-sheet. Joint family ya alag flats? Monolith vs microservices.">
+<link rel="canonical" href="https://khola-labs.github.io/bytesizedfix/lessons/s26.html">
+<meta name="theme-color" content="#111a32">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Byte-Sized Fix">
+<meta property="og:title" content="Monolith vs microservices, service boundaries, communication (System Design L26) · Byte-Sized Fix">
+<meta property="og:description" content="Monolith vs microservices, service boundaries, communication — free animated lesson in Hinglish with 3 practice problems and a cheat-sheet. Joint family ya alag flats? Monolith vs microservices.">
+<meta property="og:url" content="https://khola-labs.github.io/bytesizedfix/lessons/s26.html">
+<meta property="og:image" content="https://khola-labs.github.io/bytesizedfix/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+<div class="wrap">
+<a class="brand" href="../index.html"><img src="../assets/favicon.svg" alt="" width="28" height="28">BYTE-SIZED FIX</a>
+<nav class="nav" aria-label="Main"><a href="../index.html">Home</a><a href="../dsa.html">DSA</a><a href="../system-design.html" aria-current="page">System Design</a><a href="../interview.html">Interview Craft</a><a href="../lessons.html">All lessons</a><a href="../calendar.html">Calendar</a></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<p class="crumbs"><a href="../index.html">Home</a> › <a href="../system-design.html">System Design</a> › <a href="../system-design.html#sd">SD-3 · Distributed Systems Core</a></p>
+<div class="lesson-head">
+<p class="eyebrow">System Design · Lesson L26 · SD-3 · Distributed Systems Core</p>
+<h1>Monolith vs microservices, service boundaries, communication</h1>
+<p class="lead hook">“Joint family ya alag flats? Monolith vs microservices”</p>
+<div class="lesson-facts"><span class="badge soon">Coming Fri 30 Jul 2027</span><span>Lesson ~12 min</span><span>Short 60-90 s</span><span>Cheat-sheet: <span class="badge kw">MICRO</span></span></div>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:S26"><span><strong>I’ve finished this lesson</strong></span></label>
+</div>
+<p class="storage-note" data-storage-note hidden>Your browser is blocking local storage, so ticks won’t be saved after you leave this page. Everything else works.</p>
+<div class="media-row"><div><div class="video placeholder" role="img" aria-label="Video placeholder: full lesson coming Fri 30 Jul 2027">
+<img src="../assets/kursor-320.webp" alt="" width="72" height="72">
+<strong>Full lesson coming Fri 30 Jul 2027</strong><span>Kursor is still drawing this one.</span></div></div></div>
+
+<h2>What you’ll learn</h2>
+<ul class="goals"><li>When a monolith is the right answer</li><li>Service boundaries, sync vs async calls</li><li>Distributed-system tax: latency, failures, data ownership</li></ul>
+<h2>The story behind it</h2>
+<p>A joint family in one house (monolith) vs each brother moving to his own flat (microservices): more freedom, but now every family dinner needs coordination.</p>
+<h2>Before this lesson</h2>
+<ul><li><a href="s09.html">Reverse proxy, API gateway, service discovery</a> <span class="meter-label" style="display:inline">(System Design L9)</span></li><li><a href="s21.html">Message queues, pub/sub, Kafka-style logs</a> <span class="meter-label" style="display:inline">(System Design L21)</span></li></ul>
+<h2>Practice <span class="meter-label js-only" style="display:inline;font-weight:400" data-pmeter="S26" hidden></span></h2>
+<p>Ordered from first try to stretch. All free.</p>
+<ul class="practice"><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:S26|https://martinfowler.com/articles/microservices.html"><span class="visually-hidden">Mark Martin Fowler: Microservices as solved</span></label>
+<span class="p-main"><a href="https://martinfowler.com/articles/microservices.html" rel="noopener">Martin Fowler: Microservices</a><span class="src">Reading / hands-on · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:S26|https://martinfowler.com/bliki/MonolithFirst.html"><span class="visually-hidden">Mark Martin Fowler: Monolith first as solved</span></label>
+<span class="p-main"><a href="https://martinfowler.com/bliki/MonolithFirst.html" rel="noopener">Martin Fowler: Monolith first</a><span class="src">Reading / hands-on · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:S26|https://martinfowler.com/articles/microservices.html"><span class="visually-hidden">Mark Exercise: split a food-delivery monolith into services; name each service&#x27;s data and one sync + one async call as solved</span></label>
+<span class="p-main"><a href="https://martinfowler.com/articles/microservices.html" rel="noopener">Exercise: split a food-delivery monolith into services; name each service&#x27;s data and one sync + one async call</a><span class="src">Reading / hands-on · free</span><span class="note">Try it yourself first; the link is the answer key / reference</span></span></li></ul>
+
+<h2>Get the cheat-sheet</h2>
+<div class="kwbox"><p>Comment <span class="badge kw">MICRO</span> on the Reel or Short and we’ll DM you the one-page cheat-sheet, the video link and this page.</p>
+<p class="meter-label">Find us on <a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a> and <a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a> as @thebytesizedfix.</p></div>
+<h2>Sources &amp; further reading</h2>
+<ul><li><a href="https://martinfowler.com/articles/microservices.html" rel="noopener">Martin Fowler: Microservices</a></li><li><a href="https://martinfowler.com/bliki/MonolithFirst.html" rel="noopener">Martin Fowler: Monolith first</a></li><li><a href="https://github.com/donnemartin/system-design-primer" rel="noopener">System Design Primer (donnemartin)</a></li></ul>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:S26"><span>Mark this lesson as done</span></label>
+<nav class="pager" aria-label="Lessons"><a class="prev" href="s25.html" rel="prev"><small>← Previous</small>Distributed transactions: 2PC, sagas, transactional outbox</a><a class="next" href="s27.html" rel="next"><small>Next →</small>Reliability: SLOs, monitoring, circuit breakers, graceful degradation</a></nav>
+</div>
+</main>
+<footer class="site-foot">
+<div class="wrap">
+<p><strong>Free forever. Made by Khola Labs.</strong><br>No ads, no sign-up, no tracking. Your progress stays in your browser.</p>
+<ul>
+<li><a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a></li>
+<li><a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a></li>
+<li><a href="../lessons.html">All lessons</a></li>
+<li><a href="../calendar.html">Release calendar</a></li>
+</ul>
+</div>
+</footer>
+</body>
+</html>

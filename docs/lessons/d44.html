@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Longest increasing subsequence &amp; stock DP with states (DSA L42) · Byte-Sized Fix</title>
+<meta name="description" content="Longest increasing subsequence &amp; stock DP with states — free animated lesson in Hinglish with 6 practice problems and a cheat-sheet. Seedhi chadhte numbers: LIS &amp; sequence DP.">
+<link rel="canonical" href="https://khola-labs.github.io/bytesizedfix/lessons/d44.html">
+<meta name="theme-color" content="#111a32">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Byte-Sized Fix">
+<meta property="og:title" content="Longest increasing subsequence &amp; stock DP with states (DSA L42) · Byte-Sized Fix">
+<meta property="og:description" content="Longest increasing subsequence &amp; stock DP with states — free animated lesson in Hinglish with 6 practice problems and a cheat-sheet. Seedhi chadhte numbers: LIS &amp; sequence DP.">
+<meta property="og:url" content="https://khola-labs.github.io/bytesizedfix/lessons/d44.html">
+<meta property="og:image" content="https://khola-labs.github.io/bytesizedfix/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+<div class="wrap">
+<a class="brand" href="../index.html"><img src="../assets/favicon.svg" alt="" width="28" height="28">BYTE-SIZED FIX</a>
+<nav class="nav" aria-label="Main"><a href="../index.html">Home</a><a href="../dsa.html" aria-current="page">DSA</a><a href="../system-design.html">System Design</a><a href="../interview.html">Interview Craft</a><a href="../lessons.html">All lessons</a><a href="../calendar.html">Calendar</a></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<p class="crumbs"><a href="../index.html">Home</a> › <a href="../dsa.html">DSA</a> › <a href="../dsa.html#dk">DSA-10 · Dynamic Programming</a></p>
+<div class="lesson-head">
+<p class="eyebrow">DSA · Lesson L42 · DSA-10 · Dynamic Programming</p>
+<h1>Longest increasing subsequence &amp; stock DP with states</h1>
+<p class="lead hook">“Seedhi chadhte numbers: LIS &amp; sequence DP”</p>
+<div class="lesson-facts"><span class="badge soon">Coming Tue 24 Aug 2027</span><span>Lesson ~14 min</span><span>Short 60-90 s</span><span>Code on screen: Python</span><span>Cheat-sheet: <span class="badge kw">LIS</span></span></div>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:D44"><span><strong>I’ve finished this lesson</strong></span></label>
+</div>
+<p class="storage-note" data-storage-note hidden>Your browser is blocking local storage, so ticks won’t be saved after you leave this page. Everything else works.</p>
+<div class="media-row"><div><div class="video placeholder" role="img" aria-label="Video placeholder: full lesson coming Tue 24 Aug 2027">
+<img src="../assets/kursor-320.webp" alt="" width="72" height="72">
+<strong>Full lesson coming Tue 24 Aug 2027</strong><span>Kursor is still drawing this one.</span></div></div></div>
+
+<h2>What you’ll learn</h2>
+<ul class="goals"><li>O(n²) LIS and O(n log n) patience sorting</li><li>State-machine DP (stocks with cooldown/fees)</li><li>Russian doll envelopes</li></ul>
+<h2>The story behind it</h2>
+<p>A Sensex chart: longest stretch of days where each picked day is higher than the last. Then a trader with rules: cooldown day after selling, brokerage fee per trade.</p>
+<h2>Before this lesson</h2>
+<ul><li><a href="d40.html">1D DP: take/skip, decode ways, word break</a> <span class="meter-label" style="display:inline">(DSA L38)</span></li><li><a href="d16.html">Binary search on the answer space</a> <span class="meter-label" style="display:inline">(DSA L15)</span></li></ul>
+<h2>Practice <span class="meter-label js-only" style="display:inline;font-weight:400" data-pmeter="D44" hidden></span></h2>
+<p>Ordered from first try to stretch. All free.</p>
+<ul class="practice"><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D44|https://leetcode.com/problems/longest-increasing-subsequence/"><span class="visually-hidden">Mark 300. Longest Increasing Subsequence as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/longest-increasing-subsequence/" rel="noopener">300. Longest Increasing Subsequence</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D44|https://leetcode.com/problems/number-of-longest-increasing-subsequence/"><span class="visually-hidden">Mark 673. Number of Longest Increasing Subsequence as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/number-of-longest-increasing-subsequence/" rel="noopener">673. Number of Longest Increasing Subsequence</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D44|https://leetcode.com/problems/russian-doll-envelopes/"><span class="visually-hidden">Mark 354. Russian Doll Envelopes as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/russian-doll-envelopes/" rel="noopener">354. Russian Doll Envelopes</a><span class="src"><span class="diff Hard">Hard</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D44|https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/"><span class="visually-hidden">Mark 309. Best Time to Buy and Sell Stock with Cooldown as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/" rel="noopener">309. Best Time to Buy and Sell Stock with Cooldown</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D44|https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/"><span class="visually-hidden">Mark 714. Best Time to Buy and Sell Stock with Transaction Fee as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/" rel="noopener">714. Best Time to Buy and Sell Stock with Transaction Fee</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D44|https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/"><span class="visually-hidden">Mark 123. Best Time to Buy and Sell Stock III as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/" rel="noopener">123. Best Time to Buy and Sell Stock III</a><span class="src"><span class="diff Hard">Hard</span> · LeetCode · free</span></span></li></ul>
+
+<h2>Get the cheat-sheet</h2>
+<div class="kwbox"><p>Comment <span class="badge kw">LIS</span> on the Reel or Short and we’ll DM you the one-page cheat-sheet, the video link and this page.</p>
+<p class="meter-label">Find us on <a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a> and <a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a> as @thebytesizedfix.</p></div>
+<h2>Sources &amp; further reading</h2>
+<ul><li><a href="https://cp-algorithms.com/sequences/longest_increasing_subsequence.html" rel="noopener">cp-algorithms: Longest increasing subsequence</a></li><li><a href="https://www.techinterviewhandbook.org/algorithms/dynamic-programming/" rel="noopener">Tech Interview Handbook: Dynamic programming cheatsheet</a></li></ul>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:D44"><span>Mark this lesson as done</span></label>
+<nav class="pager" aria-label="Lessons"><a class="prev" href="d43.html" rel="prev"><small>← Previous</small>String DP: LCS, edit distance, palindromic subsequences</a><a class="next" href="d45.html" rel="next"><small>Next →</small>Interval &amp; partition DP (MCM, burst balloons)</a></nav>
+</div>
+</main>
+<footer class="site-foot">
+<div class="wrap">
+<p><strong>Free forever. Made by Khola Labs.</strong><br>No ads, no sign-up, no tracking. Your progress stays in your browser.</p>
+<ul>
+<li><a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a></li>
+<li><a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a></li>
+<li><a href="../lessons.html">All lessons</a></li>
+<li><a href="../calendar.html">Release calendar</a></li>
+</ul>
+</div>
+</footer>
+</body>
+</html>

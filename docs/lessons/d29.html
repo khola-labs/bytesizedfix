@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Two heaps (running median) &amp; scheduling with heaps (DSA L27) · Byte-Sized Fix</title>
+<meta name="description" content="Two heaps (running median) &amp; scheduling with heaps — free animated lesson in Hinglish with 4 practice problems and a cheat-sheet. Class ka beech wala bachcha: two heaps for running median.">
+<link rel="canonical" href="https://khola-labs.github.io/bytesizedfix/lessons/d29.html">
+<meta name="theme-color" content="#111a32">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Byte-Sized Fix">
+<meta property="og:title" content="Two heaps (running median) &amp; scheduling with heaps (DSA L27) · Byte-Sized Fix">
+<meta property="og:description" content="Two heaps (running median) &amp; scheduling with heaps — free animated lesson in Hinglish with 4 practice problems and a cheat-sheet. Class ka beech wala bachcha: two heaps for running median.">
+<meta property="og:url" content="https://khola-labs.github.io/bytesizedfix/lessons/d29.html">
+<meta property="og:image" content="https://khola-labs.github.io/bytesizedfix/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+<div class="wrap">
+<a class="brand" href="../index.html"><img src="../assets/favicon.svg" alt="" width="28" height="28">BYTE-SIZED FIX</a>
+<nav class="nav" aria-label="Main"><a href="../index.html">Home</a><a href="../dsa.html" aria-current="page">DSA</a><a href="../system-design.html">System Design</a><a href="../interview.html">Interview Craft</a><a href="../lessons.html">All lessons</a><a href="../calendar.html">Calendar</a></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<p class="crumbs"><a href="../index.html">Home</a> › <a href="../dsa.html">DSA</a> › <a href="../dsa.html#dh">DSA-7 · Heaps &amp; Priority Queues</a></p>
+<div class="lesson-head">
+<p class="eyebrow">DSA · Lesson L27 · DSA-7 · Heaps &amp; Priority Queues</p>
+<h1>Two heaps (running median) &amp; scheduling with heaps</h1>
+<p class="lead hook">“Class ka beech wala bachcha: two heaps for running median”</p>
+<div class="lesson-facts"><span class="badge soon">Coming Tue 11 May 2027</span><span>Lesson ~11 min</span><span>Short 60-90 s</span><span>Code on screen: Python</span><span>Cheat-sheet: <span class="badge kw">MEDIAN</span></span></div>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:D29"><span><strong>I’ve finished this lesson</strong></span></label>
+</div>
+<p class="storage-note" data-storage-note hidden>Your browser is blocking local storage, so ticks won’t be saved after you leave this page. Everything else works.</p>
+<div class="media-row"><div><div class="video placeholder" role="img" aria-label="Video placeholder: full lesson coming Tue 11 May 2027">
+<img src="../assets/kursor-320.webp" alt="" width="72" height="72">
+<strong>Full lesson coming Tue 11 May 2027</strong><span>Kursor is still drawing this one.</span></div></div></div>
+
+<h2>What you’ll learn</h2>
+<ul class="goals"><li>Max-heap + min-heap balance for median</li><li>Lazy deletion idea</li><li>Heap-driven greedy scheduling (IPO, meeting rooms III)</li></ul>
+<h2>The story behind it</h2>
+<p>Students entering a class keep lining up by height; the teacher always wants the middle kid — keep a &#x27;short half&#x27; and a &#x27;tall half&#x27; group of equal size.</p>
+<h2>Before this lesson</h2>
+<ul><li><a href="d28.html">Top-K and K-way merge</a> <span class="meter-label" style="display:inline">(DSA L26)</span></li></ul>
+<h2>Practice <span class="meter-label js-only" style="display:inline;font-weight:400" data-pmeter="D29" hidden></span></h2>
+<p>Ordered from first try to stretch. All free.</p>
+<ul class="practice"><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D29|https://leetcode.com/problems/find-median-from-data-stream/"><span class="visually-hidden">Mark 295. Find Median from Data Stream as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/find-median-from-data-stream/" rel="noopener">295. Find Median from Data Stream</a><span class="src"><span class="diff Hard">Hard</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D29|https://leetcode.com/problems/ipo/"><span class="visually-hidden">Mark 502. IPO as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/ipo/" rel="noopener">502. IPO</a><span class="src"><span class="diff Hard">Hard</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D29|https://leetcode.com/problems/single-threaded-cpu/"><span class="visually-hidden">Mark 1834. Single-Threaded CPU as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/single-threaded-cpu/" rel="noopener">1834. Single-Threaded CPU</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D29|https://leetcode.com/problems/meeting-rooms-iii/"><span class="visually-hidden">Mark 2402. Meeting Rooms III as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/meeting-rooms-iii/" rel="noopener">2402. Meeting Rooms III</a><span class="src"><span class="diff Hard">Hard</span> · LeetCode · free</span></span></li></ul>
+
+<h2>Get the cheat-sheet</h2>
+<div class="kwbox"><p>Comment <span class="badge kw">MEDIAN</span> on the Reel or Short and we’ll DM you the one-page cheat-sheet, the video link and this page.</p>
+<p class="meter-label">Find us on <a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a> and <a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a> as @thebytesizedfix.</p></div>
+<h2>Sources &amp; further reading</h2>
+<ul><li><a href="https://www.techinterviewhandbook.org/algorithms/heap/" rel="noopener">Tech Interview Handbook: Heap cheatsheet</a></li></ul>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:D29"><span>Mark this lesson as done</span></label>
+<nav class="pager" aria-label="Lessons"><a class="prev" href="d28.html" rel="prev"><small>← Previous</small>Top-K and K-way merge</a><a class="next" href="d30.html" rel="next"><small>Next →</small>Graph basics: representation, BFS, DFS</a></nav>
+</div>
+</main>
+<footer class="site-foot">
+<div class="wrap">
+<p><strong>Free forever. Made by Khola Labs.</strong><br>No ads, no sign-up, no tracking. Your progress stays in your browser.</p>
+<ul>
+<li><a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a></li>
+<li><a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a></li>
+<li><a href="../lessons.html">All lessons</a></li>
+<li><a href="../calendar.html">Release calendar</a></li>
+</ul>
+</div>
+</footer>
+</body>
+</html>

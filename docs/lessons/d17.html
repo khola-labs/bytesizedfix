@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Linked lists: basics, reversal, merging (DSA L16) · Byte-Sized Fix</title>
+<meta name="description" content="Linked lists: basics, reversal, merging — free animated lesson in Hinglish with 6 practice problems and a cheat-sheet. Treasure hunt ki parchiyaan: linked list.">
+<link rel="canonical" href="https://khola-labs.github.io/bytesizedfix/lessons/d17.html">
+<meta name="theme-color" content="#111a32">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Byte-Sized Fix">
+<meta property="og:title" content="Linked lists: basics, reversal, merging (DSA L16) · Byte-Sized Fix">
+<meta property="og:description" content="Linked lists: basics, reversal, merging — free animated lesson in Hinglish with 6 practice problems and a cheat-sheet. Treasure hunt ki parchiyaan: linked list.">
+<meta property="og:url" content="https://khola-labs.github.io/bytesizedfix/lessons/d17.html">
+<meta property="og:image" content="https://khola-labs.github.io/bytesizedfix/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+<div class="wrap">
+<a class="brand" href="../index.html"><img src="../assets/favicon.svg" alt="" width="28" height="28">BYTE-SIZED FIX</a>
+<nav class="nav" aria-label="Main"><a href="../index.html">Home</a><a href="../dsa.html" aria-current="page">DSA</a><a href="../system-design.html">System Design</a><a href="../interview.html">Interview Craft</a><a href="../lessons.html">All lessons</a><a href="../calendar.html">Calendar</a></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<p class="crumbs"><a href="../index.html">Home</a> › <a href="../dsa.html">DSA</a> › <a href="../dsa.html#df">DSA-5 · Linked Lists, Stacks &amp; Queues</a></p>
+<div class="lesson-head">
+<p class="eyebrow">DSA · Lesson L16 · DSA-5 · Linked Lists, Stacks &amp; Queues</p>
+<h1>Linked lists: basics, reversal, merging</h1>
+<p class="lead hook">“Treasure hunt ki parchiyaan: linked list”</p>
+<div class="lesson-facts"><span class="badge soon">Coming Tue 23 Feb 2027</span><span>Lesson ~14 min</span><span>Short 60-90 s</span><span>Code on screen: Python</span><span>Cheat-sheet: <span class="badge kw">LINKED</span></span></div>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:D17"><span><strong>I’ve finished this lesson</strong></span></label>
+</div>
+<p class="storage-note" data-storage-note hidden>Your browser is blocking local storage, so ticks won’t be saved after you leave this page. Everything else works.</p>
+<div class="media-row"><div><div class="video placeholder" role="img" aria-label="Video placeholder: full lesson coming Tue 23 Feb 2027">
+<img src="../assets/kursor-320.webp" alt="" width="72" height="72">
+<strong>Full lesson coming Tue 23 Feb 2027</strong><span>Kursor is still drawing this one.</span></div></div></div>
+
+<h2>What you’ll learn</h2>
+<ul class="goals"><li>Node/pointer model; insert &amp; delete without shifting</li><li>Reverse a list iteratively and recursively</li><li>Dummy-head trick and merge two sorted lists</li></ul>
+<h2>The story behind it</h2>
+<p>Birthday treasure hunt: each chit says where the next chit is hidden. Insert a new clue? Just rewrite one chit. Reverse the hunt? Flip every arrow carefully so nothing gets lost.</p>
+<h2>Before this lesson</h2>
+<ul><li><a href="d02.html">Memory model, arrays &amp; space complexity</a> <span class="meter-label" style="display:inline">(DSA L2)</span></li></ul>
+<h2>Practice <span class="meter-label js-only" style="display:inline;font-weight:400" data-pmeter="D17" hidden></span></h2>
+<p>Ordered from first try to stretch. All free.</p>
+<ul class="practice"><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D17|https://leetcode.com/problems/reverse-linked-list/"><span class="visually-hidden">Mark 206. Reverse Linked List as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/reverse-linked-list/" rel="noopener">206. Reverse Linked List</a><span class="src"><span class="diff Easy">Easy</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D17|https://leetcode.com/problems/merge-two-sorted-lists/"><span class="visually-hidden">Mark 21. Merge Two Sorted Lists as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/merge-two-sorted-lists/" rel="noopener">21. Merge Two Sorted Lists</a><span class="src"><span class="diff Easy">Easy</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D17|https://leetcode.com/problems/remove-nth-node-from-end-of-list/"><span class="visually-hidden">Mark 19. Remove Nth Node From End of List as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/remove-nth-node-from-end-of-list/" rel="noopener">19. Remove Nth Node From End of List</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D17|https://leetcode.com/problems/reorder-list/"><span class="visually-hidden">Mark 143. Reorder List as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/reorder-list/" rel="noopener">143. Reorder List</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D17|https://leetcode.com/problems/add-two-numbers/"><span class="visually-hidden">Mark 2. Add Two Numbers as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/add-two-numbers/" rel="noopener">2. Add Two Numbers</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D17|https://leetcode.com/problems/copy-list-with-random-pointer/"><span class="visually-hidden">Mark 138. Copy List with Random Pointer as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/copy-list-with-random-pointer/" rel="noopener">138. Copy List with Random Pointer</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li></ul>
+
+<h2>Get the cheat-sheet</h2>
+<div class="kwbox"><p>Comment <span class="badge kw">LINKED</span> on the Reel or Short and we’ll DM you the one-page cheat-sheet, the video link and this page.</p>
+<p class="meter-label">Find us on <a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a> and <a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a> as @thebytesizedfix.</p></div>
+<h2>Sources &amp; further reading</h2>
+<ul><li><a href="https://www.techinterviewhandbook.org/algorithms/linked-list/" rel="noopener">Tech Interview Handbook: Linked list cheatsheet</a></li><li><a href="https://visualgo.net/en/list" rel="noopener">VisuAlgo: Linked list / stack / queue / deque (animated)</a></li></ul>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:D17"><span>Mark this lesson as done</span></label>
+<nav class="pager" aria-label="Lessons"><a class="prev" href="d16.html" rel="prev"><small>← Previous</small>Binary search on the answer space</a><a class="next" href="d18.html" rel="next"><small>Next →</small>Fast &amp; slow pointers (cycle detection, middle)</a></nav>
+</div>
+</main>
+<footer class="site-foot">
+<div class="wrap">
+<p><strong>Free forever. Made by Khola Labs.</strong><br>No ads, no sign-up, no tracking. Your progress stays in your browser.</p>
+<ul>
+<li><a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a></li>
+<li><a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a></li>
+<li><a href="../lessons.html">All lessons</a></li>
+<li><a href="../calendar.html">Release calendar</a></li>
+</ul>
+</div>
+</footer>
+</body>
+</html>

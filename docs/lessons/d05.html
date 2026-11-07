@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hashing: hash maps &amp; hash sets (DSA L4) · Byte-Sized Fix</title>
+<meta name="description" content="Hashing: hash maps &amp; hash sets — free animated lesson in Hinglish with 7 practice problems and a cheat-sheet. Dhobi ka register: HashMap aur HashSet andar se.">
+<link rel="canonical" href="https://khola-labs.github.io/bytesizedfix/lessons/d05.html">
+<meta name="theme-color" content="#111a32">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Byte-Sized Fix">
+<meta property="og:title" content="Hashing: hash maps &amp; hash sets (DSA L4) · Byte-Sized Fix">
+<meta property="og:description" content="Hashing: hash maps &amp; hash sets — free animated lesson in Hinglish with 7 practice problems and a cheat-sheet. Dhobi ka register: HashMap aur HashSet andar se.">
+<meta property="og:url" content="https://khola-labs.github.io/bytesizedfix/lessons/d05.html">
+<meta property="og:image" content="https://khola-labs.github.io/bytesizedfix/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+<div class="wrap">
+<a class="brand" href="../index.html"><img src="../assets/favicon.svg" alt="" width="28" height="28">BYTE-SIZED FIX</a>
+<nav class="nav" aria-label="Main"><a href="../index.html">Home</a><a href="../dsa.html" aria-current="page">DSA</a><a href="../system-design.html">System Design</a><a href="../interview.html">Interview Craft</a><a href="../lessons.html">All lessons</a><a href="../calendar.html">Calendar</a></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<p class="crumbs"><a href="../index.html">Home</a> › <a href="../dsa.html">DSA</a> › <a href="../dsa.html#db">DSA-1 · Arrays, Strings &amp; Hashing</a></p>
+<div class="lesson-head">
+<p class="eyebrow">DSA · Lesson L4 · DSA-1 · Arrays, Strings &amp; Hashing</p>
+<h1>Hashing: hash maps &amp; hash sets</h1>
+<p class="lead hook">“Dhobi ka register: HashMap aur HashSet andar se”</p>
+<div class="lesson-facts"><span class="badge soon">Coming Tue 17 Nov 2026</span><span>Lesson ~14 min</span><span>Short 60-90 s</span><span>Code on screen: Python</span><span>Cheat-sheet: <span class="badge kw">HASHMAP</span></span></div>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:D05"><span><strong>I’ve finished this lesson</strong></span></label>
+</div>
+<p class="storage-note" data-storage-note hidden>Your browser is blocking local storage, so ticks won’t be saved after you leave this page. Everything else works.</p>
+<div class="media-row"><div><div class="video placeholder" role="img" aria-label="Video placeholder: full lesson coming Tue 17 Nov 2026">
+<img src="../assets/kursor-320.webp" alt="" width="72" height="72">
+<strong>Full lesson coming Tue 17 Nov 2026</strong><span>Kursor is still drawing this one.</span></div></div></div>
+
+<h2>What you’ll learn</h2>
+<ul class="goals"><li>How hashing turns a key into a bucket index</li><li>Collisions: chaining vs open addressing; load factor</li><li>Pattern: &#x27;seen before?&#x27; and &#x27;count frequency&#x27; in O(n)</li></ul>
+<h2>The story behind it</h2>
+<p>The colony dhobi keeps a register with a page per flat number&#x27;s last digit. Find flat 304&#x27;s clothes? Jump to page 4. Two flats ending in 4 share a page — collision — so he lists them one below the other.</p>
+<h2>Before this lesson</h2>
+<ul><li><a href="d02.html">Memory model, arrays &amp; space complexity</a> <span class="meter-label" style="display:inline">(DSA L2)</span></li></ul>
+<h2>Practice <span class="meter-label js-only" style="display:inline;font-weight:400" data-pmeter="D05" hidden></span></h2>
+<p>Ordered from first try to stretch. All free.</p>
+<ul class="practice"><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D05|https://leetcode.com/problems/two-sum/"><span class="visually-hidden">Mark 1. Two Sum as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/two-sum/" rel="noopener">1. Two Sum</a><span class="src"><span class="diff Easy">Easy</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D05|https://leetcode.com/problems/contains-duplicate/"><span class="visually-hidden">Mark 217. Contains Duplicate as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/contains-duplicate/" rel="noopener">217. Contains Duplicate</a><span class="src"><span class="diff Easy">Easy</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D05|https://leetcode.com/problems/valid-anagram/"><span class="visually-hidden">Mark 242. Valid Anagram as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/valid-anagram/" rel="noopener">242. Valid Anagram</a><span class="src"><span class="diff Easy">Easy</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D05|https://leetcode.com/problems/group-anagrams/"><span class="visually-hidden">Mark 49. Group Anagrams as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/group-anagrams/" rel="noopener">49. Group Anagrams</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D05|https://leetcode.com/problems/top-k-frequent-elements/"><span class="visually-hidden">Mark 347. Top K Frequent Elements as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/top-k-frequent-elements/" rel="noopener">347. Top K Frequent Elements</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D05|https://leetcode.com/problems/longest-consecutive-sequence/"><span class="visually-hidden">Mark 128. Longest Consecutive Sequence as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/longest-consecutive-sequence/" rel="noopener">128. Longest Consecutive Sequence</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D05|https://leetcode.com/problems/design-hashmap/"><span class="visually-hidden">Mark 706. Design HashMap as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/design-hashmap/" rel="noopener">706. Design HashMap</a><span class="src"><span class="diff Easy">Easy</span> · LeetCode · free</span></span></li></ul>
+
+<h2>Get the cheat-sheet</h2>
+<div class="kwbox"><p>Comment <span class="badge kw">HASHMAP</span> on the Reel or Short and we’ll DM you the one-page cheat-sheet, the video link and this page.</p>
+<p class="meter-label">Find us on <a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a> and <a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a> as @thebytesizedfix.</p></div>
+<h2>Sources &amp; further reading</h2>
+<ul><li><a href="https://www.techinterviewhandbook.org/algorithms/hash-table/" rel="noopener">Tech Interview Handbook: Hash table cheatsheet</a></li><li><a href="https://visualgo.net/en/hashtable" rel="noopener">VisuAlgo: Hash table (animated)</a></li></ul>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:D05"><span>Mark this lesson as done</span></label>
+<nav class="pager" aria-label="Lessons"><a class="prev" href="d04.html" rel="prev"><small>← Previous</small>Arrays &amp; prefix sums</a><a class="next" href="d06.html" rel="next"><small>Next →</small>Strings: frequency counts, palindromes, parsing</a></nav>
+</div>
+</main>
+<footer class="site-foot">
+<div class="wrap">
+<p><strong>Free forever. Made by Khola Labs.</strong><br>No ads, no sign-up, no tracking. Your progress stays in your browser.</p>
+<ul>
+<li><a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a></li>
+<li><a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a></li>
+<li><a href="../lessons.html">All lessons</a></li>
+<li><a href="../calendar.html">Release calendar</a></li>
+</ul>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Advanced graph patterns: implicit graphs, bipartite, bridges (DSA L34) · Byte-Sized Fix</title>
+<meta name="description" content="Advanced graph patterns: implicit graphs, bipartite, bridges — free animated lesson in Hinglish with 5 practice problems and a cheat-sheet. Bridges, word ladders aur state-space: graph pro moves.">
+<link rel="canonical" href="https://khola-labs.github.io/bytesizedfix/lessons/d36.html">
+<meta name="theme-color" content="#111a32">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Byte-Sized Fix">
+<meta property="og:title" content="Advanced graph patterns: implicit graphs, bipartite, bridges (DSA L34) · Byte-Sized Fix">
+<meta property="og:description" content="Advanced graph patterns: implicit graphs, bipartite, bridges — free animated lesson in Hinglish with 5 practice problems and a cheat-sheet. Bridges, word ladders aur state-space: graph pro moves.">
+<meta property="og:url" content="https://khola-labs.github.io/bytesizedfix/lessons/d36.html">
+<meta property="og:image" content="https://khola-labs.github.io/bytesizedfix/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+<div class="wrap">
+<a class="brand" href="../index.html"><img src="../assets/favicon.svg" alt="" width="28" height="28">BYTE-SIZED FIX</a>
+<nav class="nav" aria-label="Main"><a href="../index.html">Home</a><a href="../dsa.html" aria-current="page">DSA</a><a href="../system-design.html">System Design</a><a href="../interview.html">Interview Craft</a><a href="../lessons.html">All lessons</a><a href="../calendar.html">Calendar</a></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<p class="crumbs"><a href="../index.html">Home</a> › <a href="../dsa.html">DSA</a> › <a href="../dsa.html#di">DSA-8 · Graphs</a></p>
+<div class="lesson-head">
+<p class="eyebrow">DSA · Lesson L34 · DSA-8 · Graphs</p>
+<h1>Advanced graph patterns: implicit graphs, bipartite, bridges</h1>
+<p class="lead hook">“Bridges, word ladders aur state-space: graph pro moves”</p>
+<div class="lesson-facts"><span class="badge soon">Coming Tue 29 Jun 2027</span><span>Lesson ~13 min</span><span>Short 60-90 s</span><span>Code on screen: Python</span><span>Cheat-sheet: <span class="badge kw">GRAPHPRO</span></span></div>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:D36"><span><strong>I’ve finished this lesson</strong></span></label>
+</div>
+<p class="storage-note" data-storage-note hidden>Your browser is blocking local storage, so ticks won’t be saved after you leave this page. Everything else works.</p>
+<div class="media-row"><div><div class="video placeholder" role="img" aria-label="Video placeholder: full lesson coming Tue 29 Jun 2027">
+<img src="../assets/kursor-320.webp" alt="" width="72" height="72">
+<strong>Full lesson coming Tue 29 Jun 2027</strong><span>Kursor is still drawing this one.</span></div></div></div>
+
+<h2>What you’ll learn</h2>
+<ul class="goals"><li>Model puzzles as state-space graphs (word ladder, open the lock)</li><li>Bipartite check by 2-colouring</li><li>Bridges/articulation points at a glance (Tarjan)</li></ul>
+<h2>The story behind it</h2>
+<p>A road network where one bridge failing cuts a city in two (bridges); splitting a class into two teams so no two friends are on the same team (bipartite).</p>
+<h2>Before this lesson</h2>
+<ul><li><a href="d31.html">Grid graphs: flood fill, islands, multi-source BFS</a> <span class="meter-label" style="display:inline">(DSA L29)</span></li><li><a href="d32.html">Topological sort &amp; DAGs</a> <span class="meter-label" style="display:inline">(DSA L30)</span></li></ul>
+<h2>Practice <span class="meter-label js-only" style="display:inline;font-weight:400" data-pmeter="D36" hidden></span></h2>
+<p>Ordered from first try to stretch. All free.</p>
+<ul class="practice"><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D36|https://leetcode.com/problems/word-ladder/"><span class="visually-hidden">Mark 127. Word Ladder as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/word-ladder/" rel="noopener">127. Word Ladder</a><span class="src"><span class="diff Hard">Hard</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D36|https://leetcode.com/problems/open-the-lock/"><span class="visually-hidden">Mark 752. Open the Lock as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/open-the-lock/" rel="noopener">752. Open the Lock</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D36|https://leetcode.com/problems/is-graph-bipartite/"><span class="visually-hidden">Mark 785. Is Graph Bipartite? as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/is-graph-bipartite/" rel="noopener">785. Is Graph Bipartite?</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D36|https://leetcode.com/problems/critical-connections-in-a-network/"><span class="visually-hidden">Mark 1192. Critical Connections in a Network as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/critical-connections-in-a-network/" rel="noopener">1192. Critical Connections in a Network</a><span class="src"><span class="diff Hard">Hard</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D36|https://leetcode.com/problems/reconstruct-itinerary/"><span class="visually-hidden">Mark 332. Reconstruct Itinerary as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/reconstruct-itinerary/" rel="noopener">332. Reconstruct Itinerary</a><span class="src"><span class="diff Hard">Hard</span> · LeetCode · free</span></span></li></ul>
+
+<h2>Get the cheat-sheet</h2>
+<div class="kwbox"><p>Comment <span class="badge kw">GRAPHPRO</span> on the Reel or Short and we’ll DM you the one-page cheat-sheet, the video link and this page.</p>
+<p class="meter-label">Find us on <a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a> and <a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a> as @thebytesizedfix.</p></div>
+<h2>Sources &amp; further reading</h2>
+<ul><li><a href="https://cp-algorithms.com/graph/depth-first-search.html" rel="noopener">cp-algorithms: Depth-first search</a></li><li><a href="https://www.techinterviewhandbook.org/algorithms/graph/" rel="noopener">Tech Interview Handbook: Graph cheatsheet</a></li></ul>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:D36"><span>Mark this lesson as done</span></label>
+<nav class="pager" aria-label="Lessons"><a class="prev" href="d35.html" rel="prev"><small>← Previous</small>Minimum spanning tree: Kruskal &amp; Prim</a><a class="next" href="d37.html" rel="next"><small>Next →</small>Greedy: choices, exchange arguments, counter-examples</a></nav>
+</div>
+</main>
+<footer class="site-foot">
+<div class="wrap">
+<p><strong>Free forever. Made by Khola Labs.</strong><br>No ads, no sign-up, no tracking. Your progress stays in your browser.</p>
+<ul>
+<li><a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a></li>
+<li><a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a></li>
+<li><a href="../lessons.html">All lessons</a></li>
+<li><a href="../calendar.html">Release calendar</a></li>
+</ul>
+</div>
+</footer>
+</body>
+</html>

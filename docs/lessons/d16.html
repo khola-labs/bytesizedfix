@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Binary search on the answer space (DSA L15) · Byte-Sized Fix</title>
+<meta name="description" content="Binary search on the answer space — free animated lesson in Hinglish with 6 practice problems and a cheat-sheet. Kitni speed se kele khaaoge? Binary search on answer.">
+<link rel="canonical" href="https://khola-labs.github.io/bytesizedfix/lessons/d16.html">
+<meta name="theme-color" content="#111a32">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Byte-Sized Fix">
+<meta property="og:title" content="Binary search on the answer space (DSA L15) · Byte-Sized Fix">
+<meta property="og:description" content="Binary search on the answer space — free animated lesson in Hinglish with 6 practice problems and a cheat-sheet. Kitni speed se kele khaaoge? Binary search on answer.">
+<meta property="og:url" content="https://khola-labs.github.io/bytesizedfix/lessons/d16.html">
+<meta property="og:image" content="https://khola-labs.github.io/bytesizedfix/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+<div class="wrap">
+<a class="brand" href="../index.html"><img src="../assets/favicon.svg" alt="" width="28" height="28">BYTE-SIZED FIX</a>
+<nav class="nav" aria-label="Main"><a href="../index.html">Home</a><a href="../dsa.html" aria-current="page">DSA</a><a href="../system-design.html">System Design</a><a href="../interview.html">Interview Craft</a><a href="../lessons.html">All lessons</a><a href="../calendar.html">Calendar</a></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<p class="crumbs"><a href="../index.html">Home</a> › <a href="../dsa.html">DSA</a> › <a href="../dsa.html#de">DSA-4 · Binary Search</a></p>
+<div class="lesson-head">
+<p class="eyebrow">DSA · Lesson L15 · DSA-4 · Binary Search</p>
+<h1>Binary search on the answer space</h1>
+<p class="lead hook">“Kitni speed se kele khaaoge? Binary search on answer”</p>
+<div class="lesson-facts"><span class="badge soon">Coming Tue 16 Feb 2027</span><span>Lesson ~14 min</span><span>Short 60-90 s</span><span>Code on screen: Python</span><span>Cheat-sheet: <span class="badge kw">ANSWER</span></span></div>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:D16"><span><strong>I’ve finished this lesson</strong></span></label>
+</div>
+<p class="storage-note" data-storage-note hidden>Your browser is blocking local storage, so ticks won’t be saved after you leave this page. Everything else works.</p>
+<div class="media-row"><div><div class="video placeholder" role="img" aria-label="Video placeholder: full lesson coming Tue 16 Feb 2027">
+<img src="../assets/kursor-320.webp" alt="" width="72" height="72">
+<strong>Full lesson coming Tue 16 Feb 2027</strong><span>Kursor is still drawing this one.</span></div></div></div>
+
+<h2>What you’ll learn</h2>
+<ul class="goals"><li>Spot monotonic yes/no predicates</li><li>Search the smallest feasible capacity/speed/time</li><li>Median of two sorted arrays intuition</li></ul>
+<h2>The story behind it</h2>
+<p>A Diwali mithai shop must pack all orders in D days: what&#x27;s the minimum boxes-per-day? Guess 50 → feasible, try lower; guess 20 → not feasible, go higher.</p>
+<h2>Before this lesson</h2>
+<ul><li><a href="d15.html">Binary search on sorted arrays</a> <span class="meter-label" style="display:inline">(DSA L14)</span></li></ul>
+<h2>Practice <span class="meter-label js-only" style="display:inline;font-weight:400" data-pmeter="D16" hidden></span></h2>
+<p>Ordered from first try to stretch. All free.</p>
+<ul class="practice"><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D16|https://leetcode.com/problems/koko-eating-bananas/"><span class="visually-hidden">Mark 875. Koko Eating Bananas as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/koko-eating-bananas/" rel="noopener">875. Koko Eating Bananas</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D16|https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/"><span class="visually-hidden">Mark 1011. Capacity To Ship Packages Within D Days as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/" rel="noopener">1011. Capacity To Ship Packages Within D Days</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D16|https://leetcode.com/problems/split-array-largest-sum/"><span class="visually-hidden">Mark 410. Split Array Largest Sum as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/split-array-largest-sum/" rel="noopener">410. Split Array Largest Sum</a><span class="src"><span class="diff Hard">Hard</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D16|https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/"><span class="visually-hidden">Mark 1482. Minimum Number of Days to Make m Bouquets as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/" rel="noopener">1482. Minimum Number of Days to Make m Bouquets</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D16|https://leetcode.com/problems/time-based-key-value-store/"><span class="visually-hidden">Mark 981. Time Based Key-Value Store as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/time-based-key-value-store/" rel="noopener">981. Time Based Key-Value Store</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D16|https://leetcode.com/problems/median-of-two-sorted-arrays/"><span class="visually-hidden">Mark 4. Median of Two Sorted Arrays as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/median-of-two-sorted-arrays/" rel="noopener">4. Median of Two Sorted Arrays</a><span class="src"><span class="diff Hard">Hard</span> · LeetCode · free</span></span></li></ul>
+
+<h2>Get the cheat-sheet</h2>
+<div class="kwbox"><p>Comment <span class="badge kw">ANSWER</span> on the Reel or Short and we’ll DM you the one-page cheat-sheet, the video link and this page.</p>
+<p class="meter-label">Find us on <a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a> and <a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a> as @thebytesizedfix.</p></div>
+<h2>Sources &amp; further reading</h2>
+<ul><li><a href="https://usaco.guide/silver/binary-search" rel="noopener">USACO Guide: Binary search (on the answer)</a></li><li><a href="https://cp-algorithms.com/num_methods/binary_search.html" rel="noopener">cp-algorithms: Binary search</a></li></ul>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:D16"><span>Mark this lesson as done</span></label>
+<nav class="pager" aria-label="Lessons"><a class="prev" href="d15.html" rel="prev"><small>← Previous</small>Binary search on sorted arrays</a><a class="next" href="d17.html" rel="next"><small>Next →</small>Linked lists: basics, reversal, merging</a></nav>
+</div>
+</main>
+<footer class="site-foot">
+<div class="wrap">
+<p><strong>Free forever. Made by Khola Labs.</strong><br>No ads, no sign-up, no tracking. Your progress stays in your browser.</p>
+<ul>
+<li><a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a></li>
+<li><a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a></li>
+<li><a href="../lessons.html">All lessons</a></li>
+<li><a href="../calendar.html">Release calendar</a></li>
+</ul>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Range queries: segment tree &amp; Fenwick (BIT) (DSA L46) · Byte-Sized Fix</title>
+<meta name="description" content="Range queries: segment tree &amp; Fenwick (BIT) — free animated lesson in Hinglish with 4 practice problems and a cheat-sheet. Har over ka max run-rate: segment tree &amp; Fenwick.">
+<link rel="canonical" href="https://khola-labs.github.io/bytesizedfix/lessons/d48.html">
+<meta name="theme-color" content="#111a32">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Byte-Sized Fix">
+<meta property="og:title" content="Range queries: segment tree &amp; Fenwick (BIT) (DSA L46) · Byte-Sized Fix">
+<meta property="og:description" content="Range queries: segment tree &amp; Fenwick (BIT) — free animated lesson in Hinglish with 4 practice problems and a cheat-sheet. Har over ka max run-rate: segment tree &amp; Fenwick.">
+<meta property="og:url" content="https://khola-labs.github.io/bytesizedfix/lessons/d48.html">
+<meta property="og:image" content="https://khola-labs.github.io/bytesizedfix/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+<div class="wrap">
+<a class="brand" href="../index.html"><img src="../assets/favicon.svg" alt="" width="28" height="28">BYTE-SIZED FIX</a>
+<nav class="nav" aria-label="Main"><a href="../index.html">Home</a><a href="../dsa.html" aria-current="page">DSA</a><a href="../system-design.html">System Design</a><a href="../interview.html">Interview Craft</a><a href="../lessons.html">All lessons</a><a href="../calendar.html">Calendar</a></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<p class="crumbs"><a href="../index.html">Home</a> › <a href="../dsa.html">DSA</a> › <a href="../dsa.html#dl">DSA-11 · Advanced Toolkit</a></p>
+<div class="lesson-head">
+<p class="eyebrow">DSA · Lesson L46 · DSA-11 · Advanced Toolkit</p>
+<h1>Range queries: segment tree &amp; Fenwick (BIT)</h1>
+<p class="lead hook">“Har over ka max run-rate: segment tree &amp; Fenwick”</p>
+<div class="lesson-facts"><span class="badge soon">Coming Tue 21 Sep 2027</span><span>Lesson ~15 min</span><span>Short 60-90 s</span><span>Code on screen: Python</span><span>Cheat-sheet: <span class="badge kw">SEGTREE</span></span></div>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:D48"><span><strong>I’ve finished this lesson</strong></span></label>
+</div>
+<p class="storage-note" data-storage-note hidden>Your browser is blocking local storage, so ticks won’t be saved after you leave this page. Everything else works.</p>
+<div class="media-row"><div><div class="video placeholder" role="img" aria-label="Video placeholder: full lesson coming Tue 21 Sep 2027">
+<img src="../assets/kursor-320.webp" alt="" width="72" height="72">
+<strong>Full lesson coming Tue 21 Sep 2027</strong><span>Kursor is still drawing this one.</span></div></div></div>
+
+<h2>What you’ll learn</h2>
+<ul class="goals"><li>Point update + range query in O(log n)</li><li>Segment tree build/query/update; lazy propagation idea</li><li>Fenwick tree for prefix sums</li></ul>
+<h2>The story behind it</h2>
+<p>A cricket analytics desk answering &#x27;highest run-rate between overs 7 and 15&#x27; while scores keep getting corrected (updates).</p>
+<h2>Before this lesson</h2>
+<ul><li><a href="d04.html">Arrays &amp; prefix sums</a> <span class="meter-label" style="display:inline">(DSA L3)</span></li><li><a href="d22.html">Binary trees: DFS (pre/in/post) and BFS (level order)</a> <span class="meter-label" style="display:inline">(DSA L20)</span></li></ul>
+<h2>Practice <span class="meter-label js-only" style="display:inline;font-weight:400" data-pmeter="D48" hidden></span></h2>
+<p>Ordered from first try to stretch. All free.</p>
+<ul class="practice"><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D48|https://leetcode.com/problems/range-sum-query-mutable/"><span class="visually-hidden">Mark 307. Range Sum Query - Mutable as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/range-sum-query-mutable/" rel="noopener">307. Range Sum Query - Mutable</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D48|https://leetcode.com/problems/count-of-smaller-numbers-after-self/"><span class="visually-hidden">Mark 315. Count of Smaller Numbers After Self as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/count-of-smaller-numbers-after-self/" rel="noopener">315. Count of Smaller Numbers After Self</a><span class="src"><span class="diff Hard">Hard</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D48|https://leetcode.com/problems/my-calendar-ii/"><span class="visually-hidden">Mark 731. My Calendar II as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/my-calendar-ii/" rel="noopener">731. My Calendar II</a><span class="src"><span class="diff Medium">Medium</span> · LeetCode · free</span></span></li><li data-row><label class="js-only" hidden><input type="checkbox" data-progress="P:D48|https://leetcode.com/problems/falling-squares/"><span class="visually-hidden">Mark 699. Falling Squares as solved</span></label>
+<span class="p-main"><a href="https://leetcode.com/problems/falling-squares/" rel="noopener">699. Falling Squares</a><span class="src"><span class="diff Hard">Hard</span> · LeetCode · free</span></span></li></ul>
+
+<h2>Get the cheat-sheet</h2>
+<div class="kwbox"><p>Comment <span class="badge kw">SEGTREE</span> on the Reel or Short and we’ll DM you the one-page cheat-sheet, the video link and this page.</p>
+<p class="meter-label">Find us on <a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a> and <a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a> as @thebytesizedfix.</p></div>
+<h2>Sources &amp; further reading</h2>
+<ul><li><a href="https://cp-algorithms.com/data_structures/segment_tree.html" rel="noopener">cp-algorithms: Segment tree</a></li><li><a href="https://cp-algorithms.com/data_structures/fenwick.html" rel="noopener">cp-algorithms: Fenwick tree</a></li><li><a href="https://visualgo.net/en/segmenttree" rel="noopener">VisuAlgo: Segment tree (animated)</a></li></ul>
+<label class="check js-only " hidden><input type="checkbox" data-progress="L:D48"><span>Mark this lesson as done</span></label>
+<nav class="pager" aria-label="Lessons"><a class="prev" href="d47.html" rel="prev"><small>← Previous</small>Bit manipulation &amp; interview maths (GCD, primes, modulo, fast power)</a><a class="next" href="d49.html" rel="next"><small>Next →</small>String algorithms: KMP, Rabin-Karp, Z-function</a></nav>
+</div>
+</main>
+<footer class="site-foot">
+<div class="wrap">
+<p><strong>Free forever. Made by Khola Labs.</strong><br>No ads, no sign-up, no tracking. Your progress stays in your browser.</p>
+<ul>
+<li><a href="https://www.youtube.com/@thebytesizedfix" rel="noopener">YouTube</a></li>
+<li><a href="https://www.instagram.com/thebytesizedfix/" rel="noopener">Instagram</a></li>
+<li><a href="../lessons.html">All lessons</a></li>
+<li><a href="../calendar.html">Release calendar</a></li>
+</ul>
+</div>
+</footer>
+</body>
+</html>
