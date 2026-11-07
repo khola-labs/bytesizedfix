@@ -7412,12 +7412,12 @@
    "animation": "Isometric steps counter across PSP → switch → banks; timeout branch to 'pending'; reconciliation job matching two ledgers; double-entry ledger table.",
    "practice": [
     {
-     "platform": "Hello Interview",
-     "title": "Hello Interview breakdown: Payment system",
-     "url": "https://www.hellointerview.com/learn/system-design/problem-breakdowns/payment-system",
+     "platform": "ByteByteGo blog",
+     "title": "ByteByteGo: Payment system (free article)",
+     "url": "https://blog.bytebytego.com/p/payment-system",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -7425,29 +7425,33 @@
      "url": "https://stripe.com/blog/idempotency",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
-     "title": "NPCI: UPI product overview",
-     "url": "https://www.npci.org.in/what-we-do/upi/product-overview",
+     "title": "Airbnb Tech Blog: Avoiding double payments in a distributed payments system",
+     "url": "https://medium.com/airbnb-engineering/avoiding-double-payments-in-a-distributed-payments-system-2981f6b070bb",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     }
    ],
    "sources": [
     {
-     "title": "NPCI: UPI product overview",
-     "url": "https://www.npci.org.in/what-we-do/upi/product-overview"
+     "title": "NPCI: UPI circulars (official rules, incl. failed-transaction handling)",
+     "url": "https://www.npci.org.in/circulars/upi"
     },
     {
-     "title": "Hello Interview breakdown: Payment system",
-     "url": "https://www.hellointerview.com/learn/system-design/problem-breakdowns/payment-system"
+     "title": "ByteByteGo: Payment system",
+     "url": "https://blog.bytebytego.com/p/payment-system"
     },
     {
      "title": "Stripe blog: Designing robust APIs with idempotency",
      "url": "https://stripe.com/blog/idempotency"
+    },
+    {
+     "title": "Airbnb Tech Blog: Avoiding double payments in a distributed payments system",
+     "url": "https://medium.com/airbnb-engineering/avoiding-double-payments-in-a-distributed-payments-system-2981f6b070bb"
     }
    ],
    "cheatsheet_keyword": "UPI",
