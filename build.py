@@ -286,7 +286,7 @@ def home(meta, site, lessons, by_id, mods, mod_order, order, today):
 <h2>How each lesson works</h2>
 <ol>
 <li>Watch the long lesson (8–20 min) or its 60–90 s Short.</li>
-<li>Comment the lesson’s keyword on the Reel or Short to get the one-page cheat-sheet in your DMs.</li>
+<li>When a lesson is out, comment its keyword on the Reel or Short to get the one-page cheat-sheet in your DMs.</li>
 <li>Solve the practice problems on the lesson page and tick them off.</li>
 <li>Go deeper with the linked sources when you want the full theory.</li>
 </ol>
@@ -446,6 +446,11 @@ def lesson_page(l, by_id, mods, site, today):
         disclaimer = '<p class="disclaimer">This is a learning design for a system <em>like</em> the one named. It is not a description of any company’s internal architecture.</p>'
     code_note = "<span>Code on screen: Python</span>" if l["track"] == "DSA" else ""
     kw = escape(l["cheatsheet_keyword"])
+    # Only promise the DM once something is out (the ManyChat flow is made when the lesson/Short goes live).
+    if l.get("video_id") or l.get("short_id"):
+        cheat_line = f'<p>Comment <span class="badge kw">{kw}</span> on the Reel or Short and we’ll DM you the one-page cheat-sheet, the video link and this page.</p>'
+    else:
+        cheat_line = f'<p>The one-page cheat-sheet comes out with this lesson. When it’s live, comment <span class="badge kw">{kw}</span> on the Reel or Short to get it in your DMs.</p>'
     body = f"""<p class="crumbs"><a href="../index.html">Home</a> › <a href="../{slug_track}.html">{escape(l['track'])}</a> › <a href="../{slug_track}.html#{l['module'].lower()}">{escape(mod['title'])}</a></p>
 <div class="lesson-head">
 <p class="eyebrow">{escape(l['track'])} · Lesson {escape(lesson_label(l))} · {escape(mod['title'])}</p>
@@ -468,7 +473,7 @@ def lesson_page(l, by_id, mods, site, today):
 <ul class="practice">{''.join(prac)}</ul>
 {alts}
 <h2>Get the cheat-sheet</h2>
-<div class="kwbox"><p>Comment <span class="badge kw">{kw}</span> on the Reel or Short and we’ll DM you the one-page cheat-sheet, the video link and this page.</p>
+<div class="kwbox">{cheat_line}
 <p class="meter-label">Find us on <a href="{escape(site['instagram'])}" rel="noopener">Instagram</a> and <a href="{escape(site['youtube'])}" rel="noopener">YouTube</a> as @thebytesizedfix.</p></div>
 <h2>Sources &amp; further reading</h2>
 <ul>{srcs}</ul>
