@@ -263,7 +263,7 @@
      "url": "https://leetcode.com/problems/fibonacci-number/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -271,7 +271,7 @@
      "url": "https://leetcode.com/problems/contains-duplicate/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -279,7 +279,7 @@
      "url": "https://leetcode.com/problems/richest-customer-wealth/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -287,15 +287,15 @@
      "url": "https://leetcode.com/problems/count-primes/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "takeUforward",
      "title": "Striver: Time & space complexity (A2Z step 1)",
-     "url": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
+     "url": "https://takeuforward.org/prep-hub/strivers-a2z-dsa-sheet",
      "difficulty": null,
      "free": true,
-     "verified": "http",
+     "verified": "browser 2026-11-07",
      "note": "Do the complexity quiz items in Step 1"
     }
    ],
@@ -309,8 +309,8 @@
      "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/"
     },
     {
-     "title": "Python wiki: TimeComplexity of built-ins",
-     "url": "https://wiki.python.org/moin/TimeComplexity"
+     "title": "Python docs: Time complexity of built-in types",
+     "url": "https://docs.python.org/3/builtins/time-complexity.html"
     }
    ],
    "cheatsheet_keyword": "BIGO",
@@ -355,7 +355,7 @@
      "url": "https://leetcode.com/problems/concatenation-of-array/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -363,7 +363,7 @@
      "url": "https://leetcode.com/problems/remove-element/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -371,7 +371,7 @@
      "url": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -379,7 +379,7 @@
      "url": "https://leetcode.com/problems/rotate-array/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -387,7 +387,7 @@
      "url": "https://leetcode.com/problems/shuffle-the-array/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -442,7 +442,7 @@
      "url": "https://leetcode.com/problems/running-sum-of-1d-array/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -450,7 +450,7 @@
      "url": "https://leetcode.com/problems/range-sum-query-immutable/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -458,7 +458,7 @@
      "url": "https://leetcode.com/problems/find-pivot-index/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -466,7 +466,7 @@
      "url": "https://leetcode.com/problems/product-of-array-except-self/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -474,7 +474,7 @@
      "url": "https://leetcode.com/problems/subarray-sum-equals-k/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -482,7 +482,7 @@
      "url": "https://leetcode.com/problems/range-sum-query-2d-immutable/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -537,7 +537,7 @@
      "url": "https://leetcode.com/problems/two-sum/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -545,7 +545,7 @@
      "url": "https://leetcode.com/problems/contains-duplicate/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -553,7 +553,7 @@
      "url": "https://leetcode.com/problems/valid-anagram/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -561,7 +561,7 @@
      "url": "https://leetcode.com/problems/group-anagrams/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -569,7 +569,7 @@
      "url": "https://leetcode.com/problems/top-k-frequent-elements/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -577,7 +577,7 @@
      "url": "https://leetcode.com/problems/longest-consecutive-sequence/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -585,7 +585,7 @@
      "url": "https://leetcode.com/problems/design-hashmap/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -640,7 +640,7 @@
      "url": "https://leetcode.com/problems/valid-palindrome/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -648,7 +648,7 @@
      "url": "https://leetcode.com/problems/longest-common-prefix/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -656,7 +656,7 @@
      "url": "https://leetcode.com/problems/is-subsequence/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -664,7 +664,7 @@
      "url": "https://leetcode.com/problems/longest-palindromic-substring/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -672,7 +672,7 @@
      "url": "https://leetcode.com/problems/string-to-integer-atoi/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -680,7 +680,7 @@
      "url": "https://leetcode.com/problems/encode-and-decode-tinyurl/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -690,7 +690,7 @@
     },
     {
      "title": "Striver's A2Z DSA Sheet (takeUforward)",
-     "url": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
+     "url": "https://takeuforward.org/prep-hub/strivers-a2z-dsa-sheet"
     }
    ],
    "cheatsheet_keyword": "STRINGS",
@@ -735,7 +735,7 @@
      "url": "https://leetcode.com/problems/sort-an-array/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -743,7 +743,7 @@
      "url": "https://leetcode.com/problems/sort-colors/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -751,7 +751,7 @@
      "url": "https://leetcode.com/problems/merge-sorted-array/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -759,7 +759,7 @@
      "url": "https://leetcode.com/problems/largest-number/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -767,7 +767,7 @@
      "url": "https://leetcode.com/problems/kth-largest-element-in-an-array/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -775,7 +775,7 @@
      "url": "https://leetcode.com/problems/h-index/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -834,7 +834,7 @@
      "url": "https://leetcode.com/problems/spiral-matrix/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -842,7 +842,7 @@
      "url": "https://leetcode.com/problems/rotate-image/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -850,7 +850,7 @@
      "url": "https://leetcode.com/problems/set-matrix-zeroes/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -858,7 +858,7 @@
      "url": "https://leetcode.com/problems/valid-sudoku/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -866,7 +866,7 @@
      "url": "https://leetcode.com/problems/search-a-2d-matrix/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -874,7 +874,7 @@
      "url": "https://leetcode.com/problems/game-of-life/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -925,7 +925,7 @@
      "url": "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -933,7 +933,7 @@
      "url": "https://leetcode.com/problems/3sum/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -941,7 +941,7 @@
      "url": "https://leetcode.com/problems/container-with-most-water/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -949,7 +949,7 @@
      "url": "https://leetcode.com/problems/move-zeroes/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -957,7 +957,7 @@
      "url": "https://leetcode.com/problems/trapping-rain-water/",
      "difficulty": "Hard",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -965,7 +965,7 @@
      "url": "https://leetcode.com/problems/squares-of-a-sorted-array/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -1021,7 +1021,7 @@
      "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1029,7 +1029,7 @@
      "url": "https://leetcode.com/problems/maximum-average-subarray-i/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1037,7 +1037,7 @@
      "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1045,7 +1045,7 @@
      "url": "https://leetcode.com/problems/longest-repeating-character-replacement/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1053,7 +1053,7 @@
      "url": "https://leetcode.com/problems/permutation-in-string/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1061,7 +1061,7 @@
      "url": "https://leetcode.com/problems/minimum-window-substring/",
      "difficulty": "Hard",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1069,7 +1069,7 @@
      "url": "https://leetcode.com/problems/fruit-into-baskets/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -1079,7 +1079,7 @@
     },
     {
      "title": "Striver's A2Z DSA Sheet (takeUforward)",
-     "url": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
+     "url": "https://takeuforward.org/prep-hub/strivers-a2z-dsa-sheet"
     }
    ],
    "cheatsheet_keyword": "WINDOW",
@@ -1124,7 +1124,7 @@
      "url": "https://leetcode.com/problems/merge-intervals/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1132,7 +1132,7 @@
      "url": "https://leetcode.com/problems/insert-interval/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1140,7 +1140,7 @@
      "url": "https://leetcode.com/problems/non-overlapping-intervals/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1148,7 +1148,7 @@
      "url": "https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1156,7 +1156,7 @@
      "url": "https://leetcode.com/problems/car-pooling/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1164,7 +1164,7 @@
      "url": "https://leetcode.com/problems/my-calendar-i/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -1215,7 +1215,7 @@
      "url": "https://leetcode.com/problems/fibonacci-number/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1223,7 +1223,7 @@
      "url": "https://leetcode.com/problems/power-of-two/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1231,7 +1231,7 @@
      "url": "https://leetcode.com/problems/reverse-linked-list/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1239,7 +1239,7 @@
      "url": "https://leetcode.com/problems/powx-n/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1247,7 +1247,7 @@
      "url": "https://leetcode.com/problems/k-th-symbol-in-grammar/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1255,7 +1255,7 @@
      "url": "https://leetcode.com/problems/merge-two-sorted-lists/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -1310,7 +1310,7 @@
      "url": "https://leetcode.com/problems/subsets/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1318,7 +1318,7 @@
      "url": "https://leetcode.com/problems/subsets-ii/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1326,7 +1326,7 @@
      "url": "https://leetcode.com/problems/combinations/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1334,7 +1334,7 @@
      "url": "https://leetcode.com/problems/combination-sum/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1342,7 +1342,7 @@
      "url": "https://leetcode.com/problems/permutations/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1350,7 +1350,7 @@
      "url": "https://leetcode.com/problems/letter-combinations-of-a-phone-number/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -1406,7 +1406,7 @@
      "url": "https://leetcode.com/problems/word-search/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1414,7 +1414,7 @@
      "url": "https://leetcode.com/problems/palindrome-partitioning/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1422,7 +1422,7 @@
      "url": "https://leetcode.com/problems/n-queens/",
      "difficulty": "Hard",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1430,7 +1430,7 @@
      "url": "https://leetcode.com/problems/sudoku-solver/",
      "difficulty": "Hard",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1438,7 +1438,7 @@
      "url": "https://leetcode.com/problems/generate-parentheses/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1446,7 +1446,7 @@
      "url": "https://leetcode.com/problems/combination-sum-ii/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -1456,7 +1456,7 @@
     },
     {
      "title": "Striver's A2Z DSA Sheet (takeUforward)",
-     "url": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
+     "url": "https://takeuforward.org/prep-hub/strivers-a2z-dsa-sheet"
     }
    ],
    "cheatsheet_keyword": "NQUEENS",
@@ -1501,7 +1501,7 @@
      "url": "https://leetcode.com/problems/binary-search/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1509,7 +1509,7 @@
      "url": "https://leetcode.com/problems/search-insert-position/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1517,7 +1517,7 @@
      "url": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1525,7 +1525,7 @@
      "url": "https://leetcode.com/problems/search-in-rotated-sorted-array/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1533,7 +1533,7 @@
      "url": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1541,7 +1541,7 @@
      "url": "https://leetcode.com/problems/find-peak-element/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -1596,7 +1596,7 @@
      "url": "https://leetcode.com/problems/koko-eating-bananas/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1604,7 +1604,7 @@
      "url": "https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1612,7 +1612,7 @@
      "url": "https://leetcode.com/problems/split-array-largest-sum/",
      "difficulty": "Hard",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1620,7 +1620,7 @@
      "url": "https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1628,7 +1628,7 @@
      "url": "https://leetcode.com/problems/time-based-key-value-store/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1636,7 +1636,7 @@
      "url": "https://leetcode.com/problems/median-of-two-sorted-arrays/",
      "difficulty": "Hard",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -1691,7 +1691,7 @@
      "url": "https://leetcode.com/problems/reverse-linked-list/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1699,7 +1699,7 @@
      "url": "https://leetcode.com/problems/merge-two-sorted-lists/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1707,7 +1707,7 @@
      "url": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1715,7 +1715,7 @@
      "url": "https://leetcode.com/problems/reorder-list/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1723,7 +1723,7 @@
      "url": "https://leetcode.com/problems/add-two-numbers/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1731,7 +1731,7 @@
      "url": "https://leetcode.com/problems/copy-list-with-random-pointer/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -1786,7 +1786,7 @@
      "url": "https://leetcode.com/problems/linked-list-cycle/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1794,7 +1794,7 @@
      "url": "https://leetcode.com/problems/linked-list-cycle-ii/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1802,7 +1802,7 @@
      "url": "https://leetcode.com/problems/middle-of-the-linked-list/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1810,7 +1810,7 @@
      "url": "https://leetcode.com/problems/palindrome-linked-list/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1818,7 +1818,7 @@
      "url": "https://leetcode.com/problems/happy-number/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1826,7 +1826,7 @@
      "url": "https://leetcode.com/problems/find-the-duplicate-number/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -1881,7 +1881,7 @@
      "url": "https://leetcode.com/problems/valid-parentheses/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1889,7 +1889,7 @@
      "url": "https://leetcode.com/problems/min-stack/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1897,7 +1897,7 @@
      "url": "https://leetcode.com/problems/evaluate-reverse-polish-notation/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1905,7 +1905,7 @@
      "url": "https://leetcode.com/problems/implement-queue-using-stacks/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1913,7 +1913,7 @@
      "url": "https://leetcode.com/problems/decode-string/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1921,7 +1921,7 @@
      "url": "https://leetcode.com/problems/asteroid-collision/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -1981,7 +1981,7 @@
      "url": "https://leetcode.com/problems/daily-temperatures/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1989,7 +1989,7 @@
      "url": "https://leetcode.com/problems/next-greater-element-i/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -1997,7 +1997,7 @@
      "url": "https://leetcode.com/problems/online-stock-span/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2005,7 +2005,7 @@
      "url": "https://leetcode.com/problems/car-fleet/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2013,7 +2013,7 @@
      "url": "https://leetcode.com/problems/largest-rectangle-in-histogram/",
      "difficulty": "Hard",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2021,7 +2021,7 @@
      "url": "https://leetcode.com/problems/sliding-window-maximum/",
      "difficulty": "Hard",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2029,7 +2029,7 @@
      "url": "https://leetcode.com/problems/sum-of-subarray-minimums/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -2039,7 +2039,7 @@
     },
     {
      "title": "Striver's A2Z DSA Sheet (takeUforward)",
-     "url": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
+     "url": "https://takeuforward.org/prep-hub/strivers-a2z-dsa-sheet"
     }
    ],
    "cheatsheet_keyword": "MONOSTACK",
@@ -2085,7 +2085,7 @@
      "url": "https://leetcode.com/problems/binary-tree-inorder-traversal/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2093,7 +2093,7 @@
      "url": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2101,7 +2101,7 @@
      "url": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2109,7 +2109,7 @@
      "url": "https://leetcode.com/problems/invert-binary-tree/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2117,7 +2117,7 @@
      "url": "https://leetcode.com/problems/same-tree/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2125,7 +2125,7 @@
      "url": "https://leetcode.com/problems/binary-tree-right-side-view/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -2180,7 +2180,7 @@
      "url": "https://leetcode.com/problems/diameter-of-binary-tree/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2188,7 +2188,7 @@
      "url": "https://leetcode.com/problems/balanced-binary-tree/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2196,7 +2196,7 @@
      "url": "https://leetcode.com/problems/path-sum-ii/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2204,7 +2204,7 @@
      "url": "https://leetcode.com/problems/subtree-of-another-tree/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2212,7 +2212,7 @@
      "url": "https://leetcode.com/problems/count-good-nodes-in-binary-tree/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2220,7 +2220,7 @@
      "url": "https://leetcode.com/problems/binary-tree-maximum-path-sum/",
      "difficulty": "Hard",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -2276,7 +2276,7 @@
      "url": "https://leetcode.com/problems/search-in-a-binary-search-tree/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2284,7 +2284,7 @@
      "url": "https://leetcode.com/problems/insert-into-a-binary-search-tree/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2292,7 +2292,7 @@
      "url": "https://leetcode.com/problems/delete-node-in-a-bst/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2300,7 +2300,7 @@
      "url": "https://leetcode.com/problems/validate-binary-search-tree/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2308,7 +2308,7 @@
      "url": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2316,7 +2316,7 @@
      "url": "https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -2372,7 +2372,7 @@
      "url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2380,7 +2380,7 @@
      "url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2388,7 +2388,7 @@
      "url": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2396,7 +2396,7 @@
      "url": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/",
      "difficulty": "Hard",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2404,7 +2404,7 @@
      "url": "https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -2414,7 +2414,7 @@
     },
     {
      "title": "Striver's A2Z DSA Sheet (takeUforward)",
-     "url": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
+     "url": "https://takeuforward.org/prep-hub/strivers-a2z-dsa-sheet"
     }
    ],
    "cheatsheet_keyword": "LCA",
@@ -2460,7 +2460,7 @@
      "url": "https://leetcode.com/problems/implement-trie-prefix-tree/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2468,7 +2468,7 @@
      "url": "https://leetcode.com/problems/design-add-and-search-words-data-structure/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2476,7 +2476,7 @@
      "url": "https://leetcode.com/problems/word-search-ii/",
      "difficulty": "Hard",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2484,7 +2484,7 @@
      "url": "https://leetcode.com/problems/replace-words/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2492,7 +2492,7 @@
      "url": "https://leetcode.com/problems/search-suggestions-system/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -2548,7 +2548,7 @@
      "url": "https://leetcode.com/problems/kth-largest-element-in-a-stream/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2556,7 +2556,7 @@
      "url": "https://leetcode.com/problems/last-stone-weight/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2564,7 +2564,7 @@
      "url": "https://leetcode.com/problems/k-closest-points-to-origin/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2572,7 +2572,7 @@
      "url": "https://leetcode.com/problems/task-scheduler/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2580,7 +2580,7 @@
      "url": "https://leetcode.com/problems/sort-characters-by-frequency/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -2635,7 +2635,7 @@
      "url": "https://leetcode.com/problems/top-k-frequent-elements/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2643,7 +2643,7 @@
      "url": "https://leetcode.com/problems/top-k-frequent-words/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2651,7 +2651,7 @@
      "url": "https://leetcode.com/problems/merge-k-sorted-lists/",
      "difficulty": "Hard",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2659,7 +2659,7 @@
      "url": "https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2667,7 +2667,7 @@
      "url": "https://leetcode.com/problems/find-k-pairs-with-smallest-sums/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2675,7 +2675,7 @@
      "url": "https://leetcode.com/problems/reorganize-string/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -2730,7 +2730,7 @@
      "url": "https://leetcode.com/problems/find-median-from-data-stream/",
      "difficulty": "Hard",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2738,7 +2738,7 @@
      "url": "https://leetcode.com/problems/ipo/",
      "difficulty": "Hard",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2746,7 +2746,7 @@
      "url": "https://leetcode.com/problems/single-threaded-cpu/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2754,7 +2754,7 @@
      "url": "https://leetcode.com/problems/meeting-rooms-iii/",
      "difficulty": "Hard",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -2806,7 +2806,7 @@
      "url": "https://leetcode.com/problems/find-if-path-exists-in-graph/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2814,7 +2814,7 @@
      "url": "https://leetcode.com/problems/clone-graph/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2822,7 +2822,7 @@
      "url": "https://leetcode.com/problems/number-of-provinces/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2830,7 +2830,7 @@
      "url": "https://leetcode.com/problems/keys-and-rooms/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2838,7 +2838,7 @@
      "url": "https://leetcode.com/problems/course-schedule/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "GeeksforGeeks",
@@ -2846,7 +2846,7 @@
      "url": "https://www.geeksforgeeks.org/problems/connected-components-in-an-undirected-graph/1",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     }
    ],
    "sources": [
@@ -2906,7 +2906,7 @@
      "url": "https://leetcode.com/problems/flood-fill/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2914,7 +2914,7 @@
      "url": "https://leetcode.com/problems/number-of-islands/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2922,7 +2922,7 @@
      "url": "https://leetcode.com/problems/max-area-of-island/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2930,7 +2930,7 @@
      "url": "https://leetcode.com/problems/rotting-oranges/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2938,7 +2938,7 @@
      "url": "https://leetcode.com/problems/pacific-atlantic-water-flow/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2946,7 +2946,7 @@
      "url": "https://leetcode.com/problems/surrounded-regions/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -2954,7 +2954,7 @@
      "url": "https://leetcode.com/problems/01-matrix/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -3009,7 +3009,7 @@
      "url": "https://leetcode.com/problems/course-schedule/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3017,7 +3017,7 @@
      "url": "https://leetcode.com/problems/course-schedule-ii/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3025,7 +3025,7 @@
      "url": "https://leetcode.com/problems/find-eventual-safe-states/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3033,7 +3033,7 @@
      "url": "https://leetcode.com/problems/parallel-courses-iii/",
      "difficulty": "Hard",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "GeeksforGeeks",
@@ -3041,7 +3041,7 @@
      "url": "https://www.geeksforgeeks.org/problems/alien-dictionary/1",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     }
    ],
    "sources": [
@@ -3096,7 +3096,7 @@
      "url": "https://leetcode.com/problems/redundant-connection/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3104,7 +3104,7 @@
      "url": "https://leetcode.com/problems/number-of-provinces/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3112,7 +3112,7 @@
      "url": "https://leetcode.com/problems/accounts-merge/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3120,7 +3120,7 @@
      "url": "https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3128,7 +3128,7 @@
      "url": "https://leetcode.com/problems/satisfiability-of-equality-equations/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -3184,7 +3184,7 @@
      "url": "https://leetcode.com/problems/network-delay-time/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3192,7 +3192,7 @@
      "url": "https://leetcode.com/problems/path-with-minimum-effort/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3200,7 +3200,7 @@
      "url": "https://leetcode.com/problems/cheapest-flights-within-k-stops/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3208,7 +3208,7 @@
      "url": "https://leetcode.com/problems/swim-in-rising-water/",
      "difficulty": "Hard",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3216,7 +3216,7 @@
      "url": "https://leetcode.com/problems/path-with-maximum-probability/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3224,7 +3224,7 @@
      "url": "https://leetcode.com/problems/shortest-path-in-binary-matrix/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -3284,7 +3284,7 @@
      "url": "https://leetcode.com/problems/min-cost-to-connect-all-points/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3292,7 +3292,7 @@
      "url": "https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/",
      "difficulty": "Hard",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "GeeksforGeeks",
@@ -3300,7 +3300,7 @@
      "url": "https://www.geeksforgeeks.org/problems/minimum-spanning-tree/1",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     }
    ],
    "sources": [
@@ -3360,7 +3360,7 @@
      "url": "https://leetcode.com/problems/word-ladder/",
      "difficulty": "Hard",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3368,7 +3368,7 @@
      "url": "https://leetcode.com/problems/open-the-lock/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3376,7 +3376,7 @@
      "url": "https://leetcode.com/problems/is-graph-bipartite/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3384,7 +3384,7 @@
      "url": "https://leetcode.com/problems/critical-connections-in-a-network/",
      "difficulty": "Hard",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3392,7 +3392,7 @@
      "url": "https://leetcode.com/problems/reconstruct-itinerary/",
      "difficulty": "Hard",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -3448,7 +3448,7 @@
      "url": "https://leetcode.com/problems/assign-cookies/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3456,7 +3456,7 @@
      "url": "https://leetcode.com/problems/jump-game/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3464,7 +3464,7 @@
      "url": "https://leetcode.com/problems/jump-game-ii/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3472,7 +3472,7 @@
      "url": "https://leetcode.com/problems/gas-station/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3480,7 +3480,7 @@
      "url": "https://leetcode.com/problems/hand-of-straights/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3488,7 +3488,7 @@
      "url": "https://leetcode.com/problems/partition-labels/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3496,7 +3496,7 @@
      "url": "https://leetcode.com/problems/valid-parenthesis-string/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -3506,7 +3506,7 @@
     },
     {
      "title": "Striver's A2Z DSA Sheet (takeUforward)",
-     "url": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
+     "url": "https://takeuforward.org/prep-hub/strivers-a2z-dsa-sheet"
     }
    ],
    "cheatsheet_keyword": "GREEDY",
@@ -3552,7 +3552,7 @@
      "url": "https://leetcode.com/problems/maximum-subarray/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3560,7 +3560,7 @@
      "url": "https://leetcode.com/problems/maximum-product-subarray/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3568,7 +3568,7 @@
      "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3576,7 +3576,7 @@
      "url": "https://leetcode.com/problems/majority-element/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3584,7 +3584,7 @@
      "url": "https://leetcode.com/problems/maximum-sum-circular-subarray/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -3594,7 +3594,7 @@
     },
     {
      "title": "Striver's A2Z DSA Sheet (takeUforward)",
-     "url": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
+     "url": "https://takeuforward.org/prep-hub/strivers-a2z-dsa-sheet"
     }
    ],
    "cheatsheet_keyword": "KADANE",
@@ -3639,7 +3639,7 @@
      "url": "https://leetcode.com/problems/climbing-stairs/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3647,7 +3647,7 @@
      "url": "https://leetcode.com/problems/min-cost-climbing-stairs/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3655,7 +3655,7 @@
      "url": "https://leetcode.com/problems/n-th-tribonacci-number/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3663,7 +3663,7 @@
      "url": "https://leetcode.com/problems/house-robber/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3671,7 +3671,7 @@
      "url": "https://leetcode.com/problems/coin-change/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -3730,7 +3730,7 @@
      "url": "https://leetcode.com/problems/house-robber/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3738,7 +3738,7 @@
      "url": "https://leetcode.com/problems/house-robber-ii/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3746,7 +3746,7 @@
      "url": "https://leetcode.com/problems/decode-ways/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3754,7 +3754,7 @@
      "url": "https://leetcode.com/problems/word-break/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3762,7 +3762,7 @@
      "url": "https://leetcode.com/problems/coin-change/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3770,7 +3770,7 @@
      "url": "https://leetcode.com/problems/perfect-squares/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -3825,7 +3825,7 @@
      "url": "https://leetcode.com/problems/partition-equal-subset-sum/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3833,7 +3833,7 @@
      "url": "https://leetcode.com/problems/target-sum/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3841,7 +3841,7 @@
      "url": "https://leetcode.com/problems/last-stone-weight-ii/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3849,7 +3849,7 @@
      "url": "https://leetcode.com/problems/coin-change-ii/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3857,7 +3857,7 @@
      "url": "https://leetcode.com/problems/ones-and-zeroes/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "GeeksforGeeks",
@@ -3865,7 +3865,7 @@
      "url": "https://www.geeksforgeeks.org/problems/0-1-knapsack-problem0945/1",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     }
    ],
    "sources": [
@@ -3921,7 +3921,7 @@
      "url": "https://leetcode.com/problems/unique-paths/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3929,7 +3929,7 @@
      "url": "https://leetcode.com/problems/unique-paths-ii/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3937,7 +3937,7 @@
      "url": "https://leetcode.com/problems/minimum-path-sum/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3945,7 +3945,7 @@
      "url": "https://leetcode.com/problems/triangle/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3953,7 +3953,7 @@
      "url": "https://leetcode.com/problems/maximal-square/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -3961,7 +3961,7 @@
      "url": "https://leetcode.com/problems/dungeon-game/",
      "difficulty": "Hard",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -3971,7 +3971,7 @@
     },
     {
      "title": "Striver's A2Z DSA Sheet (takeUforward)",
-     "url": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
+     "url": "https://takeuforward.org/prep-hub/strivers-a2z-dsa-sheet"
     }
    ],
    "cheatsheet_keyword": "GRIDDP",
@@ -4017,7 +4017,7 @@
      "url": "https://leetcode.com/problems/longest-common-subsequence/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -4025,7 +4025,7 @@
      "url": "https://leetcode.com/problems/edit-distance/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -4033,7 +4033,7 @@
      "url": "https://leetcode.com/problems/longest-palindromic-subsequence/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -4041,7 +4041,7 @@
      "url": "https://leetcode.com/problems/distinct-subsequences/",
      "difficulty": "Hard",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -4049,7 +4049,7 @@
      "url": "https://leetcode.com/problems/interleaving-string/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -4057,7 +4057,7 @@
      "url": "https://leetcode.com/problems/regular-expression-matching/",
      "difficulty": "Hard",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -4113,7 +4113,7 @@
      "url": "https://leetcode.com/problems/longest-increasing-subsequence/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -4121,7 +4121,7 @@
      "url": "https://leetcode.com/problems/number-of-longest-increasing-subsequence/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -4129,7 +4129,7 @@
      "url": "https://leetcode.com/problems/russian-doll-envelopes/",
      "difficulty": "Hard",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -4137,7 +4137,7 @@
      "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -4145,7 +4145,7 @@
      "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -4153,7 +4153,7 @@
      "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/",
      "difficulty": "Hard",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -4208,7 +4208,7 @@
      "url": "https://leetcode.com/problems/minimum-cost-to-cut-a-stick/",
      "difficulty": "Hard",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -4216,7 +4216,7 @@
      "url": "https://leetcode.com/problems/burst-balloons/",
      "difficulty": "Hard",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -4224,7 +4224,7 @@
      "url": "https://leetcode.com/problems/palindrome-partitioning-ii/",
      "difficulty": "Hard",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -4232,7 +4232,7 @@
      "url": "https://leetcode.com/problems/minimum-score-triangulation-of-polygon/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -4240,7 +4240,7 @@
      "url": "https://leetcode.com/problems/stone-game/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -4296,7 +4296,7 @@
      "url": "https://leetcode.com/problems/house-robber-iii/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -4304,7 +4304,7 @@
      "url": "https://leetcode.com/problems/binary-tree-cameras/",
      "difficulty": "Hard",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -4312,7 +4312,7 @@
      "url": "https://leetcode.com/problems/partition-to-k-equal-sum-subsets/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -4320,7 +4320,7 @@
      "url": "https://leetcode.com/problems/shortest-path-visiting-all-nodes/",
      "difficulty": "Hard",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -4328,7 +4328,7 @@
      "url": "https://leetcode.com/problems/smallest-sufficient-team/",
      "difficulty": "Hard",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -4384,7 +4384,7 @@
      "url": "https://leetcode.com/problems/single-number/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -4392,7 +4392,7 @@
      "url": "https://leetcode.com/problems/number-of-1-bits/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -4400,7 +4400,7 @@
      "url": "https://leetcode.com/problems/counting-bits/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -4408,7 +4408,7 @@
      "url": "https://leetcode.com/problems/reverse-bits/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -4416,7 +4416,7 @@
      "url": "https://leetcode.com/problems/missing-number/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -4424,7 +4424,7 @@
      "url": "https://leetcode.com/problems/sum-of-two-integers/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -4432,7 +4432,7 @@
      "url": "https://leetcode.com/problems/count-primes/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -4440,7 +4440,7 @@
      "url": "https://leetcode.com/problems/powx-n/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -4500,7 +4500,7 @@
      "url": "https://leetcode.com/problems/range-sum-query-mutable/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -4508,7 +4508,7 @@
      "url": "https://leetcode.com/problems/count-of-smaller-numbers-after-self/",
      "difficulty": "Hard",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -4516,7 +4516,7 @@
      "url": "https://leetcode.com/problems/my-calendar-ii/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -4524,7 +4524,7 @@
      "url": "https://leetcode.com/problems/falling-squares/",
      "difficulty": "Hard",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -4584,7 +4584,7 @@
      "url": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -4592,7 +4592,7 @@
      "url": "https://leetcode.com/problems/repeated-substring-pattern/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -4600,7 +4600,7 @@
      "url": "https://leetcode.com/problems/shortest-palindrome/",
      "difficulty": "Hard",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -4608,7 +4608,7 @@
      "url": "https://leetcode.com/problems/longest-happy-prefix/",
      "difficulty": "Hard",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -4616,7 +4616,7 @@
      "url": "https://leetcode.com/problems/repeated-dna-sequences/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -4676,7 +4676,7 @@
      "url": "https://leetcode.com/problems/lru-cache/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -4684,7 +4684,7 @@
      "url": "https://leetcode.com/problems/lfu-cache/",
      "difficulty": "Hard",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -4692,7 +4692,7 @@
      "url": "https://leetcode.com/problems/design-browser-history/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -4700,7 +4700,7 @@
      "url": "https://leetcode.com/problems/snapshot-array/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -4708,7 +4708,7 @@
      "url": "https://leetcode.com/problems/insert-delete-getrandom-o1/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -4716,7 +4716,7 @@
      "url": "https://leetcode.com/problems/design-twitter/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -4769,7 +4769,7 @@
      "url": "https://hpbn.co/primer-on-latency-and-bandwidth/",
      "difficulty": null,
      "free": true,
-     "verified": "http",
+     "verified": "browser 2026-11-07",
      "note": "Read alongside: latency & bandwidth primer"
     },
     {
@@ -4778,7 +4778,7 @@
      "url": "https://www.hellointerview.com/learn/system-design/core-concepts/networking-essentials",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -4786,7 +4786,7 @@
      "url": "https://gist.github.com/jboner/2841832",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     }
    ],
    "sources": [
@@ -4842,10 +4842,10 @@
     {
      "platform": "Reading / hands-on",
      "title": "Hands-on: `dig +trace` your college/company domain and label each hop",
-     "url": "https://howdns.works/",
+     "url": "https://dnsimple.com/comics/how-dns-works/",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "System Design Primer",
@@ -4853,22 +4853,22 @@
      "url": "https://github.com/donnemartin/system-design-primer#domain-name-system",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
      "title": "Exercise: draw the full lookup path for www.<yourcollege>.ac.in and mark where each cache could answer",
-     "url": "https://howdns.works/",
+     "url": "https://dnsimple.com/comics/how-dns-works/",
      "difficulty": null,
      "free": true,
-     "verified": "http",
+     "verified": "browser 2026-11-07",
      "note": "Try it yourself first; the link is the answer key / reference"
     }
    ],
    "sources": [
     {
      "title": "How DNS Works (illustrated comic)",
-     "url": "https://howdns.works/"
+     "url": "https://dnsimple.com/comics/how-dns-works/"
     },
     {
      "title": "System Design Primer: Domain name system",
@@ -4921,7 +4921,7 @@
      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -4929,7 +4929,7 @@
      "url": "https://tls13.xargs.org/",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -4937,7 +4937,7 @@
      "url": "https://leetcode.com/problems/validate-ip-address/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -4945,7 +4945,7 @@
      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview",
      "difficulty": null,
      "free": true,
-     "verified": "http",
+     "verified": "browser 2026-11-07",
      "note": "Try it yourself first; the link is the answer key / reference"
     }
    ],
@@ -5005,7 +5005,7 @@
      "url": "https://leetcode.com/problems/design-underground-system/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -5013,7 +5013,7 @@
      "url": "https://leetcode.com/problems/design-browser-history/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "Hello Interview",
@@ -5021,7 +5021,7 @@
      "url": "https://www.hellointerview.com/learn/system-design/core-concepts/api-design",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Hello Interview",
@@ -5029,7 +5029,7 @@
      "url": "https://www.hellointerview.com/learn/system-design/core-concepts/api-design",
      "difficulty": null,
      "free": true,
-     "verified": "http",
+     "verified": "browser 2026-11-07",
      "note": "Check your design against the guide"
     }
    ],
@@ -5084,12 +5084,12 @@
    "animation": "Three lanes comparing request counts over time; persistent connection pipe; connection-count meter on a server.",
    "practice": [
     {
-     "platform": "Hello Interview",
-     "title": "Hello Interview: Real-time updates pattern",
-     "url": "https://www.hellointerview.com/learn/system-design/patterns/realtime-updates",
+     "platform": "Reading / hands-on",
+     "title": "MDN: Using server-sent events",
+     "url": "https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Hello Interview",
@@ -5097,7 +5097,7 @@
      "url": "https://www.hellointerview.com/learn/system-design/problem-breakdowns/fb-live-comments",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -5105,13 +5105,13 @@
      "url": "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     }
    ],
    "sources": [
     {
-     "title": "Hello Interview: Real-time updates pattern",
-     "url": "https://www.hellointerview.com/learn/system-design/patterns/realtime-updates"
+     "title": "javascript.info: Long polling",
+     "url": "https://javascript.info/long-polling"
     },
     {
      "title": "MDN: WebSockets API",
@@ -5159,12 +5159,12 @@
    "animation": "Calculator-style chain of conversions; latency ladder from L1 cache to cross-continent; storage stack growing over 5 years.",
    "practice": [
     {
-     "platform": "Hello Interview",
-     "title": "Hello Interview: Numbers to know",
-     "url": "https://www.hellointerview.com/learn/system-design/core-concepts/numbers-to-know",
+     "platform": "System Design Primer",
+     "title": "System Design Primer: Back-of-the-envelope calculations (+ powers of two, latency tables)",
+     "url": "https://github.com/donnemartin/system-design-primer#back-of-the-envelope-calculations",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -5172,15 +5172,15 @@
      "url": "https://gist.github.com/jboner/2841832",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
-     "platform": "Hello Interview",
+     "platform": "Reading / hands-on",
      "title": "Exercise: estimate storage for 5 years of a UPI-like transaction log (assume 50 crore txns/day, 1 KB each)",
-     "url": "https://www.hellointerview.com/learn/system-design/core-concepts/numbers-to-know",
+     "url": "https://github.com/donnemartin/system-design-primer#back-of-the-envelope-calculations",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     }
    ],
    "sources": [
@@ -5189,8 +5189,8 @@
      "url": "https://gist.github.com/jboner/2841832"
     },
     {
-     "title": "Hello Interview: Numbers to know",
-     "url": "https://www.hellointerview.com/learn/system-design/core-concepts/numbers-to-know"
+     "title": "System Design Primer: Back-of-the-envelope calculations (+ powers of two, latency tables)",
+     "url": "https://github.com/donnemartin/system-design-primer#back-of-the-envelope-calculations"
     },
     {
      "title": "System Design Primer (donnemartin)",
@@ -5239,7 +5239,7 @@
      "url": "https://github.com/donnemartin/system-design-primer/blob/master/solutions/system_design/scaling_aws/README.md",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Hello Interview",
@@ -5247,7 +5247,7 @@
      "url": "https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "System Design Primer",
@@ -5255,7 +5255,7 @@
      "url": "https://github.com/donnemartin/system-design-primer/blob/master/solutions/system_design/scaling_aws/README.md",
      "difficulty": null,
      "free": true,
-     "verified": "http",
+     "verified": "browser 2026-11-07",
      "note": "Try it yourself first; the link is the answer key / reference"
     }
    ],
@@ -5269,8 +5269,8 @@
      "url": "https://github.com/donnemartin/system-design-primer"
     },
     {
-     "title": "Designing Data-Intensive Applications (Kleppmann) — book site",
-     "url": "https://dataintensive.net/"
+     "title": "Martin Kleppmann: Distributed Systems lecture notes (Cambridge, free PDF)",
+     "url": "https://www.cl.cam.ac.uk/teaching/2122/ConcDisSys/dist-sys-notes.pdf"
     }
    ],
    "cheatsheet_keyword": "SCALE",
@@ -5315,7 +5315,7 @@
      "url": "https://github.com/donnemartin/system-design-primer#load-balancer",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -5323,7 +5323,7 @@
      "url": "https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -5331,7 +5331,7 @@
      "url": "https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     }
    ],
    "sources": [
@@ -5340,8 +5340,8 @@
      "url": "https://github.com/donnemartin/system-design-primer#load-balancer"
     },
     {
-     "title": "HAProxy: Load balancing algorithms explained",
-     "url": "https://www.haproxy.com/blog/fundamentals-load-balancing-and-the-right-distribution-algorithm-for-you"
+     "title": "HAProxy: Load-balancing algorithms",
+     "url": "https://www.haproxy.com/glossary/what-are-load-balancing-algorithms"
     },
     {
      "title": "NGINX docs: HTTP load balancing",
@@ -5391,7 +5391,7 @@
      "url": "https://www.hellointerview.com/learn/system-design/deep-dives/api-gateway",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "System Design Primer",
@@ -5399,7 +5399,7 @@
      "url": "https://github.com/donnemartin/system-design-primer#reverse-proxy-web-server",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Hello Interview",
@@ -5407,7 +5407,7 @@
      "url": "https://www.hellointerview.com/learn/system-design/deep-dives/api-gateway",
      "difficulty": null,
      "free": true,
-     "verified": "http",
+     "verified": "browser 2026-11-07",
      "note": "Try it yourself first; the link is the answer key / reference"
     },
     {
@@ -5416,7 +5416,7 @@
      "url": "https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     }
    ],
    "sources": [
@@ -5476,7 +5476,7 @@
      "url": "https://github.com/donnemartin/system-design-primer#content-delivery-network",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -5484,7 +5484,7 @@
      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Caching",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -5492,7 +5492,7 @@
      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Caching",
      "difficulty": null,
      "free": true,
-     "verified": "http",
+     "verified": "browser 2026-11-07",
      "note": "Try it yourself first; the link is the answer key / reference"
     }
    ],
@@ -5552,7 +5552,7 @@
      "url": "https://leetcode.com/problems/lru-cache/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -5560,7 +5560,7 @@
      "url": "https://leetcode.com/problems/time-based-key-value-store/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "Hello Interview",
@@ -5568,15 +5568,15 @@
      "url": "https://www.hellointerview.com/learn/system-design/core-concepts/caching",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
-     "platform": "Hello Interview",
-     "title": "Hello Interview breakdown: Distributed cache",
-     "url": "https://www.hellointerview.com/learn/system-design/problem-breakdowns/distributed-cache",
+     "platform": "Reading / hands-on",
+     "title": "AWS: Caching best practices (cache-aside, write-through, TTL, stampede)",
+     "url": "https://aws.amazon.com/caching/best-practices/",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     }
    ],
    "sources": [
@@ -5635,7 +5635,7 @@
      "url": "https://www.hellointerview.com/learn/system-design/core-concepts/data-modeling",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Hello Interview",
@@ -5643,7 +5643,7 @@
      "url": "https://www.hellointerview.com/learn/system-design/core-concepts/data-modeling",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -5651,7 +5651,7 @@
      "url": "https://leetcode.com/problems/combine-two-tables/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -5659,7 +5659,7 @@
      "url": "https://leetcode.com/problems/second-highest-salary/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -5667,7 +5667,7 @@
      "url": "https://leetcode.com/problems/department-top-three-salaries/",
      "difficulty": "Hard",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -5676,8 +5676,8 @@
      "url": "https://github.com/donnemartin/system-design-primer#database"
     },
     {
-     "title": "Designing Data-Intensive Applications (Kleppmann) — book site",
-     "url": "https://dataintensive.net/"
+     "title": "Martin Kleppmann: Distributed Systems lecture notes (Cambridge, free PDF)",
+     "url": "https://www.cl.cam.ac.uk/teaching/2122/ConcDisSys/dist-sys-notes.pdf"
     },
     {
      "title": "Hello Interview: Data modeling",
@@ -5721,12 +5721,12 @@
    "animation": "Table rows scanned one by one vs B-tree descent; LSM memtable flushing to sorted files and compaction; composite index left-prefix demo.",
    "practice": [
     {
-     "platform": "Hello Interview",
-     "title": "Hello Interview: Database indexing",
-     "url": "https://www.hellointerview.com/learn/system-design/core-concepts/db-indexing",
+     "platform": "Reading / hands-on",
+     "title": "Use The Index, Luke!: Anatomy of an index (B-tree, leaf nodes)",
+     "url": "https://use-the-index-luke.com/sql/anatomy",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -5734,7 +5734,7 @@
      "url": "https://use-the-index-luke.com/",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -5742,7 +5742,7 @@
      "url": "https://leetcode.com/problems/customers-who-never-order/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -5750,7 +5750,7 @@
      "url": "https://leetcode.com/problems/rising-temperature/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -5763,8 +5763,8 @@
      "url": "https://use-the-index-luke.com/"
     },
     {
-     "title": "Hello Interview: Database indexing",
-     "url": "https://www.hellointerview.com/learn/system-design/core-concepts/db-indexing"
+     "title": "PostgreSQL docs: Index types (B-tree, hash, GiST, GIN, BRIN)",
+     "url": "https://www.postgresql.org/docs/current/indexes-types.html"
     }
    ],
    "cheatsheet_keyword": "INDEX",
@@ -5809,15 +5809,15 @@
      "url": "https://www.postgresql.org/docs/current/transaction-iso.html",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
-     "platform": "Hello Interview",
-     "title": "Hello Interview: Dealing with contention",
-     "url": "https://www.hellointerview.com/learn/system-design/patterns/dealing-with-contention",
+     "platform": "Reading / hands-on",
+     "title": "PostgreSQL docs: Explicit locking (row locks, SELECT … FOR UPDATE)",
+     "url": "https://www.postgresql.org/docs/current/explicit-locking.html",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -5825,7 +5825,7 @@
      "url": "https://leetcode.com/problems/simple-bank-system/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -5834,12 +5834,12 @@
      "url": "https://www.postgresql.org/docs/current/transaction-iso.html"
     },
     {
-     "title": "Designing Data-Intensive Applications (Kleppmann) — book site",
-     "url": "https://dataintensive.net/"
+     "title": "Martin Kleppmann: Distributed Systems lecture notes (Cambridge, free PDF)",
+     "url": "https://www.cl.cam.ac.uk/teaching/2122/ConcDisSys/dist-sys-notes.pdf"
     },
     {
-     "title": "Hello Interview: Dealing with contention",
-     "url": "https://www.hellointerview.com/learn/system-design/patterns/dealing-with-contention"
+     "title": "PostgreSQL docs: Explicit locking (row locks, SELECT … FOR UPDATE)",
+     "url": "https://www.postgresql.org/docs/current/explicit-locking.html"
     }
    ],
    "cheatsheet_keyword": "ACID",
@@ -5879,12 +5879,12 @@
    "animation": "Leader DB streaming log entries to followers with lag meters; client reading stale follower; failover promotion.",
    "practice": [
     {
-     "platform": "Hello Interview",
-     "title": "Hello Interview: Scaling reads",
-     "url": "https://www.hellointerview.com/learn/system-design/patterns/scaling-reads",
+     "platform": "System Design Primer",
+     "title": "System Design Primer: Master-slave replication (read replicas)",
+     "url": "https://github.com/donnemartin/system-design-primer#master-slave-replication",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -5892,22 +5892,22 @@
      "url": "https://www.postgresql.org/docs/current/high-availability.html",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
      "title": "Exercise: a user updates their profile photo and still sees the old one — list 3 fixes using read-your-writes",
-     "url": "https://dataintensive.net/",
+     "url": "https://jepsen.io/consistency/models/read-your-writes",
      "difficulty": null,
      "free": true,
-     "verified": "http",
+     "verified": "browser 2026-11-07",
      "note": "Try it yourself first; the link is the answer key / reference"
     }
    ],
    "sources": [
     {
-     "title": "Designing Data-Intensive Applications (Kleppmann) — book site",
-     "url": "https://dataintensive.net/"
+     "title": "Martin Kleppmann: Distributed Systems lecture notes (Cambridge, free PDF)",
+     "url": "https://www.cl.cam.ac.uk/teaching/2122/ConcDisSys/dist-sys-notes.pdf"
     },
     {
      "title": "PostgreSQL docs: High availability & replication",
@@ -5960,15 +5960,15 @@
      "url": "https://www.hellointerview.com/learn/system-design/core-concepts/sharding",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
-     "platform": "Hello Interview",
-     "title": "Hello Interview: Scaling writes",
-     "url": "https://www.hellointerview.com/learn/system-design/patterns/scaling-writes",
+     "platform": "System Design Primer",
+     "title": "System Design Primer: Sharding",
+     "url": "https://github.com/donnemartin/system-design-primer#sharding",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Hello Interview",
@@ -5976,7 +5976,7 @@
      "url": "https://www.hellointerview.com/learn/system-design/core-concepts/sharding",
      "difficulty": null,
      "free": true,
-     "verified": "http",
+     "verified": "browser 2026-11-07",
      "note": "Try it yourself first; the link is the answer key / reference"
     }
    ],
@@ -5986,8 +5986,8 @@
      "url": "https://www.hellointerview.com/learn/system-design/core-concepts/sharding"
     },
     {
-     "title": "Designing Data-Intensive Applications (Kleppmann) — book site",
-     "url": "https://dataintensive.net/"
+     "title": "Martin Kleppmann: Distributed Systems lecture notes (Cambridge, free PDF)",
+     "url": "https://www.cl.cam.ac.uk/teaching/2122/ConcDisSys/dist-sys-notes.pdf"
     },
     {
      "title": "System Design Primer: Database (RDBMS, NoSQL)",
@@ -6037,7 +6037,7 @@
      "url": "https://www.hellointerview.com/learn/system-design/core-concepts/consistent-hashing",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -6045,7 +6045,7 @@
      "url": "https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Hello Interview",
@@ -6053,7 +6053,7 @@
      "url": "https://www.hellointerview.com/learn/system-design/core-concepts/consistent-hashing",
      "difficulty": null,
      "free": true,
-     "verified": "http",
+     "verified": "browser 2026-11-07",
      "note": "Try it yourself first; the link is the answer key / reference"
     }
    ],
@@ -6109,12 +6109,12 @@
    "animation": "Client uploading chunks directly to storage; DB row pointing to object key; signed URL with expiry clock.",
    "practice": [
     {
-     "platform": "Hello Interview",
-     "title": "Hello Interview: Handling large blobs",
-     "url": "https://www.hellointerview.com/learn/system-design/patterns/large-blobs",
+     "platform": "Reading / hands-on",
+     "title": "AWS S3 docs: Upload and download with presigned URLs",
+     "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-presigned-url.html",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Hello Interview",
@@ -6122,7 +6122,7 @@
      "url": "https://www.hellointerview.com/learn/system-design/problem-breakdowns/dropbox",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -6130,22 +6130,22 @@
      "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
-     "platform": "Hello Interview",
+     "platform": "Reading / hands-on",
      "title": "Exercise: design resumable upload for a 2 GB wedding video over flaky 4G",
-     "url": "https://www.hellointerview.com/learn/system-design/patterns/large-blobs",
+     "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/mpuoverview.html",
      "difficulty": null,
      "free": true,
-     "verified": "http",
+     "verified": "browser 2026-11-07",
      "note": "Try it yourself first; the link is the answer key / reference"
     }
    ],
    "sources": [
     {
-     "title": "Hello Interview: Handling large blobs",
-     "url": "https://www.hellointerview.com/learn/system-design/patterns/large-blobs"
+     "title": "AWS S3 docs: Upload and download with presigned URLs",
+     "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-presigned-url.html"
     },
     {
      "title": "AWS docs: What is Amazon S3?",
@@ -6194,7 +6194,7 @@
      "url": "https://www.hellointerview.com/learn/system-design/core-concepts/cap-theorem",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "System Design Primer",
@@ -6202,7 +6202,7 @@
      "url": "https://github.com/donnemartin/system-design-primer#availability-vs-consistency",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Hello Interview",
@@ -6210,7 +6210,7 @@
      "url": "https://www.hellointerview.com/learn/system-design/core-concepts/cap-theorem",
      "difficulty": null,
      "free": true,
-     "verified": "http",
+     "verified": "browser 2026-11-07",
      "note": "Try it yourself first; the link is the answer key / reference"
     }
    ],
@@ -6224,8 +6224,8 @@
      "url": "https://github.com/donnemartin/system-design-primer#availability-vs-consistency"
     },
     {
-     "title": "Designing Data-Intensive Applications (Kleppmann) — book site",
-     "url": "https://dataintensive.net/"
+     "title": "Martin Kleppmann: Distributed Systems lecture notes (Cambridge, free PDF)",
+     "url": "https://www.cl.cam.ac.uk/teaching/2122/ConcDisSys/dist-sys-notes.pdf"
     }
    ],
    "cheatsheet_keyword": "CAP",
@@ -6270,7 +6270,7 @@
      "url": "https://jepsen.io/consistency",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -6278,7 +6278,7 @@
      "url": "https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -6286,7 +6286,7 @@
      "url": "https://jepsen.io/consistency",
      "difficulty": null,
      "free": true,
-     "verified": "http",
+     "verified": "browser 2026-11-07",
      "note": "Try it yourself first; the link is the answer key / reference"
     }
    ],
@@ -6296,8 +6296,8 @@
      "url": "https://jepsen.io/consistency"
     },
     {
-     "title": "Designing Data-Intensive Applications (Kleppmann) — book site",
-     "url": "https://dataintensive.net/"
+     "title": "Martin Kleppmann: Distributed Systems lecture notes (Cambridge, free PDF)",
+     "url": "https://www.cl.cam.ac.uk/teaching/2122/ConcDisSys/dist-sys-notes.pdf"
     },
     {
      "title": "Amazon Dynamo paper (2007)",
@@ -6346,7 +6346,7 @@
      "url": "https://www.hellointerview.com/learn/system-design/deep-dives/kafka",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "System Design Primer",
@@ -6354,7 +6354,7 @@
      "url": "https://github.com/donnemartin/system-design-primer#asynchronism",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -6362,7 +6362,7 @@
      "url": "https://kafka.apache.org/intro",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     }
    ],
    "sources": [
@@ -6422,23 +6422,23 @@
      "url": "https://docs.stripe.com/api/idempotent_requests",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
      "title": "AWS Builders' Library: Timeouts, retries and backoff with jitter",
-     "url": "https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/",
+     "url": "https://builder.aws.com/content/3EumjoZascWd1oZiEgL8ORlv3qE/timeouts-retries-and-backoff-with-jitter",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
-     "platform": "Hello Interview",
-     "title": "Hello Interview breakdown: Payment system",
-     "url": "https://www.hellointerview.com/learn/system-design/problem-breakdowns/payment-system",
+     "platform": "Reading / hands-on",
+     "title": "Airbnb Tech Blog: Avoiding double payments in a distributed payments system",
+     "url": "https://medium.com/airbnb-engineering/avoiding-double-payments-in-a-distributed-payments-system-2981f6b070bb",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     }
    ],
    "sources": [
@@ -6448,11 +6448,11 @@
     },
     {
      "title": "AWS Builders' Library: Timeouts, retries and backoff with jitter",
-     "url": "https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/"
+     "url": "https://builder.aws.com/content/3EumjoZascWd1oZiEgL8ORlv3qE/timeouts-retries-and-backoff-with-jitter"
     },
     {
-     "title": "Hello Interview: Multi-step processes (sagas, workflows)",
-     "url": "https://www.hellointerview.com/learn/system-design/patterns/multi-step-processes"
+     "title": "Azure Architecture Center: Compensating transaction pattern",
+     "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/compensating-transaction"
     }
    ],
    "cheatsheet_keyword": "RETRY",
@@ -6497,7 +6497,7 @@
      "url": "https://www.hellointerview.com/learn/system-design/problem-breakdowns/distributed-rate-limiter",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -6505,7 +6505,7 @@
      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/429",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -6513,7 +6513,7 @@
      "url": "https://leetcode.com/problems/number-of-recent-calls/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -6572,15 +6572,15 @@
      "url": "https://raft.github.io/",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
-     "platform": "Hello Interview",
-     "title": "Hello Interview breakdown: Job scheduler",
-     "url": "https://www.hellointerview.com/learn/system-design/problem-breakdowns/job-scheduler",
+     "platform": "Reading / hands-on",
+     "title": "Martin Kleppmann: How to do distributed locking (leases + fencing tokens)",
+     "url": "https://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -6588,7 +6588,7 @@
      "url": "https://raft.github.io/",
      "difficulty": null,
      "free": true,
-     "verified": "http",
+     "verified": "browser 2026-11-07",
      "note": "Try it yourself first; the link is the answer key / reference"
     }
    ],
@@ -6598,12 +6598,12 @@
      "url": "https://raft.github.io/"
     },
     {
-     "title": "Designing Data-Intensive Applications (Kleppmann) — book site",
-     "url": "https://dataintensive.net/"
+     "title": "Martin Kleppmann: Distributed Systems lecture notes (Cambridge, free PDF)",
+     "url": "https://www.cl.cam.ac.uk/teaching/2122/ConcDisSys/dist-sys-notes.pdf"
     },
     {
-     "title": "Hello Interview: Dealing with contention",
-     "url": "https://www.hellointerview.com/learn/system-design/patterns/dealing-with-contention"
+     "title": "Azure Architecture Center: Leader election pattern",
+     "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/leader-election"
     }
    ],
    "cheatsheet_keyword": "CONSENSUS",
@@ -6644,12 +6644,12 @@
    "animation": "Coordinator with prepare/commit messages; saga step chain with compensation arrows going back; outbox table relayed to a queue.",
    "practice": [
     {
-     "platform": "Hello Interview",
-     "title": "Hello Interview: Multi-step processes (sagas, workflows)",
-     "url": "https://www.hellointerview.com/learn/system-design/patterns/multi-step-processes",
+     "platform": "Reading / hands-on",
+     "title": "Azure Architecture Center: Saga pattern",
+     "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/saga",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -6657,7 +6657,7 @@
      "url": "https://microservices.io/patterns/data/saga.html",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -6665,7 +6665,7 @@
      "url": "https://microservices.io/patterns/data/transactional-outbox.html",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     }
    ],
    "sources": [
@@ -6678,8 +6678,8 @@
      "url": "https://microservices.io/patterns/data/transactional-outbox.html"
     },
     {
-     "title": "Hello Interview: Multi-step processes (sagas, workflows)",
-     "url": "https://www.hellointerview.com/learn/system-design/patterns/multi-step-processes"
+     "title": "Azure Architecture Center: Saga pattern",
+     "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/saga"
     }
    ],
    "cheatsheet_keyword": "SAGA",
@@ -6725,7 +6725,7 @@
      "url": "https://martinfowler.com/articles/microservices.html",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -6733,7 +6733,7 @@
      "url": "https://martinfowler.com/bliki/MonolithFirst.html",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -6741,7 +6741,7 @@
      "url": "https://martinfowler.com/articles/microservices.html",
      "difficulty": null,
      "free": true,
-     "verified": "http",
+     "verified": "browser 2026-11-07",
      "note": "Try it yourself first; the link is the answer key / reference"
     }
    ],
@@ -6801,7 +6801,7 @@
      "url": "https://sre.google/sre-book/service-level-objectives/",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -6809,7 +6809,7 @@
      "url": "https://martinfowler.com/bliki/CircuitBreaker.html",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -6817,7 +6817,7 @@
      "url": "https://sre.google/sre-book/handling-overload/",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     }
    ],
    "sources": [
@@ -6877,23 +6877,23 @@
      "url": "https://www.hellointerview.com/learn/system-design/deep-dives/elasticsearch",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
-     "title": "Elastic docs: Documents and indices",
-     "url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/documents-indices.html",
+     "title": "Elastic docs: Index basics (documents and indices)",
+     "url": "https://www.elastic.co/docs/manage-data/data-store/index-basics",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
      "title": "Exercise: build by hand the inverted index for 4 recipe titles and run the query 'paneer tikka'",
-     "url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/documents-indices.html",
+     "url": "https://www.elastic.co/docs/manage-data/data-store/index-basics",
      "difficulty": null,
      "free": true,
-     "verified": "http",
+     "verified": "browser 2026-11-07",
      "note": "Try it yourself first; the link is the answer key / reference"
     },
     {
@@ -6902,21 +6902,21 @@
      "url": "https://leetcode.com/problems/search-suggestions-system/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
     {
-     "title": "Elastic docs: Documents and indices",
-     "url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/documents-indices.html"
+     "title": "Elastic docs: Index basics (documents and indices)",
+     "url": "https://www.elastic.co/docs/manage-data/data-store/index-basics"
     },
     {
      "title": "Hello Interview deep dive: Elasticsearch",
      "url": "https://www.hellointerview.com/learn/system-design/deep-dives/elasticsearch"
     },
     {
-     "title": "Designing Data-Intensive Applications (Kleppmann) — book site",
-     "url": "https://dataintensive.net/"
+     "title": "Martin Kleppmann: Distributed Systems lecture notes (Cambridge, free PDF)",
+     "url": "https://www.cl.cam.ac.uk/teaching/2122/ConcDisSys/dist-sys-notes.pdf"
     }
    ],
    "cheatsheet_keyword": "SEARCH",
@@ -6961,7 +6961,7 @@
      "url": "https://oauth.net/2/",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -6969,7 +6969,7 @@
      "url": "https://jwt.io/introduction",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -6977,7 +6977,7 @@
      "url": "https://owasp.org/www-project-top-ten/",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     }
    ],
    "sources": [
@@ -7036,7 +7036,7 @@
      "url": "https://www.digitalocean.com/community/conceptual-articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -7044,7 +7044,7 @@
      "url": "https://github.com/ashishps1/awesome-low-level-design",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -7052,7 +7052,7 @@
      "url": "https://leetcode.com/problems/design-parking-system/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -7060,7 +7060,7 @@
      "url": "https://leetcode.com/problems/design-an-atm-machine/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -7115,7 +7115,7 @@
      "url": "https://refactoring.guru/design-patterns",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -7123,7 +7123,7 @@
      "url": "https://github.com/ashishps1/awesome-low-level-design",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -7131,7 +7131,7 @@
      "url": "https://refactoring.guru/design-patterns",
      "difficulty": null,
      "free": true,
-     "verified": "http",
+     "verified": "browser 2026-11-07",
      "note": "Try it yourself first; the link is the answer key / reference"
     },
     {
@@ -7140,7 +7140,7 @@
      "url": "https://leetcode.com/problems/design-browser-history/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -7195,7 +7195,7 @@
      "url": "https://github.com/donnemartin/system-design-primer/blob/master/solutions/object_oriented_design/parking_lot/parking_lot.ipynb",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -7203,7 +7203,7 @@
      "url": "https://github.com/ashishps1/awesome-low-level-design",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -7211,7 +7211,7 @@
      "url": "https://leetcode.com/problems/design-parking-system/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -7267,7 +7267,7 @@
      "url": "https://github.com/ashishps1/awesome-low-level-design",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -7275,7 +7275,7 @@
      "url": "https://leetcode.com/problems/design-a-food-rating-system/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -7283,7 +7283,7 @@
      "url": "https://leetcode.com/problems/snakes-and-ladders/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -7340,7 +7340,7 @@
      "url": "https://www.hellointerview.com/learn/system-design/problem-breakdowns/bitly",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -7348,7 +7348,7 @@
      "url": "https://leetcode.com/problems/encode-and-decode-tinyurl/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "System Design Primer",
@@ -7356,7 +7356,7 @@
      "url": "https://github.com/donnemartin/system-design-primer/blob/master/solutions/system_design/pastebin/README.md",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     }
    ],
    "sources": [
@@ -7499,23 +7499,23 @@
      "url": "https://www.hellointerview.com/learn/system-design/problem-breakdowns/ticketmaster",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
-     "platform": "Hello Interview",
-     "title": "Hello Interview: Dealing with contention",
-     "url": "https://www.hellointerview.com/learn/system-design/patterns/dealing-with-contention",
+     "platform": "Reading / hands-on",
+     "title": "PostgreSQL docs: Explicit locking (row locks, SELECT … FOR UPDATE)",
+     "url": "https://www.postgresql.org/docs/current/explicit-locking.html",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
-     "platform": "Hello Interview",
-     "title": "Hello Interview breakdown: Flash sale",
-     "url": "https://www.hellointerview.com/learn/system-design/problem-breakdowns/flash-sale",
+     "platform": "Reading / hands-on",
+     "title": "Redis docs: Distributed locks with Redis",
+     "url": "https://redis.io/docs/latest/develop/clients/patterns/distributed-locks/",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     }
    ],
    "sources": [
@@ -7524,12 +7524,12 @@
      "url": "https://www.hellointerview.com/learn/system-design/problem-breakdowns/ticketmaster"
     },
     {
-     "title": "Hello Interview: Dealing with contention",
-     "url": "https://www.hellointerview.com/learn/system-design/patterns/dealing-with-contention"
+     "title": "PostgreSQL docs: Explicit locking (row locks, SELECT … FOR UPDATE)",
+     "url": "https://www.postgresql.org/docs/current/explicit-locking.html"
     },
     {
-     "title": "Designing Data-Intensive Applications (Kleppmann) — book site",
-     "url": "https://dataintensive.net/"
+     "title": "Martin Kleppmann: Distributed Systems lecture notes (Cambridge, free PDF)",
+     "url": "https://www.cl.cam.ac.uk/teaching/2122/ConcDisSys/dist-sys-notes.pdf"
     }
    ],
    "cheatsheet_keyword": "TATKAL",
@@ -7576,7 +7576,7 @@
      "url": "https://www.hellointerview.com/learn/system-design/problem-breakdowns/whatsapp",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -7584,15 +7584,15 @@
      "url": "https://discord.com/blog/how-discord-stores-trillions-of-messages",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
-     "platform": "Hello Interview",
+     "platform": "Reading / hands-on",
      "title": "Exercise: design the 'last seen' / presence feature for 50 crore users",
-     "url": "https://www.hellointerview.com/learn/system-design/patterns/realtime-updates",
+     "url": "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API",
      "difficulty": null,
      "free": true,
-     "verified": "http",
+     "verified": "browser 2026-11-07",
      "note": "Try it yourself first; the link is the answer key / reference"
     }
    ],
@@ -7654,15 +7654,15 @@
      "url": "https://www.hellointerview.com/learn/system-design/problem-breakdowns/uber",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
-     "platform": "Hello Interview",
-     "title": "Hello Interview breakdown: Yelp (proximity search)",
-     "url": "https://www.hellointerview.com/learn/system-design/problem-breakdowns/yelp",
+     "platform": "Reading / hands-on",
+     "title": "Redis docs: Geospatial indexes (radius search)",
+     "url": "https://redis.io/docs/latest/develop/data-types/geospatial/",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -7670,7 +7670,7 @@
      "url": "https://en.wikipedia.org/wiki/Geohash",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     }
    ],
    "sources": [
@@ -7731,7 +7731,7 @@
      "url": "https://www.hellointerview.com/learn/system-design/problem-breakdowns/fb-news-feed",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "System Design Primer",
@@ -7739,7 +7739,7 @@
      "url": "https://github.com/donnemartin/system-design-primer/blob/master/solutions/system_design/twitter/README.md",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -7747,7 +7747,7 @@
      "url": "https://leetcode.com/problems/design-twitter/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -7760,8 +7760,8 @@
      "url": "https://github.com/donnemartin/system-design-primer/blob/master/solutions/system_design/twitter/README.md"
     },
     {
-     "title": "Designing Data-Intensive Applications (Kleppmann) — book site",
-     "url": "https://dataintensive.net/"
+     "title": "Martin Kleppmann: Distributed Systems lecture notes (Cambridge, free PDF)",
+     "url": "https://www.cl.cam.ac.uk/teaching/2122/ConcDisSys/dist-sys-notes.pdf"
     }
    ],
    "cheatsheet_keyword": "FEED",
@@ -7808,7 +7808,7 @@
      "url": "https://www.hellointerview.com/learn/system-design/problem-breakdowns/youtube",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -7816,15 +7816,15 @@
      "url": "https://developer.apple.com/streaming/",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
-     "platform": "Hello Interview",
+     "platform": "Reading / hands-on",
      "title": "Exercise: estimate CDN egress for 3 crore concurrent viewers at an average 1.5 Mbps",
-     "url": "https://www.hellointerview.com/learn/system-design/core-concepts/numbers-to-know",
+     "url": "https://github.com/donnemartin/system-design-primer#powers-of-two-table",
      "difficulty": null,
      "free": true,
-     "verified": "http",
+     "verified": "browser 2026-11-07",
      "note": "Try it yourself first; the link is the answer key / reference"
     }
    ],
@@ -7838,8 +7838,8 @@
      "url": "https://developer.apple.com/streaming/"
     },
     {
-     "title": "Hello Interview: Handling large blobs",
-     "url": "https://www.hellointerview.com/learn/system-design/patterns/large-blobs"
+     "title": "AWS S3 docs: Multipart upload (chunked, resumable)",
+     "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/mpuoverview.html"
     }
    ],
    "cheatsheet_keyword": "STREAM",
@@ -7881,12 +7881,12 @@
    "animation": "Event → router → channel queues (push/SMS/email) → providers; priority lanes; retry & DLQ.",
    "practice": [
     {
-     "platform": "Hello Interview",
-     "title": "Hello Interview breakdown: Notification system",
-     "url": "https://www.hellointerview.com/learn/system-design/problem-breakdowns/notification-system",
+     "platform": "Reading / hands-on",
+     "title": "Netflix TechBlog: Rapid Event Notification System",
+     "url": "https://netflixtechblog.com/rapid-event-notification-system-at-netflix-6deb1d2b57d1",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -7894,22 +7894,22 @@
      "url": "https://firebase.google.com/docs/cloud-messaging",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
-     "platform": "Hello Interview",
+     "platform": "Reading / hands-on",
      "title": "Exercise: design OTP delivery with a 5-second SLO and SMS-provider failover",
-     "url": "https://www.hellointerview.com/learn/system-design/problem-breakdowns/notification-system",
+     "url": "https://martinfowler.com/bliki/CircuitBreaker.html",
      "difficulty": null,
      "free": true,
-     "verified": "http",
+     "verified": "browser 2026-11-07",
      "note": "Try it yourself first; the link is the answer key / reference"
     }
    ],
    "sources": [
     {
-     "title": "Hello Interview breakdown: Notification system",
-     "url": "https://www.hellointerview.com/learn/system-design/problem-breakdowns/notification-system"
+     "title": "Netflix TechBlog: Rapid Event Notification System",
+     "url": "https://netflixtechblog.com/rapid-event-notification-system-at-netflix-6deb1d2b57d1"
     },
     {
      "title": "Firebase Cloud Messaging docs",
@@ -7964,7 +7964,7 @@
      "url": "https://leetcode.com/problems/search-suggestions-system/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -7972,7 +7972,7 @@
      "url": "https://leetcode.com/problems/implement-trie-prefix-tree/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "Hello Interview",
@@ -7980,7 +7980,7 @@
      "url": "https://www.hellointerview.com/learn/system-design/problem-breakdowns/top-k",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     }
    ],
    "sources": [
@@ -8040,7 +8040,7 @@
      "url": "https://www.hellointerview.com/learn/system-design/problem-breakdowns/web-crawler",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "System Design Primer",
@@ -8048,7 +8048,7 @@
      "url": "https://github.com/donnemartin/system-design-primer/blob/master/solutions/system_design/web_crawler/README.md",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -8056,7 +8056,7 @@
      "url": "https://developers.google.com/search/docs/crawling-indexing/robots/intro",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     }
    ],
    "sources": [
@@ -8116,15 +8116,15 @@
      "url": "https://www.hellointerview.com/learn/system-design/problem-breakdowns/gopuff",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
-     "platform": "Hello Interview",
-     "title": "Hello Interview: Dealing with contention",
-     "url": "https://www.hellointerview.com/learn/system-design/patterns/dealing-with-contention",
+     "platform": "Reading / hands-on",
+     "title": "PostgreSQL docs: Explicit locking (row locks, SELECT … FOR UPDATE)",
+     "url": "https://www.postgresql.org/docs/current/explicit-locking.html",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Hello Interview",
@@ -8132,15 +8132,15 @@
      "url": "https://www.hellointerview.com/learn/system-design/problem-breakdowns/uber",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
-     "platform": "Hello Interview",
+     "platform": "Reading / hands-on",
      "title": "Exercise: reserve stock for a cart of 6 items across one dark store without overselling",
-     "url": "https://www.hellointerview.com/learn/system-design/patterns/dealing-with-contention",
+     "url": "https://www.postgresql.org/docs/current/explicit-locking.html",
      "difficulty": null,
      "free": true,
-     "verified": "http",
+     "verified": "browser 2026-11-07",
      "note": "Try it yourself first; the link is the answer key / reference"
     }
    ],
@@ -8150,8 +8150,8 @@
      "url": "https://www.hellointerview.com/learn/system-design/problem-breakdowns/gopuff"
     },
     {
-     "title": "Hello Interview: Dealing with contention",
-     "url": "https://www.hellointerview.com/learn/system-design/patterns/dealing-with-contention"
+     "title": "PostgreSQL docs: Explicit locking (row locks, SELECT … FOR UPDATE)",
+     "url": "https://www.postgresql.org/docs/current/explicit-locking.html"
     },
     {
      "title": "Uber engineering: H3 hexagonal geospatial index",
@@ -8202,7 +8202,7 @@
      "url": "https://www.hellointerview.com/learn/system-design/problem-breakdowns/top-k",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Hello Interview",
@@ -8210,7 +8210,7 @@
      "url": "https://www.hellointerview.com/learn/system-design/deep-dives/redis",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Hello Interview",
@@ -8218,7 +8218,7 @@
      "url": "https://www.hellointerview.com/learn/system-design/problem-breakdowns/ad-click-aggregator",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     }
    ],
    "sources": [
@@ -8231,8 +8231,8 @@
      "url": "https://www.hellointerview.com/learn/system-design/problem-breakdowns/top-k"
     },
     {
-     "title": "Hello Interview: Scaling writes",
-     "url": "https://www.hellointerview.com/learn/system-design/patterns/scaling-writes"
+     "title": "Redis docs: Sorted sets (leaderboards)",
+     "url": "https://redis.io/docs/latest/develop/data-types/sorted-sets/"
     }
    ],
    "cheatsheet_keyword": "LEADERBOARD",
@@ -8273,12 +8273,12 @@
    "animation": "Ring with replicas; quorum acknowledgements; node failure and handoff; vector-clock-style version conflict.",
    "practice": [
     {
-     "platform": "Hello Interview",
-     "title": "Hello Interview breakdown: Distributed cache",
-     "url": "https://www.hellointerview.com/learn/system-design/problem-breakdowns/distributed-cache",
+     "platform": "Reading / hands-on",
+     "title": "Facebook: Scaling Memcache at Facebook (NSDI 2013, free PDF)",
+     "url": "https://www.usenix.org/system/files/conference/nsdi13/nsdi13-final170_update.pdf",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -8286,7 +8286,7 @@
      "url": "https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -8294,7 +8294,7 @@
      "url": "https://leetcode.com/problems/design-hashmap/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -8303,12 +8303,12 @@
      "url": "https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf"
     },
     {
-     "title": "Hello Interview breakdown: Distributed cache",
-     "url": "https://www.hellointerview.com/learn/system-design/problem-breakdowns/distributed-cache"
+     "title": "Facebook: Scaling Memcache at Facebook (NSDI 2013, free PDF)",
+     "url": "https://www.usenix.org/system/files/conference/nsdi13/nsdi13-final170_update.pdf"
     },
     {
-     "title": "Designing Data-Intensive Applications (Kleppmann) — book site",
-     "url": "https://dataintensive.net/"
+     "title": "Martin Kleppmann: Distributed Systems lecture notes (Cambridge, free PDF)",
+     "url": "https://www.cl.cam.ac.uk/teaching/2122/ConcDisSys/dist-sys-notes.pdf"
     }
    ],
    "cheatsheet_keyword": "KVSTORE",
@@ -8349,12 +8349,12 @@
    "animation": "Shared document with coloured cursors; operations transforming; CRDT IDs keeping order.",
    "practice": [
     {
-     "platform": "Hello Interview",
-     "title": "Hello Interview breakdown: Google Docs",
-     "url": "https://www.hellointerview.com/learn/system-design/problem-breakdowns/google-docs",
+     "platform": "Reading / hands-on",
+     "title": "Wikipedia: Operational transformation (how Google Docs-style editors merge edits)",
+     "url": "https://en.wikipedia.org/wiki/Operational_transformation",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -8362,7 +8362,7 @@
      "url": "https://crdt.tech/",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -8370,13 +8370,13 @@
      "url": "https://www.figma.com/blog/how-figmas-multiplayer-technology-works/",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     }
    ],
    "sources": [
     {
-     "title": "Hello Interview breakdown: Google Docs",
-     "url": "https://www.hellointerview.com/learn/system-design/problem-breakdowns/google-docs"
+     "title": "Wikipedia: Operational transformation (how Google Docs-style editors merge edits)",
+     "url": "https://en.wikipedia.org/wiki/Operational_transformation"
     },
     {
      "title": "crdt.tech: Conflict-free replicated data types",
@@ -8427,7 +8427,7 @@
      "url": "https://www.techinterviewhandbook.org/coding-interview-study-plan/",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "NeetCode",
@@ -8435,15 +8435,15 @@
      "url": "https://neetcode.io/roadmap",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "takeUforward",
      "title": "Striver's A2Z DSA Sheet (takeUforward)",
-     "url": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
+     "url": "https://takeuforward.org/prep-hub/strivers-a2z-dsa-sheet",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     }
    ],
    "sources": [
@@ -8502,7 +8502,7 @@
      "url": "https://www.techinterviewhandbook.org/coding-interview-techniques/",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -8510,7 +8510,7 @@
      "url": "https://www.techinterviewhandbook.org/coding-interview-cheatsheet/",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -8518,7 +8518,7 @@
      "url": "https://leetcode.com/problems/two-sum/",
      "difficulty": "Easy",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     }
    ],
    "sources": [
@@ -8573,7 +8573,7 @@
      "url": "https://www.hellointerview.com/learn/system-design/in-a-hurry/delivery",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Hello Interview",
@@ -8581,15 +8581,15 @@
      "url": "https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
-     "platform": "Reading / hands-on",
-     "title": "ByteByteGo: System Design Interview course (Alex Xu Vol 1 & 2, partly free)",
-     "url": "https://bytebytego.com/courses/system-design-interview/foreword",
+     "platform": "System Design Primer",
+     "title": "System Design Primer: How to approach a system design interview question",
+     "url": "https://github.com/donnemartin/system-design-primer#how-to-approach-a-system-design-interview-question",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     }
    ],
    "sources": [
@@ -8598,8 +8598,8 @@
      "url": "https://www.hellointerview.com/learn/system-design/in-a-hurry/delivery"
     },
     {
-     "title": "ByteByteGo: System Design Interview course (Alex Xu Vol 1 & 2, partly free)",
-     "url": "https://bytebytego.com/courses/system-design-interview/foreword"
+     "title": "System Design Primer: How to approach a system design interview question",
+     "url": "https://github.com/donnemartin/system-design-primer#how-to-approach-a-system-design-interview-question"
     },
     {
      "title": "System Design Primer (donnemartin)",
@@ -8646,7 +8646,7 @@
      "url": "https://www.techinterviewhandbook.org/behavioral-interview/",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "Reading / hands-on",
@@ -8654,7 +8654,7 @@
      "url": "https://www.techinterviewhandbook.org/behavioral-interview/",
      "difficulty": null,
      "free": true,
-     "verified": "http",
+     "verified": "browser 2026-11-07",
      "note": "Try it yourself first; the link is the answer key / reference"
     },
     {
@@ -8663,7 +8663,7 @@
      "url": "https://www.techinterviewhandbook.org/behavioral-interview-questions/",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     }
    ],
    "sources": [
@@ -8715,7 +8715,7 @@
      "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "Hello Interview",
@@ -8723,7 +8723,7 @@
      "url": "https://www.hellointerview.com/learn/system-design/problem-breakdowns/distributed-rate-limiter",
      "difficulty": null,
      "free": true,
-     "verified": "http"
+     "verified": "browser 2026-11-07"
     },
     {
      "platform": "LeetCode",
@@ -8731,7 +8731,7 @@
      "url": "https://leetcode.com/problems/top-k-frequent-elements/",
      "difficulty": "Medium",
      "free": true,
-     "verified": "leetcode-graphql"
+     "verified": "graphql 2026-11-07"
     },
     {
      "platform": "Hello Interview",
@@ -8739,7 +8739,7 @@
      "url": "https://www.hellointerview.com/learn/system-design/in-a-hurry/delivery",
      "difficulty": null,
      "free": true,
-     "verified": "http",
+     "verified": "browser 2026-11-07",
      "note": "Try it yourself first; the link is the answer key / reference"
     }
    ],
