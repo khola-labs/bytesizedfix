@@ -234,7 +234,7 @@ def home(meta, site, lessons, by_id, mods, mod_order, order, today):
         out_cards.append(f"""<div class="card accent">
 <p class="eyebrow">{escape(l['track'])} · {escape(label)} out now</p>
 <h3><a href="lessons/{l['slug']}.html">{escape(l['title_plain'])}</a></h3>
-<p class="hook">{escape(l['title_hook'])}</p>
+<p class="hook">{escape(l['title_hook'])}</p>{f'<p class="note"><strong>{escape(l["release_note"])}</strong></p>' if l.get("release_note") else ""}
 <div class="btns"><a class="btn" href="{yt_watch(l['video_id'] or l['short_id'], short=not l['out'])}" rel="noopener">▶ Watch on YouTube</a><a class="btn ghost" href="lessons/{l['slug']}.html">Lesson page &amp; practice</a></div>
 </div>""")
     up = "".join(f'<li class="lesson-row"><span class="tick" aria-hidden="true">⏳</span><span class="body"><a class="t" href="lessons/{l["slug"]}.html">{escape(l["title_plain"])}</a><span class="meta"><span class="badge soon">{fmt_date(l["date"])}</span><span>{escape(l["track"])}</span></span></span></li>' for l in upcoming)
@@ -463,6 +463,7 @@ def lesson_page(l, by_id, mods, site, today):
 {check('L:' + l['id'], '<strong>I’ve finished this lesson</strong>')}
 </div>
 {STORAGE_NOTE}
+{f'<p class="note"><strong>{escape(l["release_note"])}</strong></p>' if l.get("release_note") else ""}
 {video_block(l, today)}
 {disclaimer}
 <h2>What you’ll learn</h2>
