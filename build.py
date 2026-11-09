@@ -446,8 +446,11 @@ def lesson_page(l, by_id, mods, site, today):
         disclaimer = '<p class="disclaimer">This is a learning design for a system <em>like</em> the one named. It is not a description of any company’s internal architecture.</p>'
     code_note = "<span>Code on screen: Python</span>" if l["track"] == "DSA" else ""
     kw = escape(l["cheatsheet_keyword"])
+    kw_fact = '<span>Cheat-sheet: free PNG download</span>' if l.get("cheatsheet_img") else f'<span>Cheat-sheet: <span class="badge kw">{kw}</span></span>'
     # Only promise the DM once something is out (the ManyChat flow is made when the lesson/Short goes live).
-    if l.get("video_id") or l.get("short_id"):
+    if l.get("cheatsheet_img"):   # direct download, no keyword-DM promise
+        cheat_line = f'<p><a href="../assets/{escape(l["cheatsheet_img"])}" download>Download the one-page cheat-sheet (PNG)</a></p>'
+    elif l.get("video_id") or l.get("short_id"):
         cheat_line = f'<p>Comment <span class="badge kw">{kw}</span> on the Reel or Short and we’ll DM you the one-page cheat-sheet, the video link and this page.</p>'
     else:
         cheat_line = f'<p>The one-page cheat-sheet comes out with this lesson. When it’s live, comment <span class="badge kw">{kw}</span> on the Reel or Short to get it in your DMs.</p>'
@@ -456,7 +459,7 @@ def lesson_page(l, by_id, mods, site, today):
 <p class="eyebrow">{escape(l['track'])} · Lesson {escape(lesson_label(l))} · {escape(mod['title'])}</p>
 <h1>{escape(l['title_plain'])}</h1>
 <p class="lead hook">“{escape(l['title_hook'])}”</p>
-<div class="lesson-facts">{status_badge(l, today)}<span>Lesson ~{l['target_length_min']} min</span><span>Short {escape(str(l.get('short', {}).get('length_s', '60-90')))} s</span>{code_note}<span>Cheat-sheet: <span class="badge kw">{kw}</span></span></div>
+<div class="lesson-facts">{status_badge(l, today)}<span>Lesson ~{l['target_length_min']} min</span><span>Short {escape(str(l.get('short', {}).get('length_s', '60-90')))} s</span>{code_note}{kw_fact}</div>
 {check('L:' + l['id'], '<strong>I’ve finished this lesson</strong>')}
 </div>
 {STORAGE_NOTE}
@@ -519,6 +522,11 @@ def main():
     (OUT / "lessons").mkdir(exist_ok=True)
     for a in ASSETS:
         shutil.copy2(SRC / a, OUT / "assets" / a)
+    sheets = []   # per-lesson cheat-sheet images (lesson field "cheatsheet_img": "cheatsheets/d01.png" under src/)
+    for l in lessons:
+        if l.get("cheatsheet_img"):
+            (OUT / "assets" / "cheatsheets").mkdir(exist_ok=True)
+            shutil.copy2(SRC / l["cheatsheet_img"], OUT / "assets" / l["cheatsheet_img"]); sheets.append(l["cheatsheet_img"])
 
     pages = {}
     pages["index.html"] = home(meta, site, lessons, by_id, mods, mod_order, order, today)
@@ -540,7 +548,7 @@ def main():
     (OUT / "sitemap.xml").write_text(
         f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}</urlset>\n', encoding="utf-8")
     # Anything in docs/ we didn't just write is stale (e.g. a removed lesson): move it to the Trash, never delete.
-    keep = {OUT / p for p in pages} | {OUT / "assets" / a for a in ASSETS} | {OUT / n for n in ("404.html", ".nojekyll", "robots.txt", "sitemap.xml")}
+    keep = {OUT / p for p in pages} | {OUT / "assets" / a for a in ASSETS} | {OUT / "assets" / a for a in sheets} | {OUT / n for n in ("404.html", ".nojekyll", "robots.txt", "sitemap.xml")}
     stale = [f for f in OUT.rglob("*") if f.is_file() and f not in keep]
     if stale:
         trash = Path.home() / ".Trash" / f"bsf-docs-stale-{dt.datetime.now():%Y%m%d-%H%M%S}"

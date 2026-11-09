@@ -322,7 +322,8 @@
    "status": "planned",
    "video_id": null,
    "short_id": null,
-   "code_alternatives": []
+   "code_alternatives": [],
+   "cheatsheet_img": "cheatsheets/d01.png"
   },
   {
    "id": "D02",
