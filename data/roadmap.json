@@ -319,11 +319,12 @@
    "release_week": 1,
    "release_slot": "Tue",
    "standalone": true,
-   "status": "planned",
-   "video_id": null,
+   "status": "released",
+   "video_id": "oVaa5fmvPxA",
    "short_id": null,
    "code_alternatives": [],
-   "cheatsheet_img": "cheatsheets/d01.png"
+   "cheatsheet_img": "cheatsheets/d01.png",
+   "release_note": "Out early! Regular lessons every Tuesday (DSA) and Friday (System Design) from 17 Nov."
   },
   {
    "id": "D02",
